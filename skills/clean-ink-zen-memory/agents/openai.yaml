@@ -1,0 +1,4 @@
+interface:
+  display_name: "Clean Ink Zen Memory"
+  short_description: "Create split or full-canvas clean ink memory posters"
+  default_prompt: "Use $clean-ink-zen-memory to transform each uploaded photo, and let me choose split comparison or full canvas."

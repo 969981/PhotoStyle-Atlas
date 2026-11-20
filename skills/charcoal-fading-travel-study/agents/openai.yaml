@@ -1,0 +1,4 @@
+interface:
+  display_name: "Charcoal Fading Travel Study"
+  short_description: "Create split or full-canvas fading charcoal studies"
+  default_prompt: "Use $charcoal-fading-travel-study to transform each uploaded photo, and let me choose split comparison or full canvas."

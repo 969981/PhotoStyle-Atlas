@@ -1,0 +1,4 @@
+interface:
+  display_name: "Folk Ink Landmark Portrait"
+  short_description: "Create split or full-canvas folk ink landmark posters"
+  default_prompt: "Use $folk-ink-landmark-portrait to transform each uploaded landmark photo, and let me choose split comparison or full canvas."

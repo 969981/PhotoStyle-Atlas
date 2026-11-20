@@ -1,0 +1,82 @@
+document_type: poster-manifest
+schema_version: 3
+source:
+  label: null
+  orientation: null
+series:
+  preset_id: ivory-editorial-v1
+  lock_schema_version: 3
+crop:
+  target_ratio: "3:2"
+  description: null
+  protected_content: []
+  discarded_secondary_content: []
+resolved_palette:
+  restraint_note: null
+  colors:
+    - role: subject
+      value: null
+      is_mandatory: true
+    - role: dark-anchor
+      value: null
+      is_mandatory: true
+    - role: accent
+      value: null
+      is_mandatory: true
+  # Add additional source-derived colors as the photo supports (no fixed count):
+  # - role: natural
+  #   value: null
+  #   is_mandatory: false
+resolved_elements:
+  count: null
+  elements:
+    - role: primary-form
+      description: null
+      photo_origin: null
+      is_mandatory: true
+    - role: secondary-structure
+      description: null
+      photo_origin: null
+      is_mandatory: true
+    - role: spatial-anchor
+      description: null
+      photo_origin: null
+      is_mandatory: true
+  # Add optional elements as selected per photo:
+  # - role: organic-accent
+  #   description: null
+  #   photo_origin: null
+  #   is_mandatory: false
+  # - role: native-text-mark
+  #   description: "Recognizable photo-native cultural text, anchored to its structure at its original relative position, not recomposed"
+  #   photo_origin: null
+  #   is_mandatory: false
+generation:
+  status: planned
+  retry_count: 0
+  retry_defect: null
+quality_checks:
+  canvas_3_4: null
+  one_source: null
+  split_exactly_50_50: null
+  photo_fills_top_edge_to_edge: null
+  no_divider_no_gap: null
+  no_letterboxing: null
+  crop_exact_3_2_subject_focused: null
+  background_correct: null
+  photo_strictly_faithful: null
+  photo_native_text_preserved: null
+  abstract_native_text_in_place: null
+  palette_mandatory_roles_present: null
+  palette_all_from_source: null
+  palette_restrained: null
+  element_count_in_range: null
+  no_added_text: null
+  no_decorative_additions: null
+  clean_geometric_style: null
+  flat_color_no_gradients: null
+  generous_negative_space: null
+  instantly_recognizable: null
+  editorial_museum_feel: null
+  subject_faithful: null
+notes: []

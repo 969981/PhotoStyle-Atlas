@@ -1,0 +1,17 @@
+interface:
+  display_name: "Lightroom Computer Use"
+  short_description: "Drive Adobe Lightroom (cloud desktop) with Computer Use safely"
+  brand_color: "#31A8FF"
+  default_prompt: >
+    With Computer Use, open Lightroom (cloud desktop), focus the selected photo
+    in Edit, and prepare to follow composition / lighting / color skills. Keep
+    Lightroom visible. Do not export or delete without asking.
+
+policy:
+  allow_implicit_invocation: true
+
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "computer-use"
+      description: "ChatGPT Computer Use plugin for controlling desktop apps"

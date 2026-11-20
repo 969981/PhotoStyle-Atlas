@@ -1,0 +1,4 @@
+interface:
+  display_name: "Kraft Stencil Landmark"
+  short_description: "Create split or full-canvas two-color landmark prints"
+  default_prompt: "Use $kraft-stencil-landmark to transform each uploaded landmark photo, and let me choose split comparison or full canvas."

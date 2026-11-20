@@ -1,0 +1,4 @@
+interface:
+  display_name: "Nostalgic Travel Editorial"
+  short_description: "Create split or full-canvas nostalgic travel posters"
+  default_prompt: "Use $nostalgic-travel-duet to transform each uploaded photo, and let me choose split comparison or full-canvas editorial illustration."

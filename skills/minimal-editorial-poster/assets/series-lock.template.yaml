@@ -1,0 +1,98 @@
+document_type: series-lock
+schema_version: 3
+preset_id: ivory-editorial-v1
+canvas:
+  width: 1080
+  height: 1440
+  ratio: "3:4"
+input_normalization:
+  target_photo_ratio: "3:2"
+  landscape_policy: subject-focused-crop
+  portrait_policy: mandatory-subject-landscape-crop
+  protected_content:
+    - primary-subject
+    - identity-signage
+    - unique-structure
+  crop_priority:
+    - primary-subject
+    - identity-information
+    - spatial-relationships
+  crop_removable:
+    - distant-background
+    - peripheral-low-information
+    - secondary-subjects
+  forbidden:
+    - stretch
+    - rotate-subject
+    - synthesize-new-subject
+photographic_fidelity:
+  policy: strict-source-only
+  allowed_modifications:
+    - crop
+  forbidden_modifications:
+    - color-grading
+    - filters
+    - retouching
+    - stylization
+    - compositing
+    - text-removal
+poster_layout:
+  direction: vertical
+  photo_position: top
+  photo_percent: 50
+  graphic_position: bottom
+  graphic_percent: 50
+  tolerance_percentage_points: 0
+  photo_fills_top_region: true
+  divider: none
+background: "#F3EBDD"
+typography:
+  added_text_forbidden: true
+  photo_native_text: preserved
+palette:
+  mandatory_roles:
+    - subject
+    - dark-anchor
+    - accent
+  additional_roles:
+    - natural
+    - sky-water
+    - material
+    - highlight
+    - muted
+  count_policy: 3-mandatory-plus-source-driven
+  restraint: fewer-rather-than-more
+abstract:
+  approach: minimal-editorial
+  style: geometric-reductive
+  sensibility: high-end-editorial-museum-exhibition-architectural-graphic
+  instantly_recognizable: true
+  clean_geometry: true
+  flat_color_fields: true
+  fine_lines: true
+  decorative_additions_forbidden: true
+  elements_from_source_only: true
+  negative_space: generous
+  margins: wide
+  composition: balanced-central
+  mandatory_roles:
+    - primary-form
+    - secondary-structure
+    - spatial-anchor
+  optional_roles:
+    - organic-accent
+    - material-pattern
+    - light-mass
+    - detail-mark
+    - native-text-mark
+    - figure-silhouette
+  min_element_count: 4
+  max_element_count: 7
+  native_text_in_abstract:
+    allowed: true
+    behavior:
+      - anchored-to-structure
+      - original-relative-position
+      - flat-minimal
+      - not-recomposed
+overrides: {}

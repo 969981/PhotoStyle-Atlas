@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "slug": "glitch-pixel-collage",
+  "name": "Wibi Style · 乱码像素拼贴",
+  "version": "1.0.6",
+  "author": "@威比 Hunter Wei.",
+  "author_note": "抖音、小红书同名",
+  "official_source": "https://github.com/Vieeeeeee/wibi-style/tree/main/skills/glitch-pixel-collage",
+  "license": "MIT AND LicenseRef-Wibi-Personal-NonCommercial-1.0",
+  "repository": "https://github.com/Vieeeeeee/wibi-style",
+  "path": "skills/glitch-pixel-collage",
+  "install_url": "https://github.com/Vieeeeeee/wibi-style/tree/main/skills/glitch-pixel-collage",
+  "update_manifest_url": "https://api.github.com/repos/Vieeeeeee/wibi-style/contents/skills/glitch-pixel-collage/manifest.json?ref=main",
+  "attribution": {
+    "text": "Visual Skill by @威比 Hunter Wei.",
+    "platforms": [
+      "抖音",
+      "小红书"
+    ],
+    "retention_required_on_redistribution": true,
+    "notice_file": "NOTICE"
+  },
+  "post_install": {
+    "command": "python3 {skill_dir}/scripts/show_skill_info.py --always",
+    "display_output": true,
+    "fallback": "The first Skill invocation shows the author card once if the installer does not."
+  },
+  "community": {
+    "config_url": "https://raw.githubusercontent.com/Vieeeeeee/wibi-style/main/community.json",
+    "opening": "welcome-once-per-conversation",
+    "qr_display": "download-current-github-image-and-render-locally",
+    "on_generation_failure": "current-qr-once-per-conversation",
+    "on_first_success": "author-and-join-cta"
+  },
+  "welcome": {
+    "waiting": [
+      "先发一张你想拆成像素拼贴的照片给我吧～",
+      "我会保留主体关系，把它变成带乱码、像素块和故障感的实验拼贴。"
+    ],
+    "received": [
+      "照片收到啦～我会保留主体和画面关系，把它拆成带乱码、像素块和故障感的实验拼贴。"
+    ]
+  },
+  "prompt": {
+    "file": "references/style-prompt.md",
+    "source": "projects/乱码像素拼贴/02_提示词/98_线上版.md",
+    "source_sha256": "c77b943e8c6fe1c9d38108684743af8296d55a164a0cc2fa7406f39d3a1ac38c"
+  },
+  "input": {
+    "type": "single-photo-restyle",
+    "bundled_references": 3
+  },
+  "references": [
+    {
+      "file": "assets/references/reference-01.jpg",
+      "source": "01_风格参考/01_足球人物.jpg",
+      "source_sha256": "18aa8662a1b1cbcde277508765ad7878d86038834d76bccde6bed48bf735a18e"
+    },
+    {
+      "file": "assets/references/reference-02.jpg",
+      "source": "01_风格参考/02_果盘静物.jpg",
+      "source_sha256": "aa1c100b5cdcca8a5ad8705dfc89522041afedde37536308088a5be2ac8f61c3"
+    },
+    {
+      "file": "assets/references/reference-03.jpg",
+      "source": "01_风格参考/03_果篮静物.jpg",
+      "source_sha256": "4afe231c8cc840616ebc9bb387f7e01f90269b93fb3837196646eb876079b55d"
+    }
+  ],
+  "gallery": {
+    "layout": "3x2",
+    "count": 6,
+    "repository_path": "docs/glitch-pixel-collage/examples",
+    "bundled_with_install": false
+  },
+  "rights": {
+    "status": "cleared",
+    "project_owner_confirmed_reference_distribution": true,
+    "authorization_basis": "user-provided-or-user-approved-project-assets",
+    "original_assets": [],
+    "redistributable_assets": [
+      "assets/references/reference-01.jpg",
+      "assets/references/reference-02.jpg",
+      "assets/references/reference-03.jpg"
+    ],
+    "bundled_third_party_assets": []
+  }
+}

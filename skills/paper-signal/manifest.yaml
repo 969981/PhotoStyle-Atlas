@@ -1,0 +1,56 @@
+name: paper-signal
+schema_version: "1.1"
+description: >-
+  Declarative router for universal minimal-zine image production. Delivery shape
+  and subject type are resolved independently so a landscape, portrait, object,
+  photo edit, concept poster, or evidence-led series can share one material
+  identity without sharing one layout.
+
+always_load:
+  - references/core-workflow.md
+  - references/subject-routing.md
+  - references/visual-language.md
+  - references/quality-contract.md
+
+axes:
+  route:
+    detect: >-
+      Use single-card for one new image or poster. Use restyle-existing when an
+      existing image must be preserved and transformed. Use new-series for a
+      carousel, visual essay, or ordered set of two or more images.
+    values:
+      single-card: references/prompt-compiler.md
+      restyle-existing: references/restyle-contract.md
+      new-series: references/content-architecture.md
+    default: single-card
+    multi: false
+
+  subject:
+    detect: >-
+      Classify the visual subject as landscape, portrait, object, architecture,
+      concept, evidence, or mixed-series before selecting composition.
+    values:
+      landscape: references/subject-routing.md
+      portrait: references/subject-routing.md
+      object: references/subject-routing.md
+      architecture: references/subject-routing.md
+      concept: references/subject-routing.md
+      evidence: references/subject-routing.md
+      mixed-series: references/subject-routing.md
+    default: concept
+    multi: false
+
+references:
+  on_demand:
+    - condition: facts, metrics, rankings, assessment splits, reviews, quotes, or source documents
+      path: references/evidence-ledger.md
+    - condition: first-person, recommendation, review, senior-guide, or conversational caption copy
+      path: references/human-voice.md
+    - condition: compiling final raster prompts or correcting generated images
+      path: references/prompt-compiler.md
+    - condition: selecting or varying the signature material treatment
+      path: references/presets.md
+    - condition: creating a project, manifest, evidence ledger, or ordered deliverable set
+      path: references/project-schema.md
+    - condition: a project or user PREFERENCES.md file exists
+      path: references/preferences.md

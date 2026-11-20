@@ -1,0 +1,58 @@
+Copyright (c) 2026 @威比 Hunter Wei.
+
+# Component-Specific Licenses and Terms of Use
+
+This repository follows a component-specific licensing model to provide standard open-source terms for software tooling and automation, while protecting original visual design assets and creative prompt instructions.
+
+## 1. Code, Tooling, and Framework (MIT License)
+
+Copyright (c) 2026 @威比 Hunter Wei.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+### Scope of the MIT License:
+- Automation scripts and CLI utilities: `skills/*/scripts/*.py`
+- Continuous integration workflows: `.github/workflows/`
+- Automated test suites and test fixtures: `tests/`
+- Manifest files and data configuration schemas: `skills/*/manifest.json`, `community.json`
+
+---
+
+## 2. Original Design Prompts and Visual Skills (Wibi Personal Non-Commercial License 1.0)
+
+Copyright (c) 2026 @威比 Hunter Wei.
+Author: @威比 Hunter Wei.
+Platforms: 抖音、小红书同名
+Official repository: https://github.com/Vieeeeeee/wibi-style
+
+Permission is granted to use, copy, modify, and redistribute the original Skill instructions, styling directives, prompt text, and original layout-guide assets in this repository for **personal, non-commercial purposes**, provided that the author attribution (`Visual Skill by @威比 Hunter Wei.`), platform note (`抖音、小红书同名`), official source URL, LICENSE, and NOTICE remain with every copy. Modified copies must state that they were modified and must not claim to be official Wibi Style releases.
+
+Commercial use, resale, paid redistribution, or incorporation into a paid product or service requires prior written permission from the author.
+
+### Scope of the Non-Commercial License:
+- Agent instruction rules: `skills/*/SKILL.md`
+- Visual styling prompts and routing logic: `skills/*/references/*.md`
+- Original composition guides and layout presets: `skills/*/design-system/`, `skills/*/assets/layout-guides/`
+
+---
+
+## 3. Third-Party Reference Assets and Open Fonts
+
+- Bundled reference images in `skills/*/assets/references/` are provided exclusively for visual-style research. All rights in third-party imagery remain with their respective rights holders. They may not be extracted from this repository for separate redistribution or commercial use.
+- Open font software (such as `skills/personalized-print-ticket/assets/fonts/NotoSansSC-VF.ttf`) is licensed under the SIL Open Font License 1.1 (see accompanying `OFL-Noto.txt`).

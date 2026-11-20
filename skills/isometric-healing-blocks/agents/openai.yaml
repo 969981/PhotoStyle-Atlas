@@ -1,0 +1,4 @@
+interface:
+  display_name: "Isometric Healing Blocks"
+  short_description: "Turn photos into gentle isometric block sculptures"
+  default_prompt: "Use $isometric-healing-blocks to turn each uploaded photo into a separate 3:4 isometric healing-block sculpture poster."

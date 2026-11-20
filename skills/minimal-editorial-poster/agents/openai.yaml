@@ -1,0 +1,4 @@
+interface:
+  display_name: "Photo to Minimal Editorial Poster"
+  short_description: "Turn photos into minimal editorial design posters"
+  default_prompt: "Use $photo-to-minimal-editorial-poster with ivory-editorial-v1 to turn each attached photo into a separate consistent minimal editorial poster and return the series lock plus one manifest per poster."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Paper Signal"
+  short_description: "Tactile minimal-zine art direction for any subject"
+  default_prompt: "Use $paper-signal to turn this photo, scene, object, idea, or content into a high-craft minimal-zine image and generate the final bitmap."

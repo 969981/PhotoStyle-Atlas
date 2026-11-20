@@ -1,0 +1,4 @@
+interface:
+  display_name: "Gouache Travel Still Life"
+  short_description: "Choose split, still-life, or full-scene gouache modes"
+  default_prompt: "Use $gouache-travel-still-life to transform each uploaded photo, and let me choose split still life, full-canvas still life, or full-scene painting."

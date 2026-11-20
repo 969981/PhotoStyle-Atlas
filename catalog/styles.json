@@ -1,0 +1,485 @@
+{
+  "presets": [
+    {
+      "number": 1,
+      "skill_id": "image-style-transfer",
+      "title": "文艺杂志风（Vintage Editorial / Kinfolk）",
+      "type": "substyle"
+    },
+    {
+      "number": 2,
+      "skill_id": "image-style-transfer",
+      "title": "日系清新杂志风（Japanese Fresh Editorial）",
+      "type": "substyle"
+    },
+    {
+      "number": 3,
+      "skill_id": "image-style-transfer",
+      "title": "时装大片（High Fashion Editorial）",
+      "type": "substyle"
+    },
+    {
+      "number": 4,
+      "skill_id": "image-style-transfer",
+      "title": "极简北欧风（Minimal Nordic）",
+      "type": "substyle"
+    },
+    {
+      "number": 5,
+      "skill_id": "image-style-transfer",
+      "title": "油画风（Oil Painting）",
+      "type": "substyle"
+    },
+    {
+      "number": 6,
+      "skill_id": "image-style-transfer",
+      "title": "水彩风（Watercolor）",
+      "type": "substyle"
+    },
+    {
+      "number": 7,
+      "skill_id": "image-style-transfer",
+      "title": "国风水墨（Chinese Ink Wash）",
+      "type": "substyle"
+    },
+    {
+      "number": 8,
+      "skill_id": "image-style-transfer",
+      "title": "铅笔素描（Pencil Sketch）",
+      "type": "substyle"
+    },
+    {
+      "number": 9,
+      "skill_id": "image-style-transfer",
+      "title": "浮世绘（Ukiyo-e）",
+      "type": "substyle"
+    },
+    {
+      "number": 10,
+      "skill_id": "image-style-transfer",
+      "title": "马克笔插画（Marker Illustration）",
+      "type": "substyle"
+    },
+    {
+      "number": 11,
+      "skill_id": "image-style-transfer",
+      "title": "赛博朋克（Cyberpunk）",
+      "type": "substyle"
+    },
+    {
+      "number": 12,
+      "skill_id": "image-style-transfer",
+      "title": "蒸汽波（Vaporwave）",
+      "type": "substyle"
+    },
+    {
+      "number": 13,
+      "skill_id": "image-style-transfer",
+      "title": "像素风（Pixel Art）",
+      "type": "substyle"
+    },
+    {
+      "number": 14,
+      "skill_id": "image-style-transfer",
+      "title": "3D 卡通 / 盲盒（3D Cartoon）",
+      "type": "substyle"
+    },
+    {
+      "number": 15,
+      "skill_id": "image-style-transfer",
+      "title": "黏土定格（Claymation）",
+      "type": "substyle"
+    },
+    {
+      "number": 16,
+      "skill_id": "image-style-transfer",
+      "title": "波普艺术（Pop Art）",
+      "type": "substyle"
+    },
+    {
+      "number": 17,
+      "skill_id": "image-style-transfer",
+      "title": "电影胶片感（Cinematic Film）",
+      "type": "substyle"
+    },
+    {
+      "number": 18,
+      "skill_id": "image-style-transfer",
+      "title": "黑白胶片（Black & White Film）",
+      "type": "substyle"
+    },
+    {
+      "number": 19,
+      "skill_id": "image-style-transfer",
+      "title": "港风复古（HK Retro）",
+      "type": "substyle"
+    },
+    {
+      "number": 20,
+      "skill_id": "image-style-transfer",
+      "title": "美式复古海报（Vintage American Poster）",
+      "type": "substyle"
+    },
+    {
+      "number": 21,
+      "skill_id": "image-style-transfer",
+      "title": "拍立得（Polaroid）",
+      "type": "substyle"
+    },
+    {
+      "number": 22,
+      "skill_id": "image-style-transfer",
+      "title": "日系动漫（Anime）",
+      "type": "substyle"
+    },
+    {
+      "number": 23,
+      "skill_id": "image-style-transfer",
+      "title": "吉卜力风（Studio Ghibli）",
+      "type": "substyle"
+    },
+    {
+      "number": 24,
+      "skill_id": "image-style-transfer",
+      "title": "欧美漫画（Comic Book）",
+      "type": "substyle"
+    },
+    {
+      "number": 25,
+      "skill_id": "image-style-transfer",
+      "title": "绘本童话（Storybook Illustration）",
+      "type": "substyle"
+    },
+    {
+      "number": 26,
+      "skill_id": "image-style-transfer",
+      "title": "JOJO 动漫风（Araki Anime / David Production 赛璐璐）★ 用户指定",
+      "type": "substyle"
+    },
+    {
+      "number": 27,
+      "skill_id": "image-style-transfer",
+      "title": "剪纸拼贴（Paper Cutout）",
+      "type": "substyle"
+    },
+    {
+      "number": 28,
+      "skill_id": "image-style-transfer",
+      "title": "积木风（Lego / Building Blocks）",
+      "type": "substyle"
+    },
+    {
+      "number": 29,
+      "skill_id": "image-style-transfer",
+      "title": "霓虹玻璃（Neon Glass）",
+      "type": "substyle"
+    },
+    {
+      "number": 30,
+      "skill_id": "image-style-transfer",
+      "title": "莫兰迪色调（Morandi Tone）",
+      "type": "substyle"
+    },
+    {
+      "number": 31,
+      "skill_id": "image-style-transfer",
+      "title": "印象派厚涂（Impressionist Impasto）",
+      "type": "substyle"
+    },
+    {
+      "number": 32,
+      "skill_id": "image-style-transfer",
+      "title": "表现主义厚涂人像（Expressionist Impasto Portrait）★ 用户定稿",
+      "type": "substyle"
+    },
+    {
+      "number": 33,
+      "skill_id": "image-style-transfer",
+      "title": "厚涂油画·微缩风景明信片（Impasto Oil Micro-Landscape Poster）",
+      "type": "substyle"
+    },
+    {
+      "number": 34,
+      "skill_id": "image-style-transfer",
+      "title": "拾景纸刊 · 实景拼贴（Gathered Scenes Zine v1.9）",
+      "type": "substyle"
+    },
+    {
+      "number": 35,
+      "skill_id": "image-style-transfer",
+      "title": "清新怀旧水彩手账（Soft Watercolor Journal）",
+      "type": "substyle"
+    },
+    {
+      "number": 36,
+      "skill_id": "image-style-transfer",
+      "title": "抽象编辑 · 记忆面板（Photo Abstract Editorial）",
+      "type": "substyle"
+    },
+    {
+      "number": 37,
+      "skill_id": "image-style-transfer",
+      "title": "现代文学艺术杂志（Literary Modernism Editorial）★ 用户指定",
+      "type": "substyle"
+    },
+    {
+      "number": 38,
+      "skill_id": "image-style-transfer",
+      "title": "装饰艺术（Art Deco）",
+      "type": "substyle"
+    },
+    {
+      "number": 39,
+      "skill_id": "image-style-transfer",
+      "title": "新艺术运动（Art Nouveau）",
+      "type": "substyle"
+    },
+    {
+      "number": 40,
+      "skill_id": "image-style-transfer",
+      "title": "包豪斯海报（Bauhaus Poster）",
+      "type": "substyle"
+    },
+    {
+      "number": 41,
+      "skill_id": "image-style-transfer",
+      "title": "孔版印刷（Risograph）",
+      "type": "substyle"
+    },
+    {
+      "number": 42,
+      "skill_id": "image-style-transfer",
+      "title": "木刻版画（Woodcut）",
+      "type": "substyle"
+    },
+    {
+      "number": 43,
+      "skill_id": "image-style-transfer",
+      "title": "钢版雕刻（Intaglio Engraving / 纸币雕版线）",
+      "type": "substyle"
+    },
+    {
+      "number": 44,
+      "skill_id": "image-style-transfer",
+      "title": "点彩派（Pointillism / Divisionism）",
+      "type": "substyle"
+    },
+    {
+      "number": 45,
+      "skill_id": "image-style-transfer",
+      "title": "超现实主义（Surrealism）",
+      "type": "substyle"
+    },
+    {
+      "number": 46,
+      "skill_id": "image-style-transfer",
+      "title": "欧普艺术（Op Art）",
+      "type": "substyle"
+    },
+    {
+      "number": 47,
+      "skill_id": "image-style-transfer",
+      "title": "湿壁画（Fresco）",
+      "type": "substyle"
+    },
+    {
+      "number": 48,
+      "skill_id": "image-style-transfer",
+      "title": "教堂花窗（Stained Glass）",
+      "type": "substyle"
+    },
+    {
+      "number": 49,
+      "skill_id": "image-style-transfer",
+      "title": "手工刺绣（Embroidery）",
+      "type": "substyle"
+    },
+    {
+      "number": 50,
+      "skill_id": "image-style-transfer",
+      "title": "大理石雕塑（Marble Sculpture）",
+      "type": "substyle"
+    },
+    {
+      "number": 51,
+      "skill_id": "image-style-transfer",
+      "title": "工笔重彩（Gongbi）",
+      "type": "substyle"
+    },
+    {
+      "number": 52,
+      "skill_id": "image-style-transfer",
+      "title": "青绿山水（Blue-Green Landscape）",
+      "type": "substyle"
+    },
+    {
+      "number": 53,
+      "skill_id": "image-style-transfer",
+      "title": "白描（Baimiao）",
+      "type": "substyle"
+    },
+    {
+      "number": 54,
+      "skill_id": "image-style-transfer",
+      "title": "敦煌壁画（Dunhuang Mural）",
+      "type": "substyle"
+    },
+    {
+      "number": 55,
+      "skill_id": "image-style-transfer",
+      "title": "青花瓷（Blue-and-White Porcelain）",
+      "type": "substyle"
+    },
+    {
+      "number": 56,
+      "skill_id": "image-style-transfer",
+      "title": "唐卡（Thangka）",
+      "type": "substyle"
+    },
+    {
+      "number": 57,
+      "skill_id": "image-style-transfer",
+      "title": "金石拓片（Stele Rubbing）",
+      "type": "substyle"
+    },
+    {
+      "number": 58,
+      "skill_id": "image-style-transfer",
+      "title": "拜占庭马赛克（Byzantine Mosaic）",
+      "type": "substyle"
+    },
+    {
+      "number": 59,
+      "skill_id": "image-style-transfer",
+      "title": "中世纪手抄本（Illuminated Manuscript）",
+      "type": "substyle"
+    },
+    {
+      "number": 60,
+      "skill_id": "image-style-transfer",
+      "title": "维米尔式室内光（Vermeer Interior Light）",
+      "type": "substyle"
+    },
+    {
+      "number": 61,
+      "skill_id": "image-style-transfer",
+      "title": "巴洛克（Baroque）",
+      "type": "substyle"
+    },
+    {
+      "number": 62,
+      "skill_id": "image-style-transfer",
+      "title": "洛可可（Rococo）",
+      "type": "substyle"
+    },
+    {
+      "number": 63,
+      "skill_id": "image-style-transfer",
+      "title": "立体主义（Cubism）",
+      "type": "substyle"
+    },
+    {
+      "number": 64,
+      "skill_id": "image-style-transfer",
+      "title": "抽象表现主义 · 行动绘画（Action Painting）",
+      "type": "substyle"
+    },
+    {
+      "number": 65,
+      "skill_id": "image-style-transfer",
+      "title": "克里姆特金箔（Klimt Gold Leaf）",
+      "type": "substyle"
+    },
+    {
+      "number": 66,
+      "skill_id": "image-style-transfer",
+      "title": "湿版摄影（Wet Plate Collodion）",
+      "type": "substyle"
+    },
+    {
+      "number": 67,
+      "skill_id": "image-style-transfer",
+      "title": "蓝晒（Cyanotype）",
+      "type": "substyle"
+    },
+    {
+      "number": 68,
+      "skill_id": "image-style-transfer",
+      "title": "反转片（Kodachrome）",
+      "type": "substyle"
+    },
+    {
+      "number": 69,
+      "skill_id": "image-style-transfer",
+      "title": "长曝光（Long Exposure）",
+      "type": "substyle"
+    },
+    {
+      "number": 70,
+      "skill_id": "image-style-transfer",
+      "title": "双重曝光（Double Exposure）",
+      "type": "substyle"
+    },
+    {
+      "number": 71,
+      "skill_id": "image-style-transfer",
+      "title": "移轴微缩（Tilt-Shift Miniature）",
+      "type": "substyle"
+    },
+    {
+      "number": 72,
+      "skill_id": "image-style-transfer",
+      "title": "故障艺术（Glitch Art）",
+      "type": "substyle"
+    },
+    {
+      "number": 73,
+      "skill_id": "image-style-transfer",
+      "title": "模拟录像 · CRT（Analog Video / CRT）",
+      "type": "substyle"
+    },
+    {
+      "number": 74,
+      "skill_id": "image-style-transfer",
+      "title": "超扁平（Superflat）",
+      "type": "substyle"
+    },
+    {
+      "number": 75,
+      "skill_id": "image-style-transfer",
+      "title": "法式 BD · 墨比斯线（Bande Dessinée / Moebius Line）",
+      "type": "substyle"
+    },
+    {
+      "number": 76,
+      "skill_id": "image-style-transfer",
+      "title": "矢量扁平插画（Flat Vector Illustration）",
+      "type": "substyle"
+    },
+    {
+      "number": 77,
+      "skill_id": "image-style-transfer",
+      "title": "单线画（Single Line Art）",
+      "type": "substyle"
+    },
+    {
+      "number": 78,
+      "skill_id": "image-style-transfer",
+      "title": "低多边形（Low Poly）",
+      "type": "substyle"
+    },
+    {
+      "number": 79,
+      "skill_id": "image-style-transfer",
+      "title": "体素（Voxel Art）",
+      "type": "substyle"
+    },
+    {
+      "number": 80,
+      "skill_id": "image-style-transfer",
+      "title": "稚拙蜡笔画（Naïve Crayon / Oil Pastel）",
+      "type": "substyle"
+    }
+  ],
+  "schema_version": 1
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Memory Diary Duet"
+  short_description: "Pair lifestyle photography with a hand-drawn memory page"
+  default_prompt: "Use $memory-diary-duet to turn each uploaded photo into a separate 4:5 photography and hand-drawn memory-diary poster."

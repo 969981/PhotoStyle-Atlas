@@ -1,0 +1,4 @@
+interface:
+  display_name: "Paper Cutout Travel Figures"
+  short_description: "Create split or full-canvas paper-figure travel posters"
+  default_prompt: "Use $paper-cutout-travel-figures to transform each uploaded photo with people, and let me choose split comparison or full canvas."
