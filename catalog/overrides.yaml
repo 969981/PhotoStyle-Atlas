@@ -1,0 +1,64 @@
+version: 1
+# 手动注释不会被上游同步覆盖；键为本仓库 skills/ 下的唯一目录名。
+skills:
+  watercolor-travel-card:
+    zh_name: 水彩旅行卡
+    tags: [旅行, 水彩, 明信片, 海报]
+    use_cases: [风景, 街景, 旅行]
+  impasto-miniature-landscape:
+    zh_name: 厚涂微缩风景
+    tags: [油画, 厚涂, 微缩景观]
+  isometric-healing-blocks:
+    zh_name: 等距治愈方块
+    tags: [等距视角, 立体插画, 治愈]
+  pixel-dissolve-landscape:
+    zh_name: 像素消散风景
+    tags: [像素画, 消散, 数字艺术]
+  observational-pen-wash:
+    zh_name: 钢笔淡彩观察画
+    tags: [钢笔, 淡彩, 留白]
+  papercraft-travel-diorama:
+    zh_name: 纸雕旅行模型
+    tags: [纸艺, 立体模型, 旅行]
+  gouache-travel-still-life:
+    zh_name: 水粉旅行静物
+    tags: [水粉, 静物, 旅行]
+  nostalgic-travel-duet:
+    zh_name: 复古旅行双联画
+    tags: [复古, 插画, 双联画]
+  paper-cutout-travel-figures:
+    zh_name: 纸片人物旅行场景
+    tags: [纸雕, 人物, 插画]
+  memory-diary-duet:
+    zh_name: 记忆日记双联画
+    tags: [摄影日记, 水彩, 画册]
+  folk-ink-landmark-portrait:
+    zh_name: 民俗水墨地标
+    tags: [水墨, 地标, 风景]
+  clean-ink-zen-memory:
+    zh_name: 极简禅意水墨
+    tags: [水墨, 黑白, 禅意]
+  charcoal-fading-travel-study:
+    zh_name: 炭笔褪色旅行素描
+    tags: [炭笔, 素描, 旅行]
+  kraft-stencil-landmark:
+    zh_name: 牛皮纸镂印地标
+    tags: [牛皮纸, 版画, 地标]
+  image-style-transfer:
+    zh_name: 80 种艺术风格迁移
+    tags: [风格库, 油画, 水墨, 胶片, 动漫, 杂志]
+  mono-color:
+    zh_name: 极简单双色印刷海报
+    tags: [Risograph, 双色印刷, 杂志]
+  portrait-retouch:
+    zh_name: 人像精修
+    tags: [人像, 肤色, 精修, 保真]
+  select-retouch:
+    zh_name: 一键选片修图
+    tags: [选片, 人像, 风景]
+  vcg-retouch:
+    zh_name: 图库级风光修图
+    tags: [风光, 夜景, 构图]
+  lr-color-grade:
+    zh_name: Lightroom 专业调色
+    tags: [Lightroom, 调色, 电影感]

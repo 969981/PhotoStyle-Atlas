@@ -1,0 +1,128 @@
+version: 1
+# 每个源均采用真实文件复制，不使用 submodule、软链接或 git subtree。
+# 上游同步只管理 manifest 中列出的目录；本地说明放在 docs/ 与 catalog/overrides.yaml。
+sources:
+  - id: photo-to-poster
+    repo: GZ-L/photo-to-poster-skills
+    ref: main
+    kind: collection
+    base: skills
+    sparse: [skills]
+    category: 艺术海报
+    license: MIT
+
+  - id: wibi-style
+    repo: Vieeeeeee/wibi-style
+    ref: main
+    kind: collection
+    base: skills
+    sparse: [skills, assets/thumbs]
+    preview_from: assets/thumbs
+    category: 创意风格
+    license: Wibi Personal Non-Commercial 1.0 + MIT tooling
+    notes: 用户表示已获得导入许可；遵守每个 Skill 内的 LICENSE、NOTICE、署名、字体及第三方图片限制；商业使用须独立确认授权。
+
+  - id: image-style-transfer
+    repo: jyi06/image-style-transfer
+    ref: main
+    kind: items
+    sparse: [skills]
+    items:
+      - path: skills/image-style-transfer
+        target: image-style-transfer
+    category: 风格迁移
+    license: MIT
+
+  - id: mono-color
+    repo: yanliudesign/mono-color-skill
+    ref: main
+    kind: root
+    target: mono-color
+    sparse: [design-system, scripts, swatches]
+    include: [SKILL.md, REFERENCES.md, LICENSE, ASSET-LICENSE.md, design-system, scripts, swatches]
+    category: 极简印刷
+    license: MIT
+
+  - id: paper-signal
+    repo: jiahuiqu17/paper-signal
+    ref: main
+    kind: collection
+    base: skills
+    sparse: [skills]
+    category: 杂志排版
+    license: MIT
+
+  - id: minimal-editorial
+    repo: SARSfang/photo-to-minimal-form-poster
+    ref: main
+    kind: root
+    target: minimal-editorial-poster
+    sparse: [agents, assets, references, scripts]
+    include: [SKILL.md, LICENSE, agents, assets, references, scripts]
+    category: 极简海报
+    license: MIT
+
+  - id: anime-restyle
+    repo: gaoren7716-lab/anime-image-restyle-skill
+    ref: main
+    kind: root
+    target: anime-image-restyle
+    sparse: [references, scripts]
+    include: [SKILL.md, LICENSE, PROTOCOL.md, references, scripts]
+    category: 动漫插画
+    license: MIT
+
+  - id: muse-retouch
+    repo: GuohongLi/muse-skills
+    ref: main
+    kind: items
+    sparse: [portrait-retouch, select-retouch, vcg-retouch]
+    items:
+      - path: portrait-retouch
+        target: portrait-retouch
+      - path: select-retouch
+        target: select-retouch
+      - path: vcg-retouch
+        target: vcg-retouch
+    category: 真实修图
+    license: MIT
+
+  - id: lightroom-computer-use
+    repo: eamonboyle/computer-use-photo-editing-skills
+    ref: main
+    kind: collection
+    base: .agents/skills
+    sparse: [.agents/skills]
+    category: Lightroom 后期
+    license: MIT
+
+  - id: photo-editing-craft
+    repo: aipiratesMunich/photo-editing-craft
+    ref: main
+    kind: root
+    target: photo-editing-craft
+    sparse: [backends, craft, recipes, scripts, tests]
+    include: [SKILL.md, LICENSE, backends, craft, recipes, scripts, tests]
+    category: 专业修图
+    license: MIT
+
+  - id: poster-generator
+    repo: howardz27/poster-generator-skill
+    ref: main
+    kind: root
+    target: poster-generator
+    sparse: [references]
+    include: [SKILL.md, LICENSE, references]
+    category: 海报设计
+    license: MIT
+
+  # 单独作为「参考配方」保存，原仓库不使用标准 SKILL.md，不能当成可安装的 Agent Skill。
+  - id: awesome-creative-recipes
+    repo: Serennity007/awesome-creative-skills
+    ref: main
+    kind: resources
+    base: skills
+    target: resources/creative-recipes
+    sparse: [skills]
+    category: 视觉参考配方
+    license: MIT
