@@ -16,7 +16,10 @@ def main():
     assert len(catalog)>=80, "incomplete Skill import"
     assert sum(x["source_id"]=="wibi-style" for x in catalog)==51, "Wibi 51 Skills incomplete"
     assert sum(x["source_id"]=="photo-to-poster" for x in catalog)==14, "Photo-to-Poster 14 Skills incomplete"
-    assert len(presets)==80, "Image Style Transfer 80 presets incomplete"
+    assert sum(x["skill_id"]=="image-style-transfer" for x in presets)==80, "80 image styles missing"
+    assert sum(x["skill_id"]=="anime-image-restyle" for x in presets)==71, "71 anime styles missing"
+    assert sum(x["skill_id"]=="poster-generator" for x in presets)==20, "20 poster styles missing"
+    assert sum(x["skill_id"]=="photo-editing-craft" for x in presets)==14, "14 retouch recipes missing"
     assert len(sources)==len(lock), "source lock count differs"
     for x in catalog:
         parent=ROOT/x["path"]

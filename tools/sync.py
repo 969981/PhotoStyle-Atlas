@@ -268,8 +268,28 @@ def build_catalog(sources: list[dict], lock: dict) -> None:
                         "skill_id": slug, "number": int(hit.group(1)),
                         "title": hit.group(2), "type": "substyle",
                     })
+            if slug == "anime-image-restyle":
+                registry = root / "references" / "style-registry.md"
+                if not registry.exists():
+                    raise RuntimeError("Anime style registry missing")
+                data = registry.read_text(encoding="utf-8")
+                for hit in re.finditer(r"(?m)^-\s+`([a-z0-9-]+)`｜([^｜\n]+)", data):
+                    presets.append({"skill_id": slug, "key": hit.group(1),
+                                    "title": hit.group(2).strip(), "type": "style-key"})
+            if slug == "poster-generator":
+                style_dir = root / "references" / "styles"
+                for style in sorted(style_dir.glob("*.md")):
+                    match = re.search(r"(?m)^#\s+(.+)$", style.read_text(encoding="utf-8"))
+                    presets.append({"skill_id": slug, "key": style.stem,
+                                    "title": match.group(1).strip() if match else style.stem,
+                                    "type": "poster-style"})
+            if slug == "photo-editing-craft":
+                for recipe in sorted((root / "recipes").glob("*.json")):
+                    presets.append({"skill_id": slug, "key": recipe.stem,
+                                    "title": recipe.stem.replace("-", " ").title(),
+                                    "type": "edit-recipe"})
     entries.sort(key=lambda x: (x["source_id"], x["id"]))
-    presets.sort(key=lambda x: (x["skill_id"], x["number"]))
+    presets.sort(key=lambda x: (x["skill_id"], x.get("number", 0), x.get("key", "")))
     ids = [e["id"] for e in entries]
     if len(ids) != len(set(ids)):
         raise RuntimeError("Duplicate skill id found across sources")

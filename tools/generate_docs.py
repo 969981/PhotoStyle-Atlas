@@ -43,7 +43,10 @@ def generate():
         "- 独立安装 Skill：" + str(len(skills)),
         "- 上游来源：" + str(len(sources)),
         "- Wibi Style Skills：" + str(len(wibi)),
-        "- Image Style Transfer 内部风格预设：" + str(len(presets)), "",
+        "- Image Style Transfer 内部风格预设：" + str(sum(x["skill_id"]=="image-style-transfer" for x in presets)),
+        "- Anime Restyle 动漫风格 key：" + str(sum(x["skill_id"]=="anime-image-restyle" for x in presets)),
+        "- Poster Generator 版式：" + str(sum(x["skill_id"]=="poster-generator" for x in presets)),
+        "- Photo Editing Craft 修图配方：" + str(sum(x["skill_id"]=="photo-editing-craft" for x in presets)), "",
         "[全部风格图鉴](docs/STYLES.md) · [安装教程](docs/INSTALL.md) · "+
         "[上游来源和许可](docs/SOURCES.md) · [维护文档](docs/MAINTENANCE.md) · "+
         "[效果对照模板](docs/STYLE-COMPARISON.md)", "",
@@ -110,14 +113,21 @@ def generate():
         gallery.append("| "+safe(x["category"])+" | ["+safe(x["title"],70)+"](../"+
             x["path"]+"/SKILL.md) | "+safe(tags or x.get("description"),135)+" | ["+
             x["source_id"]+"](https://github.com/"+x["source_repo"]+") |")
-    gallery.extend(["","## Image Style Transfer 内部艺术风格","",
-       "以下 "+str(len(presets))+" 项属于同一个 image-style-transfer Skill，"+
-       "**不是 80 个独立 Skill 目录**。","",
-       "| 编号 | 风格 | 使用方式 |","| ---: | --- | --- |"])
-    for x in presets:
-        gallery.append("| "+str(x["number"])+" | "+safe(x["title"],120)+" | "+
-                       BT+"$image-style-transfer"+BT+" + 风格 #"+str(x["number"])+" |")
-    gallery.extend(["","[查看完整风格提示词和适用场景](../skills/image-style-transfer/references/style-library.md)",""])
+    for skill_id, headline, intro in [
+        ("image-style-transfer", "Image Style Transfer · 80 种艺术风格", "同一个 Skill 内的 80 个编号预设，不是独立安装目录。"),
+        ("anime-image-restyle", "Anime Restyle · 71 种动漫风格", "使用下表中的风格 key 来指定动漫转换画风。"),
+        ("poster-generator", "Poster Generator · 20 种设计版式", "海报 Skill 内的设计风格名，可用来指导版式选择。"),
+        ("photo-editing-craft", "Photo Editing Craft · 14 套修图配方", "这些是实际像素处理配方，而不是生成式视觉风格。"),
+    ]:
+        candidates = [x for x in presets if x["skill_id"] == skill_id]
+        gallery.extend(["", "## " + headline, "", intro, "",
+                        "| 标识 | 名称 | Skill |", "| --- | --- | --- |"])
+        for x in candidates:
+            code = str(x["number"]) if "number" in x else x["key"]
+            gallery.append("| " + code + " | " + safe(x["title"], 115) +
+                           " | [" + skill_id + "](../skills/" + skill_id + "/SKILL.md) |")
+    gallery.extend(["", "[80 种风格的完整提示词](../skills/image-style-transfer/references/style-library.md) · "
+                    "[动漫风格 key 详细规则](../skills/anime-image-restyle/references/style-registry.md)", ""])
     save("docs/STYLES.md",gallery)
 
     provenance=["# 上游来源与许可证","",
