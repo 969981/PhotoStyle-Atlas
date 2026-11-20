@@ -14,6 +14,9 @@
 - 上游来源：12
 - Wibi Style Skills：51
 - Image Style Transfer 内部风格预设：80
+- Anime Restyle 动漫风格 key：71
+- Poster Generator 版式：20
+- Photo Editing Craft 修图配方：14
 
 [全部风格图鉴](docs/STYLES.md) · [安装教程](docs/INSTALL.md) · [上游来源和许可](docs/SOURCES.md) · [维护文档](docs/MAINTENANCE.md) · [效果对照模板](docs/STYLE-COMPARISON.md)
 

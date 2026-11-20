@@ -98,91 +98,217 @@
 | 艺术海报 | [水彩旅行卡](../skills/watercolor-travel-card/SKILL.md) | 旅行 / 水彩 / 明信片 / 海报 | [photo-to-poster](https://github.com/GZ-L/photo-to-poster-skills) |
 | 海报设计 | [Poster Generator](../skills/poster-generator/SKILL.md) | Generates professional designer-grade posters, flyers, campaign visuals, event posters, and product posters. Use when the user asks for | [poster-generator](https://github.com/howardz27/poster-generator-skill) |
 
-## Image Style Transfer 内部艺术风格
+## Image Style Transfer · 80 种艺术风格
 
-以下 80 项属于同一个 image-style-transfer Skill，**不是 80 个独立 Skill 目录**。
+同一个 Skill 内的 80 个编号预设，不是独立安装目录。
 
-| 编号 | 风格 | 使用方式 |
-| ---: | --- | --- |
-| 1 | 文艺杂志风（Vintage Editorial / Kinfolk） | `$image-style-transfer` + 风格 #1 |
-| 2 | 日系清新杂志风（Japanese Fresh Editorial） | `$image-style-transfer` + 风格 #2 |
-| 3 | 时装大片（High Fashion Editorial） | `$image-style-transfer` + 风格 #3 |
-| 4 | 极简北欧风（Minimal Nordic） | `$image-style-transfer` + 风格 #4 |
-| 5 | 油画风（Oil Painting） | `$image-style-transfer` + 风格 #5 |
-| 6 | 水彩风（Watercolor） | `$image-style-transfer` + 风格 #6 |
-| 7 | 国风水墨（Chinese Ink Wash） | `$image-style-transfer` + 风格 #7 |
-| 8 | 铅笔素描（Pencil Sketch） | `$image-style-transfer` + 风格 #8 |
-| 9 | 浮世绘（Ukiyo-e） | `$image-style-transfer` + 风格 #9 |
-| 10 | 马克笔插画（Marker Illustration） | `$image-style-transfer` + 风格 #10 |
-| 11 | 赛博朋克（Cyberpunk） | `$image-style-transfer` + 风格 #11 |
-| 12 | 蒸汽波（Vaporwave） | `$image-style-transfer` + 风格 #12 |
-| 13 | 像素风（Pixel Art） | `$image-style-transfer` + 风格 #13 |
-| 14 | 3D 卡通 / 盲盒（3D Cartoon） | `$image-style-transfer` + 风格 #14 |
-| 15 | 黏土定格（Claymation） | `$image-style-transfer` + 风格 #15 |
-| 16 | 波普艺术（Pop Art） | `$image-style-transfer` + 风格 #16 |
-| 17 | 电影胶片感（Cinematic Film） | `$image-style-transfer` + 风格 #17 |
-| 18 | 黑白胶片（Black & White Film） | `$image-style-transfer` + 风格 #18 |
-| 19 | 港风复古（HK Retro） | `$image-style-transfer` + 风格 #19 |
-| 20 | 美式复古海报（Vintage American Poster） | `$image-style-transfer` + 风格 #20 |
-| 21 | 拍立得（Polaroid） | `$image-style-transfer` + 风格 #21 |
-| 22 | 日系动漫（Anime） | `$image-style-transfer` + 风格 #22 |
-| 23 | 吉卜力风（Studio Ghibli） | `$image-style-transfer` + 风格 #23 |
-| 24 | 欧美漫画（Comic Book） | `$image-style-transfer` + 风格 #24 |
-| 25 | 绘本童话（Storybook Illustration） | `$image-style-transfer` + 风格 #25 |
-| 26 | JOJO 动漫风（Araki Anime / David Production 赛璐璐）★ 用户指定 | `$image-style-transfer` + 风格 #26 |
-| 27 | 剪纸拼贴（Paper Cutout） | `$image-style-transfer` + 风格 #27 |
-| 28 | 积木风（Lego / Building Blocks） | `$image-style-transfer` + 风格 #28 |
-| 29 | 霓虹玻璃（Neon Glass） | `$image-style-transfer` + 风格 #29 |
-| 30 | 莫兰迪色调（Morandi Tone） | `$image-style-transfer` + 风格 #30 |
-| 31 | 印象派厚涂（Impressionist Impasto） | `$image-style-transfer` + 风格 #31 |
-| 32 | 表现主义厚涂人像（Expressionist Impasto Portrait）★ 用户定稿 | `$image-style-transfer` + 风格 #32 |
-| 33 | 厚涂油画·微缩风景明信片（Impasto Oil Micro-Landscape Poster） | `$image-style-transfer` + 风格 #33 |
-| 34 | 拾景纸刊 · 实景拼贴（Gathered Scenes Zine v1.9） | `$image-style-transfer` + 风格 #34 |
-| 35 | 清新怀旧水彩手账（Soft Watercolor Journal） | `$image-style-transfer` + 风格 #35 |
-| 36 | 抽象编辑 · 记忆面板（Photo Abstract Editorial） | `$image-style-transfer` + 风格 #36 |
-| 37 | 现代文学艺术杂志（Literary Modernism Editorial）★ 用户指定 | `$image-style-transfer` + 风格 #37 |
-| 38 | 装饰艺术（Art Deco） | `$image-style-transfer` + 风格 #38 |
-| 39 | 新艺术运动（Art Nouveau） | `$image-style-transfer` + 风格 #39 |
-| 40 | 包豪斯海报（Bauhaus Poster） | `$image-style-transfer` + 风格 #40 |
-| 41 | 孔版印刷（Risograph） | `$image-style-transfer` + 风格 #41 |
-| 42 | 木刻版画（Woodcut） | `$image-style-transfer` + 风格 #42 |
-| 43 | 钢版雕刻（Intaglio Engraving / 纸币雕版线） | `$image-style-transfer` + 风格 #43 |
-| 44 | 点彩派（Pointillism / Divisionism） | `$image-style-transfer` + 风格 #44 |
-| 45 | 超现实主义（Surrealism） | `$image-style-transfer` + 风格 #45 |
-| 46 | 欧普艺术（Op Art） | `$image-style-transfer` + 风格 #46 |
-| 47 | 湿壁画（Fresco） | `$image-style-transfer` + 风格 #47 |
-| 48 | 教堂花窗（Stained Glass） | `$image-style-transfer` + 风格 #48 |
-| 49 | 手工刺绣（Embroidery） | `$image-style-transfer` + 风格 #49 |
-| 50 | 大理石雕塑（Marble Sculpture） | `$image-style-transfer` + 风格 #50 |
-| 51 | 工笔重彩（Gongbi） | `$image-style-transfer` + 风格 #51 |
-| 52 | 青绿山水（Blue-Green Landscape） | `$image-style-transfer` + 风格 #52 |
-| 53 | 白描（Baimiao） | `$image-style-transfer` + 风格 #53 |
-| 54 | 敦煌壁画（Dunhuang Mural） | `$image-style-transfer` + 风格 #54 |
-| 55 | 青花瓷（Blue-and-White Porcelain） | `$image-style-transfer` + 风格 #55 |
-| 56 | 唐卡（Thangka） | `$image-style-transfer` + 风格 #56 |
-| 57 | 金石拓片（Stele Rubbing） | `$image-style-transfer` + 风格 #57 |
-| 58 | 拜占庭马赛克（Byzantine Mosaic） | `$image-style-transfer` + 风格 #58 |
-| 59 | 中世纪手抄本（Illuminated Manuscript） | `$image-style-transfer` + 风格 #59 |
-| 60 | 维米尔式室内光（Vermeer Interior Light） | `$image-style-transfer` + 风格 #60 |
-| 61 | 巴洛克（Baroque） | `$image-style-transfer` + 风格 #61 |
-| 62 | 洛可可（Rococo） | `$image-style-transfer` + 风格 #62 |
-| 63 | 立体主义（Cubism） | `$image-style-transfer` + 风格 #63 |
-| 64 | 抽象表现主义 · 行动绘画（Action Painting） | `$image-style-transfer` + 风格 #64 |
-| 65 | 克里姆特金箔（Klimt Gold Leaf） | `$image-style-transfer` + 风格 #65 |
-| 66 | 湿版摄影（Wet Plate Collodion） | `$image-style-transfer` + 风格 #66 |
-| 67 | 蓝晒（Cyanotype） | `$image-style-transfer` + 风格 #67 |
-| 68 | 反转片（Kodachrome） | `$image-style-transfer` + 风格 #68 |
-| 69 | 长曝光（Long Exposure） | `$image-style-transfer` + 风格 #69 |
-| 70 | 双重曝光（Double Exposure） | `$image-style-transfer` + 风格 #70 |
-| 71 | 移轴微缩（Tilt-Shift Miniature） | `$image-style-transfer` + 风格 #71 |
-| 72 | 故障艺术（Glitch Art） | `$image-style-transfer` + 风格 #72 |
-| 73 | 模拟录像 · CRT（Analog Video / CRT） | `$image-style-transfer` + 风格 #73 |
-| 74 | 超扁平（Superflat） | `$image-style-transfer` + 风格 #74 |
-| 75 | 法式 BD · 墨比斯线（Bande Dessinée / Moebius Line） | `$image-style-transfer` + 风格 #75 |
-| 76 | 矢量扁平插画（Flat Vector Illustration） | `$image-style-transfer` + 风格 #76 |
-| 77 | 单线画（Single Line Art） | `$image-style-transfer` + 风格 #77 |
-| 78 | 低多边形（Low Poly） | `$image-style-transfer` + 风格 #78 |
-| 79 | 体素（Voxel Art） | `$image-style-transfer` + 风格 #79 |
-| 80 | 稚拙蜡笔画（Naïve Crayon / Oil Pastel） | `$image-style-transfer` + 风格 #80 |
+| 标识 | 名称 | Skill |
+| --- | --- | --- |
+| 1 | 文艺杂志风（Vintage Editorial / Kinfolk） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 2 | 日系清新杂志风（Japanese Fresh Editorial） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 3 | 时装大片（High Fashion Editorial） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 4 | 极简北欧风（Minimal Nordic） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 5 | 油画风（Oil Painting） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 6 | 水彩风（Watercolor） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 7 | 国风水墨（Chinese Ink Wash） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 8 | 铅笔素描（Pencil Sketch） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 9 | 浮世绘（Ukiyo-e） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 10 | 马克笔插画（Marker Illustration） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 11 | 赛博朋克（Cyberpunk） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 12 | 蒸汽波（Vaporwave） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 13 | 像素风（Pixel Art） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 14 | 3D 卡通 / 盲盒（3D Cartoon） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 15 | 黏土定格（Claymation） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 16 | 波普艺术（Pop Art） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 17 | 电影胶片感（Cinematic Film） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 18 | 黑白胶片（Black & White Film） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 19 | 港风复古（HK Retro） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 20 | 美式复古海报（Vintage American Poster） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 21 | 拍立得（Polaroid） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 22 | 日系动漫（Anime） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 23 | 吉卜力风（Studio Ghibli） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 24 | 欧美漫画（Comic Book） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 25 | 绘本童话（Storybook Illustration） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 26 | JOJO 动漫风（Araki Anime / David Production 赛璐璐）★ 用户指定 | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 27 | 剪纸拼贴（Paper Cutout） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 28 | 积木风（Lego / Building Blocks） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 29 | 霓虹玻璃（Neon Glass） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 30 | 莫兰迪色调（Morandi Tone） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 31 | 印象派厚涂（Impressionist Impasto） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 32 | 表现主义厚涂人像（Expressionist Impasto Portrait）★ 用户定稿 | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 33 | 厚涂油画·微缩风景明信片（Impasto Oil Micro-Landscape Poster） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 34 | 拾景纸刊 · 实景拼贴（Gathered Scenes Zine v1.9） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 35 | 清新怀旧水彩手账（Soft Watercolor Journal） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 36 | 抽象编辑 · 记忆面板（Photo Abstract Editorial） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 37 | 现代文学艺术杂志（Literary Modernism Editorial）★ 用户指定 | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 38 | 装饰艺术（Art Deco） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 39 | 新艺术运动（Art Nouveau） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 40 | 包豪斯海报（Bauhaus Poster） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 41 | 孔版印刷（Risograph） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 42 | 木刻版画（Woodcut） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 43 | 钢版雕刻（Intaglio Engraving / 纸币雕版线） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 44 | 点彩派（Pointillism / Divisionism） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 45 | 超现实主义（Surrealism） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 46 | 欧普艺术（Op Art） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 47 | 湿壁画（Fresco） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 48 | 教堂花窗（Stained Glass） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 49 | 手工刺绣（Embroidery） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 50 | 大理石雕塑（Marble Sculpture） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 51 | 工笔重彩（Gongbi） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 52 | 青绿山水（Blue-Green Landscape） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 53 | 白描（Baimiao） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 54 | 敦煌壁画（Dunhuang Mural） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 55 | 青花瓷（Blue-and-White Porcelain） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 56 | 唐卡（Thangka） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 57 | 金石拓片（Stele Rubbing） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 58 | 拜占庭马赛克（Byzantine Mosaic） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 59 | 中世纪手抄本（Illuminated Manuscript） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 60 | 维米尔式室内光（Vermeer Interior Light） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 61 | 巴洛克（Baroque） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 62 | 洛可可（Rococo） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 63 | 立体主义（Cubism） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 64 | 抽象表现主义 · 行动绘画（Action Painting） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 65 | 克里姆特金箔（Klimt Gold Leaf） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 66 | 湿版摄影（Wet Plate Collodion） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 67 | 蓝晒（Cyanotype） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 68 | 反转片（Kodachrome） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 69 | 长曝光（Long Exposure） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 70 | 双重曝光（Double Exposure） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 71 | 移轴微缩（Tilt-Shift Miniature） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 72 | 故障艺术（Glitch Art） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 73 | 模拟录像 · CRT（Analog Video / CRT） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 74 | 超扁平（Superflat） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 75 | 法式 BD · 墨比斯线（Bande Dessinée / Moebius Line） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 76 | 矢量扁平插画（Flat Vector Illustration） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 77 | 单线画（Single Line Art） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 78 | 低多边形（Low Poly） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 79 | 体素（Voxel Art） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
+| 80 | 稚拙蜡笔画（Naïve Crayon / Oil Pastel） | [image-style-transfer](../skills/image-style-transfer/SKILL.md) |
 
-[查看完整风格提示词和适用场景](../skills/image-style-transfer/references/style-library.md)
+## Anime Restyle · 71 种动漫风格
+
+使用下表中的风格 key 来指定动漫转换画风。
+
+| 标识 | 名称 | Skill |
+| --- | --- | --- |
+| anime-3d-cel | 日系三渲二 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| anime-watercolor | 水彩动画插画 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| cel-00s-moe | 00年代萌系赛璐璐 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| cel-10s-clear | 10年代清透日常 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| cel-90s-film | 90年代胶片赛璐璐 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| cel-dual-shadow | 双阴影战斗赛璐璐 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| cel-soft-edge | 柔边赛璐璐 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| cel-tv-clean | 现代TV赛璐璐 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| chibi-2head | 二头身Q版 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| chibi-4head | 四头身SD | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| chinese-3d-fantasy | 国风三维幻想 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| cn-2d-donghua | 中国2D国漫 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| colored-pencil | 彩铅动漫插画 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| cyber-rain-neon | 雨夜霓虹赛博 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| dunhuang-mural | 壁画装饰幻想 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| flat-vector-anime | 矢量扁平动漫 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| fr-european-picturebook | 法漫与欧式绘本 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| fullbody-sheet | 全身设定图 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| galgame-portrait | 美少女游戏立绘 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| game-gacha-render | 二游角色宣传图 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| gongbi-heavy-color | 工笔重彩 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| gothic-lace | 哥特蕾丝 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| guofeng-cel | 国风赛璐璐 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| handpainted-nature-fable | 手绘自然童话 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| icon-avatar | 头像 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| japanese-game-portrait | 日系游戏立绘 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| key-visual | 主视觉海报 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| kr-game-concept | 韩系游戏概念图 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| kr-webtoon | 韩系条漫 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| line-minimal | 极简简笔 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| manga-bw-screentone | 黑白网点漫画 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| manga-ink-wash | 墨线晕染漫画 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| manga-panel | 漫画分镜 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| mecha-cel | 赛璐璐机甲 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| moe-round | 圆润萌系 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| new-year-print | 年画民俗动漫 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| painterly-fantasy | 奇幻厚涂 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| pixel-16bit | 16位像素动漫 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| post-apocalypse | 末世废土动漫 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| qinglu-landscape | 青绿山水幻想 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| retro-future-80s | 80年代复古未来 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| ru-eastern-folktale | 东欧童话动画 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| semi-paint-anime | 半厚涂二次元 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| shonen-dynamic | 少年漫热血 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| shoujo-ethereal | 空灵少女漫 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| sketch-pencil | 铅笔素描 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| sky-luminous-cinema | 通透天空电影感 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| steampunk-brass | 黄铜蒸汽朋克 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| sticker-cutout | 贴纸抠图 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| sunset-nostalgia | 黄昏怀旧动画 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| theme-campus-youth | 校园青春 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| theme-daily-healing | 日常治愈 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| theme-food-anime | 美食番 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| theme-gourmet-night | 深夜食堂 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| theme-idol-stage | 偶像舞台 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| theme-isekai-fantasy | 异世界轻奇幻 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| theme-japanese-fantasy | 日式和风幻想 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| theme-magical-girl | 魔法少女 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| theme-minimal-future | 未来都市极简 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| theme-western-epic | 西方史诗幻想 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| toon-3d-clean | 干净卡通3D | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| urban-rain-romance | 雨夜都市青春 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| us-animation-film | 美式动画电影 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| us-cartoon | 美式卡通 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| us-superhero-comic | 美式超级英雄漫画 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| vertical-cover | 竖版封面 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| woodblock-ukiyo | 浮世绘木版动漫 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| wuxia-ink-action | 水墨武侠动作 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| xianxia-ethereal | 仙侠空灵 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| xieyi-ink | 写意水墨 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+| yokai-kaidan | 和风怪谈 | [anime-image-restyle](../skills/anime-image-restyle/SKILL.md) |
+
+## Poster Generator · 20 种设计版式
+
+海报 Skill 内的设计风格名，可用来指导版式选择。
+
+| 标识 | 名称 | Skill |
+| --- | --- | --- |
+| art-deco-luxe | Art Deco Luxe | [poster-generator](../skills/poster-generator/SKILL.md) |
+| bauhaus-modular | Bauhaus Modular | [poster-generator](../skills/poster-generator/SKILL.md) |
+| botanical-premium | Botanical Premium | [poster-generator](../skills/poster-generator/SKILL.md) |
+| cinematic-key-art | Cinematic Key Art | [poster-generator](../skills/poster-generator/SKILL.md) |
+| constructivist-impact | Constructivist Impact | [poster-generator](../skills/poster-generator/SKILL.md) |
+| data-editorial | Data Editorial | [poster-generator](../skills/poster-generator/SKILL.md) |
+| editorial-collage | Editorial Collage | [poster-generator](../skills/poster-generator/SKILL.md) |
+| futurist-gradient | Futurist Gradient | [poster-generator](../skills/poster-generator/SKILL.md) |
+| glassmorphism-ui | Glassmorphism UI | [poster-generator](../skills/poster-generator/SKILL.md) |
+| hyperreal-product | Hyperreal Product | [poster-generator](../skills/poster-generator/SKILL.md) |
+| japanese-ma | Japanese Ma | [poster-generator](../skills/poster-generator/SKILL.md) |
+| luxury-minimal | Luxury Minimal | [poster-generator](../skills/poster-generator/SKILL.md) |
+| monochrome-typographic | Monochrome Typographic | [poster-generator](../skills/poster-generator/SKILL.md) |
+| neo-brutalist | Neo-Brutalist | [poster-generator](../skills/poster-generator/SKILL.md) |
+| organic-craft | Organic Craft | [poster-generator](../skills/poster-generator/SKILL.md) |
+| pop-commercial | Pop Commercial | [poster-generator](../skills/poster-generator/SKILL.md) |
+| retro-futurism | Retro Futurism | [poster-generator](../skills/poster-generator/SKILL.md) |
+| risograph-zine | Risograph Zine | [poster-generator](../skills/poster-generator/SKILL.md) |
+| surreal-3d-editorial | Surreal 3D Editorial | [poster-generator](../skills/poster-generator/SKILL.md) |
+| swiss-editorial | Swiss Editorial | [poster-generator](../skills/poster-generator/SKILL.md) |
+
+## Photo Editing Craft · 14 套修图配方
+
+这些是实际像素处理配方，而不是生成式视觉风格。
+
+| 标识 | 名称 | Skill |
+| --- | --- | --- |
+| add-contrast-curve | Add Contrast Curve | [photo-editing-craft](../skills/photo-editing-craft/SKILL.md) |
+| black-and-white | Black And White | [photo-editing-craft](../skills/photo-editing-craft/SKILL.md) |
+| cutout-to-mask | Cutout To Mask | [photo-editing-craft](../skills/photo-editing-craft/SKILL.md) |
+| fix-color-cast | Fix Color Cast | [photo-editing-craft](../skills/photo-editing-craft/SKILL.md) |
+| image-inside-text | Image Inside Text | [photo-editing-craft](../skills/photo-editing-craft/SKILL.md) |
+| natural-saturation | Natural Saturation | [photo-editing-craft](../skills/photo-editing-craft/SKILL.md) |
+| print-prep-cmyk | Print Prep Cmyk | [photo-editing-craft](../skills/photo-editing-craft/SKILL.md) |
+| remove-spots | Remove Spots | [photo-editing-craft](../skills/photo-editing-craft/SKILL.md) |
+| replace-background | Replace Background | [photo-editing-craft](../skills/photo-editing-craft/SKILL.md) |
+| resize-for-web | Resize For Web | [photo-editing-craft](../skills/photo-editing-craft/SKILL.md) |
+| social-export-4x5 | Social Export 4X5 | [photo-editing-craft](../skills/photo-editing-craft/SKILL.md) |
+| title-with-shadow | Title With Shadow | [photo-editing-craft](../skills/photo-editing-craft/SKILL.md) |
+| vignette | Vignette | [photo-editing-craft](../skills/photo-editing-craft/SKILL.md) |
+| watermark | Watermark | [photo-editing-craft](../skills/photo-editing-craft/SKILL.md) |
+
+[80 种风格的完整提示词](../skills/image-style-transfer/references/style-library.md) · [动漫风格 key 详细规则](../skills/anime-image-restyle/references/style-registry.md)

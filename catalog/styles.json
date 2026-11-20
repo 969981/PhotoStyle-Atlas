@@ -1,6 +1,432 @@
 {
   "presets": [
     {
+      "key": "anime-3d-cel",
+      "skill_id": "anime-image-restyle",
+      "title": "日系三渲二",
+      "type": "style-key"
+    },
+    {
+      "key": "anime-watercolor",
+      "skill_id": "anime-image-restyle",
+      "title": "水彩动画插画",
+      "type": "style-key"
+    },
+    {
+      "key": "cel-00s-moe",
+      "skill_id": "anime-image-restyle",
+      "title": "00年代萌系赛璐璐",
+      "type": "style-key"
+    },
+    {
+      "key": "cel-10s-clear",
+      "skill_id": "anime-image-restyle",
+      "title": "10年代清透日常",
+      "type": "style-key"
+    },
+    {
+      "key": "cel-90s-film",
+      "skill_id": "anime-image-restyle",
+      "title": "90年代胶片赛璐璐",
+      "type": "style-key"
+    },
+    {
+      "key": "cel-dual-shadow",
+      "skill_id": "anime-image-restyle",
+      "title": "双阴影战斗赛璐璐",
+      "type": "style-key"
+    },
+    {
+      "key": "cel-soft-edge",
+      "skill_id": "anime-image-restyle",
+      "title": "柔边赛璐璐",
+      "type": "style-key"
+    },
+    {
+      "key": "cel-tv-clean",
+      "skill_id": "anime-image-restyle",
+      "title": "现代TV赛璐璐",
+      "type": "style-key"
+    },
+    {
+      "key": "chibi-2head",
+      "skill_id": "anime-image-restyle",
+      "title": "二头身Q版",
+      "type": "style-key"
+    },
+    {
+      "key": "chibi-4head",
+      "skill_id": "anime-image-restyle",
+      "title": "四头身SD",
+      "type": "style-key"
+    },
+    {
+      "key": "chinese-3d-fantasy",
+      "skill_id": "anime-image-restyle",
+      "title": "国风三维幻想",
+      "type": "style-key"
+    },
+    {
+      "key": "cn-2d-donghua",
+      "skill_id": "anime-image-restyle",
+      "title": "中国2D国漫",
+      "type": "style-key"
+    },
+    {
+      "key": "colored-pencil",
+      "skill_id": "anime-image-restyle",
+      "title": "彩铅动漫插画",
+      "type": "style-key"
+    },
+    {
+      "key": "cyber-rain-neon",
+      "skill_id": "anime-image-restyle",
+      "title": "雨夜霓虹赛博",
+      "type": "style-key"
+    },
+    {
+      "key": "dunhuang-mural",
+      "skill_id": "anime-image-restyle",
+      "title": "壁画装饰幻想",
+      "type": "style-key"
+    },
+    {
+      "key": "flat-vector-anime",
+      "skill_id": "anime-image-restyle",
+      "title": "矢量扁平动漫",
+      "type": "style-key"
+    },
+    {
+      "key": "fr-european-picturebook",
+      "skill_id": "anime-image-restyle",
+      "title": "法漫与欧式绘本",
+      "type": "style-key"
+    },
+    {
+      "key": "fullbody-sheet",
+      "skill_id": "anime-image-restyle",
+      "title": "全身设定图",
+      "type": "style-key"
+    },
+    {
+      "key": "galgame-portrait",
+      "skill_id": "anime-image-restyle",
+      "title": "美少女游戏立绘",
+      "type": "style-key"
+    },
+    {
+      "key": "game-gacha-render",
+      "skill_id": "anime-image-restyle",
+      "title": "二游角色宣传图",
+      "type": "style-key"
+    },
+    {
+      "key": "gongbi-heavy-color",
+      "skill_id": "anime-image-restyle",
+      "title": "工笔重彩",
+      "type": "style-key"
+    },
+    {
+      "key": "gothic-lace",
+      "skill_id": "anime-image-restyle",
+      "title": "哥特蕾丝",
+      "type": "style-key"
+    },
+    {
+      "key": "guofeng-cel",
+      "skill_id": "anime-image-restyle",
+      "title": "国风赛璐璐",
+      "type": "style-key"
+    },
+    {
+      "key": "handpainted-nature-fable",
+      "skill_id": "anime-image-restyle",
+      "title": "手绘自然童话",
+      "type": "style-key"
+    },
+    {
+      "key": "icon-avatar",
+      "skill_id": "anime-image-restyle",
+      "title": "头像",
+      "type": "style-key"
+    },
+    {
+      "key": "japanese-game-portrait",
+      "skill_id": "anime-image-restyle",
+      "title": "日系游戏立绘",
+      "type": "style-key"
+    },
+    {
+      "key": "key-visual",
+      "skill_id": "anime-image-restyle",
+      "title": "主视觉海报",
+      "type": "style-key"
+    },
+    {
+      "key": "kr-game-concept",
+      "skill_id": "anime-image-restyle",
+      "title": "韩系游戏概念图",
+      "type": "style-key"
+    },
+    {
+      "key": "kr-webtoon",
+      "skill_id": "anime-image-restyle",
+      "title": "韩系条漫",
+      "type": "style-key"
+    },
+    {
+      "key": "line-minimal",
+      "skill_id": "anime-image-restyle",
+      "title": "极简简笔",
+      "type": "style-key"
+    },
+    {
+      "key": "manga-bw-screentone",
+      "skill_id": "anime-image-restyle",
+      "title": "黑白网点漫画",
+      "type": "style-key"
+    },
+    {
+      "key": "manga-ink-wash",
+      "skill_id": "anime-image-restyle",
+      "title": "墨线晕染漫画",
+      "type": "style-key"
+    },
+    {
+      "key": "manga-panel",
+      "skill_id": "anime-image-restyle",
+      "title": "漫画分镜",
+      "type": "style-key"
+    },
+    {
+      "key": "mecha-cel",
+      "skill_id": "anime-image-restyle",
+      "title": "赛璐璐机甲",
+      "type": "style-key"
+    },
+    {
+      "key": "moe-round",
+      "skill_id": "anime-image-restyle",
+      "title": "圆润萌系",
+      "type": "style-key"
+    },
+    {
+      "key": "new-year-print",
+      "skill_id": "anime-image-restyle",
+      "title": "年画民俗动漫",
+      "type": "style-key"
+    },
+    {
+      "key": "painterly-fantasy",
+      "skill_id": "anime-image-restyle",
+      "title": "奇幻厚涂",
+      "type": "style-key"
+    },
+    {
+      "key": "pixel-16bit",
+      "skill_id": "anime-image-restyle",
+      "title": "16位像素动漫",
+      "type": "style-key"
+    },
+    {
+      "key": "post-apocalypse",
+      "skill_id": "anime-image-restyle",
+      "title": "末世废土动漫",
+      "type": "style-key"
+    },
+    {
+      "key": "qinglu-landscape",
+      "skill_id": "anime-image-restyle",
+      "title": "青绿山水幻想",
+      "type": "style-key"
+    },
+    {
+      "key": "retro-future-80s",
+      "skill_id": "anime-image-restyle",
+      "title": "80年代复古未来",
+      "type": "style-key"
+    },
+    {
+      "key": "ru-eastern-folktale",
+      "skill_id": "anime-image-restyle",
+      "title": "东欧童话动画",
+      "type": "style-key"
+    },
+    {
+      "key": "semi-paint-anime",
+      "skill_id": "anime-image-restyle",
+      "title": "半厚涂二次元",
+      "type": "style-key"
+    },
+    {
+      "key": "shonen-dynamic",
+      "skill_id": "anime-image-restyle",
+      "title": "少年漫热血",
+      "type": "style-key"
+    },
+    {
+      "key": "shoujo-ethereal",
+      "skill_id": "anime-image-restyle",
+      "title": "空灵少女漫",
+      "type": "style-key"
+    },
+    {
+      "key": "sketch-pencil",
+      "skill_id": "anime-image-restyle",
+      "title": "铅笔素描",
+      "type": "style-key"
+    },
+    {
+      "key": "sky-luminous-cinema",
+      "skill_id": "anime-image-restyle",
+      "title": "通透天空电影感",
+      "type": "style-key"
+    },
+    {
+      "key": "steampunk-brass",
+      "skill_id": "anime-image-restyle",
+      "title": "黄铜蒸汽朋克",
+      "type": "style-key"
+    },
+    {
+      "key": "sticker-cutout",
+      "skill_id": "anime-image-restyle",
+      "title": "贴纸抠图",
+      "type": "style-key"
+    },
+    {
+      "key": "sunset-nostalgia",
+      "skill_id": "anime-image-restyle",
+      "title": "黄昏怀旧动画",
+      "type": "style-key"
+    },
+    {
+      "key": "theme-campus-youth",
+      "skill_id": "anime-image-restyle",
+      "title": "校园青春",
+      "type": "style-key"
+    },
+    {
+      "key": "theme-daily-healing",
+      "skill_id": "anime-image-restyle",
+      "title": "日常治愈",
+      "type": "style-key"
+    },
+    {
+      "key": "theme-food-anime",
+      "skill_id": "anime-image-restyle",
+      "title": "美食番",
+      "type": "style-key"
+    },
+    {
+      "key": "theme-gourmet-night",
+      "skill_id": "anime-image-restyle",
+      "title": "深夜食堂",
+      "type": "style-key"
+    },
+    {
+      "key": "theme-idol-stage",
+      "skill_id": "anime-image-restyle",
+      "title": "偶像舞台",
+      "type": "style-key"
+    },
+    {
+      "key": "theme-isekai-fantasy",
+      "skill_id": "anime-image-restyle",
+      "title": "异世界轻奇幻",
+      "type": "style-key"
+    },
+    {
+      "key": "theme-japanese-fantasy",
+      "skill_id": "anime-image-restyle",
+      "title": "日式和风幻想",
+      "type": "style-key"
+    },
+    {
+      "key": "theme-magical-girl",
+      "skill_id": "anime-image-restyle",
+      "title": "魔法少女",
+      "type": "style-key"
+    },
+    {
+      "key": "theme-minimal-future",
+      "skill_id": "anime-image-restyle",
+      "title": "未来都市极简",
+      "type": "style-key"
+    },
+    {
+      "key": "theme-western-epic",
+      "skill_id": "anime-image-restyle",
+      "title": "西方史诗幻想",
+      "type": "style-key"
+    },
+    {
+      "key": "toon-3d-clean",
+      "skill_id": "anime-image-restyle",
+      "title": "干净卡通3D",
+      "type": "style-key"
+    },
+    {
+      "key": "urban-rain-romance",
+      "skill_id": "anime-image-restyle",
+      "title": "雨夜都市青春",
+      "type": "style-key"
+    },
+    {
+      "key": "us-animation-film",
+      "skill_id": "anime-image-restyle",
+      "title": "美式动画电影",
+      "type": "style-key"
+    },
+    {
+      "key": "us-cartoon",
+      "skill_id": "anime-image-restyle",
+      "title": "美式卡通",
+      "type": "style-key"
+    },
+    {
+      "key": "us-superhero-comic",
+      "skill_id": "anime-image-restyle",
+      "title": "美式超级英雄漫画",
+      "type": "style-key"
+    },
+    {
+      "key": "vertical-cover",
+      "skill_id": "anime-image-restyle",
+      "title": "竖版封面",
+      "type": "style-key"
+    },
+    {
+      "key": "woodblock-ukiyo",
+      "skill_id": "anime-image-restyle",
+      "title": "浮世绘木版动漫",
+      "type": "style-key"
+    },
+    {
+      "key": "wuxia-ink-action",
+      "skill_id": "anime-image-restyle",
+      "title": "水墨武侠动作",
+      "type": "style-key"
+    },
+    {
+      "key": "xianxia-ethereal",
+      "skill_id": "anime-image-restyle",
+      "title": "仙侠空灵",
+      "type": "style-key"
+    },
+    {
+      "key": "xieyi-ink",
+      "skill_id": "anime-image-restyle",
+      "title": "写意水墨",
+      "type": "style-key"
+    },
+    {
+      "key": "yokai-kaidan",
+      "skill_id": "anime-image-restyle",
+      "title": "和风怪谈",
+      "type": "style-key"
+    },
+    {
       "number": 1,
       "skill_id": "image-style-transfer",
       "title": "文艺杂志风（Vintage Editorial / Kinfolk）",
@@ -479,6 +905,210 @@
       "skill_id": "image-style-transfer",
       "title": "稚拙蜡笔画（Naïve Crayon / Oil Pastel）",
       "type": "substyle"
+    },
+    {
+      "key": "add-contrast-curve",
+      "skill_id": "photo-editing-craft",
+      "title": "Add Contrast Curve",
+      "type": "edit-recipe"
+    },
+    {
+      "key": "black-and-white",
+      "skill_id": "photo-editing-craft",
+      "title": "Black And White",
+      "type": "edit-recipe"
+    },
+    {
+      "key": "cutout-to-mask",
+      "skill_id": "photo-editing-craft",
+      "title": "Cutout To Mask",
+      "type": "edit-recipe"
+    },
+    {
+      "key": "fix-color-cast",
+      "skill_id": "photo-editing-craft",
+      "title": "Fix Color Cast",
+      "type": "edit-recipe"
+    },
+    {
+      "key": "image-inside-text",
+      "skill_id": "photo-editing-craft",
+      "title": "Image Inside Text",
+      "type": "edit-recipe"
+    },
+    {
+      "key": "natural-saturation",
+      "skill_id": "photo-editing-craft",
+      "title": "Natural Saturation",
+      "type": "edit-recipe"
+    },
+    {
+      "key": "print-prep-cmyk",
+      "skill_id": "photo-editing-craft",
+      "title": "Print Prep Cmyk",
+      "type": "edit-recipe"
+    },
+    {
+      "key": "remove-spots",
+      "skill_id": "photo-editing-craft",
+      "title": "Remove Spots",
+      "type": "edit-recipe"
+    },
+    {
+      "key": "replace-background",
+      "skill_id": "photo-editing-craft",
+      "title": "Replace Background",
+      "type": "edit-recipe"
+    },
+    {
+      "key": "resize-for-web",
+      "skill_id": "photo-editing-craft",
+      "title": "Resize For Web",
+      "type": "edit-recipe"
+    },
+    {
+      "key": "social-export-4x5",
+      "skill_id": "photo-editing-craft",
+      "title": "Social Export 4X5",
+      "type": "edit-recipe"
+    },
+    {
+      "key": "title-with-shadow",
+      "skill_id": "photo-editing-craft",
+      "title": "Title With Shadow",
+      "type": "edit-recipe"
+    },
+    {
+      "key": "vignette",
+      "skill_id": "photo-editing-craft",
+      "title": "Vignette",
+      "type": "edit-recipe"
+    },
+    {
+      "key": "watermark",
+      "skill_id": "photo-editing-craft",
+      "title": "Watermark",
+      "type": "edit-recipe"
+    },
+    {
+      "key": "art-deco-luxe",
+      "skill_id": "poster-generator",
+      "title": "Art Deco Luxe",
+      "type": "poster-style"
+    },
+    {
+      "key": "bauhaus-modular",
+      "skill_id": "poster-generator",
+      "title": "Bauhaus Modular",
+      "type": "poster-style"
+    },
+    {
+      "key": "botanical-premium",
+      "skill_id": "poster-generator",
+      "title": "Botanical Premium",
+      "type": "poster-style"
+    },
+    {
+      "key": "cinematic-key-art",
+      "skill_id": "poster-generator",
+      "title": "Cinematic Key Art",
+      "type": "poster-style"
+    },
+    {
+      "key": "constructivist-impact",
+      "skill_id": "poster-generator",
+      "title": "Constructivist Impact",
+      "type": "poster-style"
+    },
+    {
+      "key": "data-editorial",
+      "skill_id": "poster-generator",
+      "title": "Data Editorial",
+      "type": "poster-style"
+    },
+    {
+      "key": "editorial-collage",
+      "skill_id": "poster-generator",
+      "title": "Editorial Collage",
+      "type": "poster-style"
+    },
+    {
+      "key": "futurist-gradient",
+      "skill_id": "poster-generator",
+      "title": "Futurist Gradient",
+      "type": "poster-style"
+    },
+    {
+      "key": "glassmorphism-ui",
+      "skill_id": "poster-generator",
+      "title": "Glassmorphism UI",
+      "type": "poster-style"
+    },
+    {
+      "key": "hyperreal-product",
+      "skill_id": "poster-generator",
+      "title": "Hyperreal Product",
+      "type": "poster-style"
+    },
+    {
+      "key": "japanese-ma",
+      "skill_id": "poster-generator",
+      "title": "Japanese Ma",
+      "type": "poster-style"
+    },
+    {
+      "key": "luxury-minimal",
+      "skill_id": "poster-generator",
+      "title": "Luxury Minimal",
+      "type": "poster-style"
+    },
+    {
+      "key": "monochrome-typographic",
+      "skill_id": "poster-generator",
+      "title": "Monochrome Typographic",
+      "type": "poster-style"
+    },
+    {
+      "key": "neo-brutalist",
+      "skill_id": "poster-generator",
+      "title": "Neo-Brutalist",
+      "type": "poster-style"
+    },
+    {
+      "key": "organic-craft",
+      "skill_id": "poster-generator",
+      "title": "Organic Craft",
+      "type": "poster-style"
+    },
+    {
+      "key": "pop-commercial",
+      "skill_id": "poster-generator",
+      "title": "Pop Commercial",
+      "type": "poster-style"
+    },
+    {
+      "key": "retro-futurism",
+      "skill_id": "poster-generator",
+      "title": "Retro Futurism",
+      "type": "poster-style"
+    },
+    {
+      "key": "risograph-zine",
+      "skill_id": "poster-generator",
+      "title": "Risograph Zine",
+      "type": "poster-style"
+    },
+    {
+      "key": "surreal-3d-editorial",
+      "skill_id": "poster-generator",
+      "title": "Surreal 3D Editorial",
+      "type": "poster-style"
+    },
+    {
+      "key": "swiss-editorial",
+      "skill_id": "poster-generator",
+      "title": "Swiss Editorial",
+      "type": "poster-style"
     }
   ],
   "schema_version": 1
