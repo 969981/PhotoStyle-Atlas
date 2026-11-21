@@ -47,6 +47,37 @@
       "version": ""
     },
     {
+      "category": "自建摄影后期",
+      "description": "摄影后期 Agent Skill：真实人像保真精修、局部补光、物理重新布光、人物与环境融合、清透唯美糖水片。 适用于日系清冷空气感、夏日逆光、窗边奶油、夜间直闪、风景环境人像。",
+      "id": "atlas-portrait-suite",
+      "license": "MIT (PhotoStyle-Atlas original)",
+      "origin": "local-original",
+      "path": "skills/atlas-portrait-suite",
+      "preview": "",
+      "source_id": "atlas-original",
+      "source_repo": "969981/PhotoStyle-Atlas",
+      "tags": [
+        "人像精修",
+        "糖水片",
+        "补光",
+        "闪光灯",
+        "逆光",
+        "人物与环境融合",
+        "皮肤质感"
+      ],
+      "title": "Atlas 人像精修与清透糖水片套件",
+      "upstream_commit": "local",
+      "upstream_path": "skills/atlas-portrait-suite",
+      "use_cases": [
+        "日系清冷空气感",
+        "夏日逆光元气感",
+        "室内窗边奶油感",
+        "夜间直闪",
+        "风景环境人像"
+      ],
+      "version": "1.0.0"
+    },
+    {
       "category": "人像精修",
       "description": "Agent-driven portrait and headshot editing with identity preservation, photographic coherence, model iteration, masks, and alpha outputs.",
       "id": "genai-portrait",
@@ -657,6 +688,36 @@
       "upstream_commit": "fa2a40bf0943c14dbcf2dfd86a2efe66fa8b4cbc",
       "upstream_path": ".",
       "use_cases": [],
+      "version": ""
+    },
+    {
+      "category": "商业人像精修",
+      "description": "Retouch existing photos with identity and detail preservation. Use for natural cleanup, object removal, background or clothing replacement, enhancement, outpainting, relighting, closed-eye correction, garment smoothing, and removing elements from the user's designs. Supports 精修、换背景、换装、扩图、修闭眼 and prompt-only requests.",
+      "id": "roby-photo-retouch-pro",
+      "license": "MIT",
+      "path": "skills/roby-photo-retouch-pro",
+      "preview": "",
+      "source_id": "roby-photo-retouch-pro",
+      "source_repo": "robyboy888/photo-retouch-pro",
+      "tags": [
+        "人像精修",
+        "人物保真",
+        "去路人",
+        "背景更换",
+        "扩图",
+        "衣物修复",
+        "重布光"
+      ],
+      "title": "商业人像十模式精修",
+      "upstream_commit": "21bc81931b63061aa44dacf61106fda3e08c105e",
+      "upstream_path": ".",
+      "use_cases": [
+        "商业客片",
+        "自然修肤",
+        "背景清理",
+        "闭眼参考修复",
+        "人物风景融合"
+      ],
       "version": ""
     },
     {

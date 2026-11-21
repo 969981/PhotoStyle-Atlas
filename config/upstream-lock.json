@@ -692,6 +692,31 @@
         }
       ]
     },
+    "roby-photo-retouch-pro": {
+      "commit": "21bc81931b63061aa44dacf61106fda3e08c105e",
+      "files": {
+        "LICENSES/roby-photo-retouch-pro/LICENSE": "6c9114557a8f5dd65d8892b64afa61cb452a271c22b6e756d16797736a510be9",
+        "skills/roby-photo-retouch-pro/LICENSE": "6c9114557a8f5dd65d8892b64afa61cb452a271c22b6e756d16797736a510be9",
+        "skills/roby-photo-retouch-pro/README.md": "ff1557c3649ee37fdc55945d9631600d7d0da7d79fa9af51f3dc41b291e8fafd",
+        "skills/roby-photo-retouch-pro/SKILL.md": "7bd4ea136d0383a65871c1296fb25e1a049dc529108fb166deaf865fae965768",
+        "skills/roby-photo-retouch-pro/agents/openai.yaml": "ea3c819607000975708c781c4fc77512e04fad217898b19fa61d03ca6157ce0b",
+        "skills/roby-photo-retouch-pro/references/modes.md": "408aad681d1d3b66975b2ff86c0ca810c899b69a2bcf271b53b3ba89bfcc0884"
+      },
+      "license": "MIT",
+      "manifest_sha256": "6774041b03f68c4130d8218a26dbd52b844524a6448f527b77e251baa269d51e",
+      "ref": "main",
+      "repo": "robyboy888/photo-retouch-pro",
+      "skills": [
+        {
+          "category": "商业人像精修",
+          "id": "roby-photo-retouch-pro",
+          "license": "MIT",
+          "source_id": "roby-photo-retouch-pro",
+          "source_repo": "robyboy888/photo-retouch-pro",
+          "upstream_path": "."
+        }
+      ]
+    },
     "wibi-style": {
       "commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "files": {

@@ -10,8 +10,8 @@
 
 ## 收录统计
 
-- 独立安装 Skill：87
-- 上游来源：15
+- 独立安装 Skill：89
+- 上游来源：16
 - Wibi Style Skills：52
 - Image Style Transfer 内部风格预设：80
 - Anime Restyle 动漫风格 key：71
@@ -48,10 +48,14 @@
 | 预览 | Skill | 适用场景 |
 | --- | --- | --- |
 | <img src="previews/ai-portrait-light/portrait-light.jpg" width="145" alt="人像布光与光线配方"> | [人像布光与光线配方](skills/portrait-light/SKILL.md) | 闪光灯布光规划 / 日系清透糖水片 / 人物风景融合 / 人像光线提示词 |
+| — | [Atlas 人像精修与清透糖水片套件](skills/atlas-portrait-suite/SKILL.md) | 日系清冷空气感 / 夏日逆光元气感 / 室内窗边奶油感 / 夜间直闪 / 风景环境人像 |
 | <img src="previews/genai-portrait/genai-portrait.jpg" width="145" alt="GenAI 人像精修与光影迁移"> | [GenAI 人像精修与光影迁移](skills/genai-portrait/SKILL.md) | 棚拍证件照 / 夜景人像补光 / 替换背景 / 复杂人像环境光匹配 |
+| — | [商业人像十模式精修](skills/roby-photo-retouch-pro/SKILL.md) | 商业客片 / 自然修肤 / 背景清理 / 闭眼参考修复 / 人物风景融合 |
 | <img src="previews/xxg-portrait-light/xxg-portrait-rebuild-light.jpg" width="145" alt="人像光线重建与自然补光"> | [人像光线重建与自然补光](skills/xxg-portrait-rebuild-light/SKILL.md) | 夜间直闪人像 / 逆光面部补光 / 棚拍光线模拟 / 糖水片的柔光处理 |
 
-**授权提醒：** [x-rush/photo-retouch](https://github.com/x-rush/photo-retouch) 未附许可证，暂仅列入[外部候选目录](catalog/external-skills.yaml)，不复制其内容。
+**授权提醒：** [x-rush/photo-retouch](https://github.com/x-rush/photo-retouch) 未附许可证，以及其他未获明确再分发授权的项目仍列入[外部候选](catalog/external-skills.yaml)，不复制其内容。
+
+[自建清透糖水片五套配方](skills/atlas-portrait-suite/references/presets.md) · [新增项目许可证审查](docs/RETOUCH-SKILLS-REVIEW-2026-11-21.md)
 
 ## 按用途挑选
 
@@ -64,11 +68,13 @@
 | [人像精修](docs/STYLES.md) | 1 | 光线迁移、人物保真与背景融合 |
 | [创意风格](docs/STYLES.md) | 52 | 漫画、胶片、印刷和实验视觉 |
 | [动漫插画](docs/STYLES.md) | 1 | 动漫、国风、数字绘画 |
+| [商业人像精修](docs/STYLES.md) | 1 | 十种精修模式、身份保护、换景与扩图 |
 | [杂志排版](docs/STYLES.md) | 4 | 旅行画册、视觉日记与系列海报 |
 | [极简印刷](docs/STYLES.md) | 1 | 单双色印刷、网点、留白 |
 | [极简海报](docs/STYLES.md) | 1 | 建筑线条与抽象图形 |
 | [海报设计](docs/STYLES.md) | 1 | 电影海报、瑞士排版、包豪斯 |
 | [真实修图](docs/STYLES.md) | 3 | 选片、人像、风景后期 |
+| [自建摄影后期](docs/STYLES.md) | 1 | 清透糖水片、补光、人物与风景融合 |
 | [艺术海报](docs/STYLES.md) | 14 | 水彩、炭笔、纸雕、像素与旅行海报 |
 | [风格迁移](docs/STYLES.md) | 1 | 80 种艺术风格预设 |
 

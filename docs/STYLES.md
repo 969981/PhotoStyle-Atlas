@@ -68,6 +68,7 @@
 | --- | --- | --- | --- | --- |
 | 人像布光 | <img src="../previews/ai-portrait-light/portrait-light.jpg" width="110" alt="人像布光与光线配方"> | [人像布光与光线配方](../skills/portrait-light/SKILL.md) | 人像 / 光位 / 直闪 / 柔雾 / 黄金时刻 / 摄影构图 / 光影参考 | [ai-portrait-light](https://github.com/L-Trunks/ai-portrait-light) |
 | 动漫插画 | — | [动漫原图风格转换](../skills/anime-image-restyle/SKILL.md) | 把用户上传的单张原照片直接转换成指定动漫风格并出图。当用户上传图片后说「转成XX风格」「动漫风」「二次元」「水彩」「国风」「赛博朋克」「Q版」「像素」「厚涂」「吉卜力风」「新海诚风」「素描」「简笔」等时使用。默认保留人物身份、表情、姿势、人数、构图与关键物件，只替换视觉 | [anime-restyle](https://github.com/gaoren7716-lab/anime-image-restyle-skill) |
+| 自建摄影后期 | — | [Atlas 人像精修与清透糖水片套件](../skills/atlas-portrait-suite/SKILL.md) | 人像精修 / 糖水片 / 补光 / 闪光灯 / 逆光 / 人物与环境融合 / 皮肤质感 | [atlas-original](https://github.com/969981/PhotoStyle-Atlas) |
 | 人像精修 | <img src="../previews/genai-portrait/genai-portrait.jpg" width="110" alt="GenAI 人像精修与光影迁移"> | [GenAI 人像精修与光影迁移](../skills/genai-portrait/SKILL.md) | 人像精修 / 保留身份 / 重打光 / 背景融合 / 透明蒙版 / 合成 | [genai-portrait](https://github.com/grapeot/genai_portrait_skill) |
 | 风格迁移 | — | [80 种艺术风格迁移](../skills/image-style-transfer/SKILL.md) | 风格库 / 油画 / 水墨 / 胶片 / 动漫 / 杂志 | [image-style-transfer](https://github.com/jyi06/image-style-transfer) |
 | Lightroom 后期 | — | [Lightroom 专业调色](../skills/lr-color-grade/SKILL.md) | Lightroom / 调色 / 电影感 | [lightroom-computer-use](https://github.com/eamonboyle/computer-use-photo-editing-skills) |
@@ -100,6 +101,7 @@
 | 艺术海报 | — | [像素消散风景](../skills/pixel-dissolve-landscape/SKILL.md) | 像素画 / 消散 / 数字艺术 | [photo-to-poster](https://github.com/GZ-L/photo-to-poster-skills) |
 | 艺术海报 | — | [水彩旅行卡](../skills/watercolor-travel-card/SKILL.md) | 旅行 / 水彩 / 明信片 / 海报 | [photo-to-poster](https://github.com/GZ-L/photo-to-poster-skills) |
 | 海报设计 | — | [Poster Generator](../skills/poster-generator/SKILL.md) | Generates professional designer-grade posters, flyers, campaign visuals, event posters, and product posters. Use when the user asks for | [poster-generator](https://github.com/howardz27/poster-generator-skill) |
+| 商业人像精修 | — | [商业人像十模式精修](../skills/roby-photo-retouch-pro/SKILL.md) | 人像精修 / 人物保真 / 去路人 / 背景更换 / 扩图 / 衣物修复 / 重布光 | [roby-photo-retouch-pro](https://github.com/robyboy888/photo-retouch-pro) |
 | 人像光影 | <img src="../previews/xxg-portrait-light/xxg-portrait-rebuild-light.jpg" width="110" alt="人像光线重建与自然补光"> | [人像光线重建与自然补光](../skills/xxg-portrait-rebuild-light/SKILL.md) | 人像 / 补光 / 闪光灯 / 直闪 / 柔光 / 逆光 / 光影重建 / 保真 | [xxg-portrait-light](https://github.com/moskoo/xxg-portrait-rebuild-light) |
 
 ## Image Style Transfer · 80 种艺术风格

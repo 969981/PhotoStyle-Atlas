@@ -20,13 +20,16 @@
 | [moskoo/xxg-portrait-rebuild-light](https://github.com/moskoo/xxg-portrait-rebuild-light) | 1 | [39b1ffd21248](https://github.com/moskoo/xxg-portrait-rebuild-light/commit/39b1ffd21248fd22e2d4e3075ec0ca0989236dd9) | MIT |
 | [L-Trunks/ai-portrait-light](https://github.com/L-Trunks/ai-portrait-light) | 1 | [4def521eed57](https://github.com/L-Trunks/ai-portrait-light/commit/4def521eed57a08e37ac90ac953e7fe42a952b2d) | CC BY 4.0 documents/images (licensed examples 01-10) + MIT code |
 | [grapeot/genai_portrait_skill](https://github.com/grapeot/genai_portrait_skill) | 1 | [45bbea31e1c8](https://github.com/grapeot/genai_portrait_skill/commit/45bbea31e1c8dcc9fd839ad9d256ab78e4385763) | MIT |
+| [robyboy888/photo-retouch-pro](https://github.com/robyboy888/photo-retouch-pro) | 1 | [21bc81931b63](https://github.com/robyboy888/photo-retouch-pro/commit/21bc81931b63061aa44dacf61106fda3e08c105e) | MIT |
 
 ## 新增人像修图的授权与依赖
 
 - **XXG Portrait Rebuild Light**：上游 MIT；主要是光影工作流与核对脚本，需外部实际修图后端。
 - **AI Portrait Light**：上游文本/图片 CC BY 4.0，代码 MIT；署名与原有 CC BY 4.0 条款必须保留；镜像仅保存其许可明确覆盖的早期示例预览。最新示例图从上游获取。
 - **GenAI Portrait Skill**：上游 MIT；其 Python CLI 依赖须另行安装，生成式编辑可能需要 OpenAI/Gemini 等服务凭据。
-- **Photo Retouch（x-rush）**：上游没有明确 LICENSE，本仓库只提供外部链接与介绍，不收录代码或 Skill 正文。
+- **Roby Photo Retouch Pro**：MIT，十种人像和照片精修模式，需宿主编辑后端。
+- **Atlas Portrait Suite**：本仓库自编完整 Skill，沿用仓库 MIT，独立本地清单，不由上游同步覆盖。
+- **其他外部候选**：x-rush、hotcoffeeshake、eachlabs、tuxiuxiu 未发现明确项目授权，暂不镜像；AInVFX 为 Apache-2.0 ComfyUI 视频特效工具。
 
 ## Wibi Style 特殊条款
 
