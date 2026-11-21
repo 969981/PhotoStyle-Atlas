@@ -2,6 +2,35 @@
   "schema_version": 1,
   "skills": [
     {
+      "category": "人像布光",
+      "description": "Use when writing or diagnosing portrait lighting and image texture prompts from references, including soft backlight, direct flash, oily faces, distracting backgrounds, skirt coverage in seated poses, or migration to local models such as Z-Image.",
+      "id": "portrait-light",
+      "license": "CC BY 4.0 documents/images (licensed examples 01-10) + MIT code",
+      "path": "skills/portrait-light",
+      "preview": "previews/ai-portrait-light/portrait-light.jpg",
+      "source_id": "ai-portrait-light",
+      "source_repo": "L-Trunks/ai-portrait-light",
+      "tags": [
+        "人像",
+        "光位",
+        "直闪",
+        "柔雾",
+        "黄金时刻",
+        "摄影构图",
+        "光影参考"
+      ],
+      "title": "人像布光与光线配方",
+      "upstream_commit": "4def521eed57a08e37ac90ac953e7fe42a952b2d",
+      "upstream_path": "skills/portrait-light",
+      "use_cases": [
+        "闪光灯布光规划",
+        "日系清透糖水片",
+        "人物风景融合",
+        "人像光线提示词"
+      ],
+      "version": ""
+    },
+    {
       "category": "动漫插画",
       "description": "把用户上传的单张原照片直接转换成指定动漫风格并出图。当用户上传图片后说「转成XX风格」「动漫风」「二次元」「水彩」「国风」「赛博朋克」「Q版」「像素」「厚涂」「吉卜力风」「新海诚风」「素描」「简笔」等时使用。默认保留人物身份、表情、姿势、人数、构图与关键物件，只替换视觉语言；支持保真/标准/重构三档强度，以及画幅、背景、光线控制。内置 11 大风格家族 71 个风格 key，其中 15 个高频 key 配有完整深度配方（由 scripts/render_prompt.py 原样提取，禁止改写），其余走可组合槽位体系（人设体系+线稿+上色+调色+光影+时代地域+题材美术+氛围+镜头）。",
       "id": "anime-image-restyle",
@@ -15,6 +44,34 @@
       "upstream_commit": "404ac129e22d220ae69bc43db6b434fdfaa95a4b",
       "upstream_path": ".",
       "use_cases": [],
+      "version": ""
+    },
+    {
+      "category": "人像精修",
+      "description": "Agent-driven portrait and headshot editing with identity preservation, photographic coherence, model iteration, masks, and alpha outputs.",
+      "id": "genai-portrait",
+      "license": "MIT",
+      "path": "skills/genai-portrait",
+      "preview": "previews/genai-portrait/genai-portrait.png",
+      "source_id": "genai-portrait",
+      "source_repo": "grapeot/genai_portrait_skill",
+      "tags": [
+        "人像精修",
+        "保留身份",
+        "重打光",
+        "背景融合",
+        "透明蒙版",
+        "合成"
+      ],
+      "title": "GenAI 人像精修与光影迁移",
+      "upstream_commit": "45bbea31e1c8dcc9fd839ad9d256ab78e4385763",
+      "upstream_path": "skills/skill_genai_portrait.md",
+      "use_cases": [
+        "棚拍证件照",
+        "夜景人像补光",
+        "替换背景",
+        "复杂人像环境光匹配"
+      ],
       "version": ""
     },
     {
@@ -613,7 +670,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 粗线条漫画头像",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/alt-manga-avatar",
       "use_cases": [],
       "version": "1.0.7"
@@ -629,7 +686,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 蜡笔手绘头像",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/art-print-poster",
       "use_cases": [],
       "version": "1.0.6"
@@ -645,7 +702,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 蓝墨长比例时装速写",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/blue-ink-fashion-croquis",
       "use_cases": [],
       "version": "1.0.0"
@@ -661,7 +718,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 蓝纸漫画大字海报",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/blue-paper-manga-type",
       "use_cases": [],
       "version": "1.0.0"
@@ -677,7 +734,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 蓝底复古印刷",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/blue-retro-print",
       "use_cases": [],
       "version": "1.0.6"
@@ -693,7 +750,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 粗线手绘穿搭插画",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/bold-line-fashion",
       "use_cases": [],
       "version": "1.0.1"
@@ -709,7 +766,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 晴空都市赛璐璐",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/clear-sky-urban-cel",
       "use_cases": [],
       "version": "1.0.6"
@@ -725,7 +782,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 冷蓝失真动漫",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/cold-blue-glitch-anime",
       "use_cases": [],
       "version": "1.0.2"
@@ -741,7 +798,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 蜡笔极简扁平画",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/crayon-flat-naive",
       "use_cases": [],
       "version": "1.0.3"
@@ -757,7 +814,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 奶油纸复古家居速写",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/cream-home-sketch",
       "use_cases": [],
       "version": "1.0.0"
@@ -773,7 +830,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 奶油纸涂鸦漫画",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/cream-paper-doodle",
       "use_cases": [],
       "version": "1.0.1"
@@ -789,7 +846,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 暗夜红黑赛璐璐",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/dark-red-black-cel-shaded",
       "use_cases": [],
       "version": "1.0.6"
@@ -805,7 +862,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 钻牙萌娃大头",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/diamond-kid-head-card",
       "use_cases": [],
       "version": "1.0.7"
@@ -821,7 +878,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 电蓝网点海报",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/electric-blue-halftone-poster",
       "use_cases": [],
       "version": "1.0.9"
@@ -837,7 +894,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 鱼眼城市海报",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/fisheye-city-cover",
       "use_cases": [],
       "version": "0.13.6"
@@ -853,7 +910,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 乱码像素拼贴",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/glitch-pixel-collage",
       "use_cases": [],
       "version": "1.0.6"
@@ -869,7 +926,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 复古家居日志",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/home-journal",
       "use_cases": [],
       "version": "1.0.3"
@@ -885,7 +942,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 虹彩柔焦长曝光",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/iridescent-long-exposure",
       "use_cases": [],
       "version": "1.0.6"
@@ -901,7 +958,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 童年大头卡贴",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/kid-head-card",
       "use_cases": [],
       "version": "1.0.4"
@@ -917,7 +974,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 低清晰印刷感动漫",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/lofi-print-anime",
       "use_cases": [],
       "version": "1.0.2"
@@ -933,7 +990,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 马克笔童画",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/marker-child-doodle",
       "use_cases": [],
       "version": "1.0.1"
@@ -949,7 +1006,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 俯拍迷你自拍",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/mini-selfie",
       "use_cases": [],
       "version": "1.0.0"
@@ -965,7 +1022,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 宠物极简线条",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/minimal-pet-doodle",
       "use_cases": [],
       "version": "1.0.1"
@@ -981,7 +1038,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 黑白漫画纯色背景",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/monochrome-manga-color",
       "use_cases": [],
       "version": "1.0.0"
@@ -997,7 +1054,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 馆藏印象油画",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/museum-impression-oil",
       "use_cases": [],
       "version": "1.0.0"
@@ -1013,7 +1070,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 牛来电影海报",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/niulai-movie-poster",
       "use_cases": [],
       "version": "1.0.3"
@@ -1029,7 +1086,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 牛马宇宙",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/office-animals",
       "use_cases": [],
       "version": "1.1.2"
@@ -1045,7 +1102,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 橙底蓝墨时装漫画",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/orange-navy-fashion",
       "use_cases": [],
       "version": "1.0.1"
@@ -1061,7 +1118,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 留白平涂小景",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/paper-flat-vignette",
       "use_cases": [],
       "version": "1.0.2"
@@ -1077,7 +1134,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 纸上人物志·CD版",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/paper-portrait-cd",
       "use_cases": [],
       "version": "1.0.0"
@@ -1093,7 +1150,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 定制印刷票根",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/personalized-print-ticket",
       "use_cases": [],
       "version": "1.2.2"
@@ -1109,7 +1166,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 照片拼豆挂件",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/photo-perler-charm",
       "use_cases": [],
       "version": "1.0.6"
@@ -1125,7 +1182,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 像素切片拉伸",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/pixel-stretch",
       "use_cases": [],
       "version": "1.0.6"
@@ -1141,7 +1198,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 原色硬光都市",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/primary-hardlight-city",
       "use_cases": [],
       "version": "1.0.1"
@@ -1157,7 +1214,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 怪趣波普涂鸦贴纸",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/quirky-pop-doodle-sticker",
       "use_cases": [],
       "version": "1.0.6"
@@ -1173,7 +1230,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 红蓝手绘时装",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/red-blue-fashion-manga",
       "use_cases": [],
       "version": "1.0.1"
@@ -1189,7 +1246,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 红星太空潮流漫",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/red-star-space-anime",
       "use_cases": [],
       "version": "1.0.0"
@@ -1205,7 +1262,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 复古扁平动画头",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/retro-flat-anime-head",
       "use_cases": [],
       "version": "1.0.1"
@@ -1221,7 +1278,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 复古餐桌杂志",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/retro-table-print",
       "use_cases": [],
       "version": "1.0.1"
@@ -1237,7 +1294,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 角色颠倒·拇指妈妈",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/role-reversal-mini-mom",
       "use_cases": [],
       "version": "1.0.0"
@@ -1253,7 +1310,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 蛇发游线墨绘",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/serpent-line-ink",
       "use_cases": [],
       "version": "0.1.1"
@@ -1269,7 +1326,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 晴彩手绘",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/sunny-gouache",
       "use_cases": [],
       "version": "1.0.0"
@@ -1285,7 +1342,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 颗粒绒感玩偶",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/textile-toy-portrait",
       "use_cases": [],
       "version": "1.0.1"
@@ -1301,7 +1358,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 地下试镜skill",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/underground-audition",
       "use_cases": [],
       "version": "1.1.6"
@@ -1317,7 +1374,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 都市机械赛璐璐",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/urban-mecha-cel",
       "use_cases": [],
       "version": "1.0.1"
@@ -1333,7 +1390,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 暖彩粗线日常漫画",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/warm-naive-comic",
       "use_cases": [],
       "version": "1.0.1"
@@ -1349,7 +1406,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 暖纸轻风速写",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/warm-paper-breeze-sketch",
       "use_cases": [],
       "version": "1.0.0"
@@ -1365,7 +1422,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 暖纸蜡笔街拍",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/warm-paper-crayon-street",
       "use_cases": [],
       "version": "1.0.1"
@@ -1381,7 +1438,7 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 白底蜡笔宠物",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/white-crayon-pet",
       "use_cases": [],
       "version": "1.0.0"
@@ -1397,10 +1454,26 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 框景漫画",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/wibi-frame",
       "use_cases": [],
       "version": "1.4.1"
+    },
+    {
+      "category": "创意风格",
+      "description": "Wibi Style 官方视觉风格：把一张照片转换成明黄软萌Q版手绘。适合单人、双人或人宠同框的日常随手拍与自拍，重绘为明黄纯色底、2.5头身极简手账小人并配原创手写中文拼音标题。适用于用户要求明黄软萌Q版手绘，或明确调用 $yellow-chibi-doodle 时。",
+      "id": "yellow-chibi-doodle",
+      "license": "Wibi Personal Non-Commercial 1.0 + MIT tooling",
+      "path": "skills/yellow-chibi-doodle",
+      "preview": "previews/wibi-style/yellow-chibi-doodle.jpg",
+      "source_id": "wibi-style",
+      "source_repo": "Vieeeeeee/wibi-style",
+      "tags": [],
+      "title": "Wibi Style · 明黄软萌Q版手绘",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
+      "upstream_path": "skills/yellow-chibi-doodle",
+      "use_cases": [],
+      "version": "1.0.0"
     },
     {
       "category": "创意风格",
@@ -1413,10 +1486,40 @@
       "source_repo": "Vieeeeeee/wibi-style",
       "tags": [],
       "title": "Wibi Style · 明黄发丝涂鸦",
-      "upstream_commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "upstream_commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "upstream_path": "skills/yellow-hair-doodle",
       "use_cases": [],
       "version": "1.0.0"
+    },
+    {
+      "category": "人像光影",
+      "description": "Edit an existing JPG, JPEG, PNG, or WebP portrait to rebuild physically coherent light, exposure, color, capture style, clean optical skin, and frame quality without changing the person. Use for plastic-skin or AI-look removal, dirty synthetic texture, banding, edit seams, color drift, multi-round quality loss, tone or white-balance correction, camera/film/device emulation, backlight, prism, blind shadows, candlelight, neon, golden hour, rim light, rain-wet low key, studio light, or silhouettes.",
+      "id": "xxg-portrait-rebuild-light",
+      "license": "MIT",
+      "path": "skills/xxg-portrait-rebuild-light",
+      "preview": "previews/xxg-portrait-light/xxg-portrait-rebuild-light.jpg",
+      "source_id": "xxg-portrait-light",
+      "source_repo": "moskoo/xxg-portrait-rebuild-light",
+      "tags": [
+        "人像",
+        "补光",
+        "闪光灯",
+        "直闪",
+        "柔光",
+        "逆光",
+        "光影重建",
+        "保真"
+      ],
+      "title": "人像光线重建与自然补光",
+      "upstream_commit": "39b1ffd21248fd22e2d4e3075ec0ca0989236dd9",
+      "upstream_path": ".",
+      "use_cases": [
+        "夜间直闪人像",
+        "逆光面部补光",
+        "棚拍光线模拟",
+        "糖水片的柔光处理"
+      ],
+      "version": ""
     }
   ]
 }

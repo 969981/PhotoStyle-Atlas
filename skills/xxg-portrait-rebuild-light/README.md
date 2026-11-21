@@ -1,0 +1,417 @@
+<div align="center">
+  <img src="assets/skill-icon.png" width="120" alt="xxg-portrait-rebuild-light skill-logo">
+</div>
+<h1 align="center">XXG Portrait Rebuild Light</h1>
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-red?style=flat-square" alt="MIT License"></a>
+  <a href=""><img src="https://img.shields.io/badge/Python-3.10+-blue.svg?style=flat-square" alt="Python"></a>
+  <a href=""><img src="https://img.shields.io/badge/CodeX-Skill-green.svg?style=flat-square" alt="codex"></a>
+  <a href=""><img src="https://img.shields.io/badge/Claude-Skill-yellow.svg?style=flat-square" alt="Claude"></a>
+  <a href=""><img src="https://img.shields.io/badge/Open-Claw-8A2BE2.svg?style=flat-square" alt="OpenClaw"></a>
+  <a href="CHANGELOG.md"><img src="https://img.shields.io/badge/Version-2.3.0-black?style=flat-square" alt="Version 2.3.0"></a>
+</p>
+
+English | [简体中文](README.zh-CN.md) | [日本語](README.ja.md) | [한국어](README.ko.md)
+
+`xxg-portrait-rebuild-light` is an image-edit skill for existing portraits. V2.3 separately controls physical light, exposure placement, color/style grade, capture-device response, broad skin tone, bounded reflection, scale/focus-aware microdetail, and AI-generation quality repair.
+
+The skill changes the lighting without redrawing the person. It preserves identity, facial structure and proportions, natural slight asymmetry, expression, pose, camera view, and composition. It avoids plastic skin, grainy skin, dirty color variation, and fake depth made by exaggerating wrinkles.
+
+![演示图片](/assets/lightv2.jpg "skill-demo")
+
+## Key features
+
+- Provides `texture-only` fidelity recovery without changing source lighting, color, focus, depth of field, or scene content.
+- Repairs plastic smoothness by separating clean broad tone, source-shaped highlights, and scale/focus-aware regional microdetail.
+- Adds seven skin-finish profiles (`P0–P6`) for source-matched, satin-matte, soft-daylight, editorial, direct-flash, beauty, and available-light response.
+- Adds `E0–E7` exposure recipes that explicitly place highlight headroom, facial midtones, directional shadows, and black point.
+- Adds `G0–G8` color/style grades and `D0–D8` capture profiles for full-frame digital, medium format, 35mm negative, CCD compact, point-and-shoot flash, smartphone, instant film, and disposable-camera response.
+- Separates device response from optics: camera-style edits preserve viewpoint, perspective, crop, focal plane, and depth of field unless optical restyle is explicitly requested.
+- Repairs weak backlighting, disconnected indoor window light, flat lighting, unintended crushed shadows, and highlights with no physical source.
+- Supports soft window light, commercial soft light, Rembrandt lighting, cinematic low-key lighting, golden hour, dual-color neon, and diagonal hard light.
+- Adds at most one physically coherent atmosphere effect, including prism refraction, blind/lattice shadow lines, rain-wet reflections, window/tree shadow, bokeh, sunset flare, volumetric light, or a full-black silhouette.
+- Adds dedicated candle/flame and rim-led portrait keys with realistic falloff, edge placement, and restrained fill.
+- Adds `Q0–Q6` quality recipes for synthetic dirt/grid patterns, banding, edit seams, color drift, and cumulative multi-round degradation.
+- Uses the first root base—not the previous edit round—as the stable color/identity reference, while retaining intentional new colors and authorized lighting or grading.
+- Repairs only observed artifacts and preserves pores, hair, directional fibers, fabric weave, edges, shadow boundaries, and source focus falloff.
+- Controls subject and background in layers: key light and exposure intent first, then fill, shadows, ambient light, and color temperature.
+- Preserves identity, facial feature size and position, expression, pose, wardrobe, background structure, and source framing.
+- Reduces the skin-detail target automatically when the face is small, without canceling the requested lighting change.
+- Uses the current agent's own image-generation or image-editing capability by default; no separate API is required.
+- If the current agent has no image-edit capability, or the edit misses the target, returns one complete compact image-edit prompt.
+- Never uses Pillow, NumPy, OpenCV, ImageMagick, or temporary filter scripts to produce the delivered image.
+
+![演示图片](/assets/skill-demo1.jpg "skill-demo")
+![演示图片](/assets/skill-demo2.jpg "skill-demo")
+![演示图片](/assets/skill-demo3.jpg "skill-demo")
+![演示图片](/assets/skill-demo4.jpg "skill-demo")
+
+## Core method
+
+The skill first makes a director-style lighting decision internally:
+
+```text
+Scope → Key L → Exposure E → Fill/Shadow → Skin S/P → Light color T → Look G → Capture D → Atmosphere A → Quality Q
+```
+
+The prompt sent to the image model uses four compact core lines, adding `RENDER` only for a requested grade/device response and `QUALITY` only for an observed repair target. Target length is 55–110 English words:
+
+```text
+EDIT: Choose the smallest authorized scope; retain source identity, geometry, pose, camera view, optics, framing, and every unauthorized axis.
+LIGHT: One L and E with explicit highlight, midtone, shadow, black-point, background, T, and optional A behavior.
+RENDER: One G palette/curve plus one D capture response. Omit for G0 + D0.
+SKIN: One scale-aware S plus one light-consistent P finish.
+QUALITY: One observed Q repair; omit for Q0.
+AVOID: Only two or three source-specific failures.
+```
+
+The skill does not pile identity audits, object inventories, repeated negatives, and several photographic styles into one prompt. That often causes constraints to cancel each other or produces an unchanged copy.
+
+For skin-only requests, V2.3 forces `L0 + E0 + T0 + G0 + D0 + A0 + Q0`. Tone correction changes only E/T/G; capture-style changes only G/D and a logically required E; relighting changes L/E/T/A; quality repair changes only Q. Viewpoint, perspective, crop, focal plane, and depth of field stay source-matched unless the user explicitly requests `optical-restyle`.
+
+`A6` forces E6 silhouette exposure, moves the effective light behind the person, removes all fill and catchlights, and renders the subject interior black. L/T and any G/D treatment affect only the rear source and background; S/P are suppressed.
+
+## Recipes
+
+Choose only:
+
+```text
+one L light + one E exposure + one S skin scale + one P skin finish + one T light color + one G color/style grade + one D capture response + zero or one A atmosphere + one Q quality repair
+```
+
+### Lighting L
+
+| Code | Purpose |
+| --- | --- |
+| `L0` | Match the source; repair only flat light, unexplained crushed shadows, abnormal highlights, and harsh transitions |
+| `L1` | Natural backlight, highlight-priority by default; add fill only when explicitly requested |
+| `L2` | Soft natural window light |
+| `L3` | Large commercial soft light |
+| `L4` | Outdoor skylight |
+| `L5` | Indoor practical and mixed lighting |
+| `L6` | Hard single-point light or direct sunlight |
+| `L7` | Low-key diagonal narrow light beam |
+| `L8` | Classic editorial Rembrandt lighting |
+| `L9` | Cinematic low-key warm key / cool ambient light |
+| `L10` | Golden-hour sunset side backlight |
+| `L11` | Cyberpunk cyan/magenta dual-tone neon |
+| `L12` | Clean, even commercial soft light |
+| `L13` | Candle or flame near-field key with rapid falloff |
+| `L14` | Rim-led dramatic portrait light with restrained frontal fill |
+
+### Exposure E
+
+| Code | Purpose |
+| --- | --- |
+| `E0` | Preserve source highlights, midtones, shadows, and black point |
+| `E1` | Balanced natural exposure with clear midtones and directional shadows |
+| `E2` | Protect a bright source/rim and let unlit planes follow available bounce |
+| `E3` | Recover only blocked shadow information while controlling bright sources |
+| `E4` | High-key exposure with textured whites and gentle facial modeling |
+| `E5` | Low-key exposure with selected lit planes and a clean black point |
+| `E6` | Full silhouette exposure; use only with `A6` |
+| `E7` | Direct-flash subject exposure with rapid ambient falloff |
+
+### Skin scale S
+
+| Code | Purpose |
+| --- | --- |
+| `S0` | Small face or wide shot; restore only clean skin tone and natural reflection |
+| `S1` | Default for medium shots; low-contrast microtexture with original lip and eye-area detail |
+| `S2` | High-resolution close-up; region-aware pores, fine vellus hair, and existing details |
+
+### Skin finish P
+
+| Code | Purpose |
+| --- | --- |
+| `P0` | Preserve the exact source diffuse/specular response; default for texture-only edits |
+| `P1` | Natural satin-matte balance with bounded key-facing highlights |
+| `P2` | Soft-daylight luminous midtones and broad highlight roll-off |
+| `P3` | Editorial satin response with controlled T-zone highlights |
+| `P4` | Direct-flash response with compact separated highlights |
+| `P5` | Clean beauty response without porcelain uniformity |
+| `P6` | Available-light response with source focus falloff and no added grain or marks |
+
+### Color temperature T
+
+| Code | Purpose |
+| --- | --- |
+| `T0` | Preserve the source white balance |
+| `T1` | Neutral natural daylight |
+| `T2` | Golden warm light with healthy neutral zones retained in the skin |
+| `T3` | Warm key light with cool background ambience |
+| `T4` | Cyan/magenta neon relationship |
+| `T5` | Cool-neutral overcast or blue-hour light without a full-frame blue wash |
+| `T6` | Warm tungsten practicals with distance-based color falloff |
+| `T7` | Mixed daylight/practical balance with believable skin and neutral objects |
+| `T8` | Candle/flame amber with distance-based warmth and neutral-deep shadows |
+
+### Color and style grade G
+
+| Code | Purpose |
+| --- | --- |
+| `G0` | Preserve the source palette and curve |
+| `G1` | Neutral editorial color with a restrained S-curve |
+| `G2` | Clean commercial color, accurate whites, bright midtones |
+| `G3` | Muted documentary environment with protected skin chroma |
+| `G4` | Warm lit skin with controlled cool background/shadow ambience |
+| `G5` | Pastel editorial midtones and compressed highlights |
+| `G6` | Tonal monochrome with separated skin, hair, clothing, and background |
+| `G7` | Restrained 1970s print response; grain remains opt-in |
+| `G8` | Clean 1990s/Y2K flash color and contrast |
+
+### Capture response D
+
+| Code | Purpose |
+| --- | --- |
+| `D0` | Preserve source capture response |
+| `D1` | Modern full-frame digital: clean detail and smooth highlight roll-off |
+| `D2` | Medium-format digital: smooth tonal steps and restrained sharpening |
+| `D3` | 35mm color negative: gentle highlight compression and softer microcontrast |
+| `D4` | Compact CCD/digicam: direct crisp tone with modest highlight headroom |
+| `D5` | Point-and-shoot direct flash; pair with `L6 + E7` |
+| `D6` | Smartphone computational: broad range without HDR halos or crunchy edges |
+| `D7` | Instant-film tone; border and grain remain opt-in |
+| `D8` | Disposable-camera response; exposure defects and grain remain opt-in |
+
+### Atmosphere A
+
+| Code | Purpose |
+| --- | --- |
+| `A0` | Add no atmosphere effect |
+| `A1` | Soft window shadow |
+| `A2` | Sparse natural tree shadow |
+| `A3` | Soft bokeh restricted to the defocused background |
+| `A4` | Gentle lens flare aligned with the sunset direction |
+| `A5` | Very subtle volumetric light with sparse dust motes |
+| `A6` | Force the entire backlit subject to a clean black silhouette; no face, skin, hair, or clothing detail remains visible inside |
+| `A7` | Prism refraction with a few source-aligned spectral bands or caustic patches |
+| `A8` | Physically projected blind/lattice light-and-shadow lines |
+| `A9` | Rain-wet atmosphere with gravity-consistent droplets and key-shaped reflections |
+
+### Quality repair Q
+
+| Code | Purpose |
+| --- | --- |
+| `Q0` | Preserve current quality behavior; perform no quality repair |
+| `Q1` | Remove only repeating synthetic cellular/maze/grid/chroma residue while preserving natural directional detail |
+| `Q2` | Repair posterization, contour banding, and broken luminance/chroma gradients without blurring real edges |
+| `Q3` | Repair local edit seams, halos, cutout edges, and boundary rendering mismatch |
+| `Q4` | Lock unchanged/unauthorized color relationships to the original root base without undoing intended changes |
+| `Q5` | Consolidate a multi-round edit against the root base and remove accumulated drift, noise, sharpening, compression, banding, and seams |
+| `Q6` | Repair at most three explicitly observed Q1–Q4 defects in one pass |
+
+### Extracted lighting presets
+
+| Effect | Recipe |
+| --- | --- |
+| Prism glow | `L1/L4 + E2 + Sx + P2 + T1 + G1 + D1 + A7` |
+| Blind shadow lines | `L6 + E5 + Sx + P3 + T1/T2 + G1/G4 + D1 + A8` |
+| Candlelit low key | `L13 + E5 + Sx + P6 + T8 + G3/G4 + D1 + A0/A3` |
+| Neon city | `L11 + E5 + Sx + P6 + T4 + G4 + D1 + A3/A9` |
+| Golden twilight | `L10 + E2 + Sx + P2 + T2 + G0/G1 + D0/D1 + A4` |
+| Soft morning window | `L2 + E1 + Sx + P2 + T1/T2 + G0/G1 + D0/D2 + A0/A1` |
+| Rim-led drama | `L14 + E2/E5 + Sx + P3 + T2/T3 + G1/G4 + D1 + A0/A5` |
+| Cool rain-wet low key | `L4/L11 + E5 + Sx + P6 + T5/T4 + G3/G4 + D1 + A9` |
+
+See [Lighting, skin, color-temperature, and atmosphere recipes](references/lighting-skin-color-temperature-recipes.md) for detailed prompt clauses.
+
+## Image capabilities by agent
+
+| Agent | Default route |
+| --- | --- |
+| Codex | Read the `$imagegen` rules, discover the actual tool in `ALL_TOOLS`, prefer `tools.image_gen__imagegen`, and pass source images through `referenced_image_paths` |
+| Claude Code | Use the image-generation or image-editing capability installed or built into the current environment |
+| OpenClaw | Use the imagegen skill or native image action enabled for the current agent |
+| Other agents | Use an equivalent image-edit capability explicitly exposed by the tool registry |
+
+In Codex, the skill never guesses `tools.image_gen` or `input_image`. It returns a prompt handoff only after tool discovery confirms that no compatible image capability exists. If the real image tool fails, produces an almost unchanged image, changes identity, or dirties the skin, the skill also returns a short copy-ready prompt.
+
+## Requirements
+
+- An agent that supports directory-based `SKILL.md` skills.
+- An image-generation or image-editing capability in the current agent.
+- Python 3.9 or newer, used only for read-only aspect-ratio, mask, and region checks.
+- Pillow 9.1 or newer, used only for read-only analysis and never to create the final image.
+
+Install the read-only script dependencies:
+
+```bash
+python3 -m pip install -r ./xxg-portrait-rebuild-light/requirements.txt
+```
+
+## Install in Codex
+
+Personal skill:
+
+```bash
+mkdir -p ~/.codex/skills
+cp -R ./xxg-portrait-rebuild-light ~/.codex/skills/
+```
+
+Shared Agent Skills directory:
+
+```bash
+mkdir -p ~/.agents/skills
+cp -R ./xxg-portrait-rebuild-light ~/.agents/skills/
+```
+
+For a project-level install, place it in `.agents/skills/` at the project root. Invoke it explicitly with `$xxg-portrait-rebuild-light`.
+
+## Install in Claude Code
+
+Personal install:
+
+```bash
+mkdir -p ~/.claude/skills
+cp -R ./xxg-portrait-rebuild-light ~/.claude/skills/
+```
+
+Project install:
+
+```bash
+mkdir -p .claude/skills
+cp -R ./xxg-portrait-rebuild-light .claude/skills/
+```
+
+Invoke it with `/xxg-portrait-rebuild-light`.
+
+## Install in OpenClaw
+
+Local install:
+
+```bash
+openclaw skills install ./xxg-portrait-rebuild-light \
+  --as xxg-portrait-rebuild-light
+```
+
+Shared install:
+
+```bash
+openclaw skills install ./xxg-portrait-rebuild-light \
+  --as xxg-portrait-rebuild-light \
+  --global
+```
+
+You can also copy the complete directory into the current agent workspace's `skills/` directory or the shared `~/.openclaw/skills/` directory.
+
+## Install in other agents
+
+Copy the complete `xxg-portrait-rebuild-light/` directory into the agent's personal or project skill root. Preserve the relative structure of `SKILL.md`, `requirements.txt`, `references/`, `scripts/`, and `agents/`, then reload the skill list.
+
+## Usage examples
+
+### Tone and exposure correction
+
+```text
+Use $xxg-portrait-rebuild-light to edit this portrait with L0 + E1 + S1 + P0 + T7 + G1 + D0 + A0.
+Keep the existing light direction. Protect bright-area shape, place facial midtones clearly, open only blocked shadows, and retain a stable black point. Neutralize the unwanted cast while preserving skin hue, white objects, wardrobe color, viewpoint, focal plane, depth of field, and scene content.
+```
+
+### Smartphone capture response
+
+```text
+Use $xxg-portrait-rebuild-light to edit this portrait with L0 + E1 + S1 + P1 + T0 + G0 + D6 + A0.
+Preserve the physical light and optics. Use broad usable dynamic range, neutral skin color, restrained local tone mapping, and controlled edge sharpening; keep bright sources shaped and shadows directional, without changing crop, focal plane, or depth of field.
+```
+
+### Classic fashion editorial
+
+```text
+Use $xxg-portrait-rebuild-light to edit this portrait with L8 + E1 + S2 + P3 + T1 + G1 + D2 + A0.
+A large soft key from the upper front-side creates restrained Rembrandt lighting; subtle fill preserves the eye socket, one cheek falls into a deep soft shadow, and the eyes receive one source-consistent catchlight. Keep the skin clean and healthy with low-contrast photographic microtexture.
+```
+
+### Cinematic low-key warm/cool
+
+```text
+Use $xxg-portrait-rebuild-light to edit this portrait with L9 + E5 + S1 + P3 + T3 + G4 + D1 + A5.
+A warm side key shapes selected illuminated planes under explicit low-key exposure with no frontal fill. Keep cool color only in the background and rim, with extremely subtle source-aligned haze; illuminated skin remains chromatically clean and facial lines are not used for sculpting.
+```
+
+### Golden-hour backlight
+
+```text
+Use $xxg-portrait-rebuild-light to edit this portrait with L10 + E2 + S1 + P2 + T2 + G1 + D1 + A4.
+Warm sunset light from the side-rear outlines the hair and shoulders. Expose for the sunset highlights with no frontal fill; let the unlit side of the face fall naturally into a partial silhouette, allow slight bloom on lit edges, and give the background matching oblique warm light and long shadows.
+```
+
+### Cyberpunk neon
+
+```text
+Use $xxg-portrait-rebuild-light to edit this night portrait with L11 + E5 + S1 + P6 + T4 + G4 + D1 + A3.
+Separate the cyan rim light clearly from the magenta key while preserving a natural skin-tone zone in the center of the face. Keep bokeh only in the defocused background, never over the eyes or skin.
+```
+
+### Full-black backlit silhouette
+
+```text
+Use $xxg-portrait-rebuild-light to edit this portrait with L10 + E6 + S1 + P0 + T2 + G0 + D0 + A6.
+Place the effective light behind the person and expose for the bright background. Remove all frontal and side fill, catchlights, and internal subject illumination. Render the face, skin, hair, clothing, and body as one clean continuous black silhouette while preserving the original outer contour, proportions, pose, camera view, and composition.
+```
+
+### Soft window light with window shadow
+
+```text
+Use $xxg-portrait-rebuild-light to edit this indoor portrait with L2 + E1 + S1 + P2 + T1 + G0 + D0 + A1.
+Soft window light from the upper-left front creates a broad, gradual left-to-right falloff; faint room fill preserves the shadow side. One low-contrast window shadow continues across the person and adjacent wall and must not look pasted on.
+```
+
+### Portrait with tree shadows
+
+```text
+Use $xxg-portrait-rebuild-light to edit this outdoor portrait with L4 + E1 + S1 + P2 + T1 + G0 + D0 + A2.
+Broad skylight illuminates the person. Sparse tree shadows break softly across facial and clothing curvature, may cross parts of the eyes and cheeks where physically plausible, and continue into the background in the same direction with source-consistent color and smooth transitions.
+```
+
+### Clean dirty AI texture and banding
+
+```text
+Use $xxg-portrait-rebuild-light with L0 + E0 + S1 + P0 + T0 + G0 + D0 + A0 + Q6.
+Repair generation quality only. Remove the visible repeating synthetic texture and tonal banding while preserving natural pores, hair, directional fabric fibers, true edges, cast-shadow boundaries, color, framing, focal plane, and depth of field. Do not globally denoise, smooth, sharpen, recolor, or relight the image.
+```
+
+### Restore color after an AI edit
+
+```text
+Use $xxg-portrait-rebuild-light with Q4. Image 1 is the current edit target; Image 2 is the original root base.
+Retain Image 1's intended content and lighting changes. In unchanged or unauthorized regions only, restore Image 2's skin hue, neutral objects, whites, darks, saturation relationships, and lightness curve. Preserve intentional new colors and do not add a compensating green, cyan, or magenta cast.
+```
+
+### Consolidate a degraded multi-round edit
+
+```text
+Use $xxg-portrait-rebuild-light with Q5. Image 1 is the latest accepted edit; Image 2 is the first root base.
+Preserve every intended change in Image 1 once. Use Image 2 only for identity, geometry, framing, original color truth, and clean texture hierarchy. Remove accumulated color drift, repeating noise, sharpening halos, compression residue, banding, and seam buildup without smoothing natural detail or undoing the accepted edit.
+```
+
+## Output standard
+
+- The target key light, light-to-shadow relationship, or atmosphere effect is immediately visible at normal viewing size.
+- The subject remains the same person; facial features are neither beautified nor made artificially symmetrical.
+- Subject, clothing, and background obey the same light sources.
+- Shadow depth, highlight roll-off, and silhouette strength follow the selected exposure intent instead of flattening the scene to keep everything visible.
+- E clearly controls highlight headroom, subject midtones, directional shadows, and black point; G/D produce one coherent palette and capture response without unauthorized optical change.
+- Source complexion remains clean and continuous, with bounded source-shaped highlights and regional detail limited by scale, focus, and illumination.
+- Grain, added marks, random color variation, global sharpening, and darker facial lines are never used to imitate realism.
+- Q removes only observed generation defects; it does not flatten real texture, blur boundaries, introduce a new grade, or undo requested lighting/color changes.
+- Multi-round work always compares the current accepted edit with the first root base; intermediate raw rounds are not generation references.
+- Window shadows, tree shadows, bokeh, sunset flare, and light beams have a plausible source and landing area.
+- With `A6`, the complete subject interior is clean black with no facial, skin, hair, clothing, or catchlight detail; identity continuity is judged from the preserved outer contour, proportions, pose, and framing.
+- Preserve composition, orientation, aspect ratio, and the subject's share of the frame. Proportional downscaling to an image model's maximum resolution is allowed; exact source pixel dimensions are not required.
+
+## Related files
+
+- [Main skill rules](SKILL.md)
+- [Compact prompt compiler](references/prompt-recipes.md)
+- [Lighting, skin, color-temperature, and atmosphere recipes](references/lighting-skin-color-temperature-recipes.md)
+- [Tone, exposure, color/style, device, and optics recipes](references/tone-exposure-style-device-recipes.md)
+- [Clean-frame quality, color-lock, and iterative-repair recipes](references/quality-repair-and-iteration.md)
+- [Backend capability notes](references/backend-and-clean-realism.md)
+- [Python dependencies](requirements.txt)
+- [Contributing guide](CONTRIBUTING.md)
+- [Changelog](CHANGELOG.md)
+
+## License
+
+Licensed under the [MIT License](LICENSE).

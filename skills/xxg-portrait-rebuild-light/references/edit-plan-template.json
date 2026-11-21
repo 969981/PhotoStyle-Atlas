@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "source_image": "/absolute/path/source.png",
+  "source_size": [1672, 941],
+  "delivery_mode": "strict-final",
+  "operation_scope": "relight-and-skin",
+  "recipe_selection": {
+    "lighting": "L2",
+    "exposure": "E1",
+    "skin_scale": "S1",
+    "skin_finish": "P2",
+    "color_temperature": "T1",
+    "color_grade": "G0",
+    "capture_profile": "D0",
+    "atmosphere": "A0",
+    "quality": "Q0"
+  },
+  "reference_roles": {
+    "current_edit": "/absolute/path/source.png",
+    "root_base": null,
+    "root_base_role": "none"
+  },
+  "optics_policy": {
+    "optical_restyle_requested": false,
+    "perspective": "preserve-source",
+    "crop": "preserve-source",
+    "focal_plane": "preserve-source",
+    "depth_of_field": "preserve-source"
+  },
+  "backend": {
+    "id": "verified-local-editor",
+    "classification": "strict-local",
+    "capabilities": {
+      "preexisting_exposed_tool": true,
+      "semantic_image_edit": true,
+      "edit_mask": true,
+      "frozen_pixel_passthrough": true,
+      "exact_canvas": true,
+      "local_result_file": true
+    }
+  },
+  "inventory_complete": true,
+  "inventory_method": "full-frame-3x3-tile-sweep",
+  "reviewed_tiles": [
+    "r1c1", "r1c2", "r1c3",
+    "r2c1", "r2c2", "r2c3",
+    "r3c1", "r3c2", "r3c3"
+  ],
+  "protected_item_count": 2,
+  "inventory_counts": {
+    "identity-boundary": 1,
+    "text": 1
+  },
+  "protected_items": [
+    {
+      "id": "eyes-and-eyelids",
+      "category": "identity-boundary",
+      "description": "Both eyes, irises, and eyelid boundaries",
+      "tile_ids": ["r1c2", "r2c2"],
+      "bbox": [500, 300, 820, 440],
+      "mask_path": "/absolute/path/eyes-mask.png",
+      "protection": "frozen",
+      "required_audit": true
+    },
+    {
+      "id": "handheld-book",
+      "category": "text",
+      "description": "Handheld book with printed text",
+      "tile_ids": ["r2c2"],
+      "bbox": [650, 405, 750, 535],
+      "protection": "frozen",
+      "required_audit": true
+    }
+  ],
+  "editable_mask": "/absolute/path/editable-mask.png",
+  "protected_mask": "/absolute/path/protected-mask.png",
+  "perceptual_targets": [
+    {
+      "id": "lighting-direction",
+      "required": true,
+      "acceptance_view": "Full frame and 100% face comparison",
+      "atmosphere_recipe": "A0",
+      "exposure_intent": "source-matched",
+      "fill_policy": "ambient-reflection",
+      "shadow_policy": "retained-detail",
+      "highlight_policy": "retained",
+      "acceptance_criterion": "The selected L/E/T/A direction, highlight and midtone placement, shadow transition, black point, and background response are visible and physically coherent without duplicate sources or artificial sculpting."
+    },
+    {
+      "id": "clean-skin-realism",
+      "required": true,
+      "acceptance_view": "Normal viewing size and the face-scale-defined close view",
+      "acceptance_criterion": "Skin first reads clean and continuous, with bounded source-shaped highlights and faint regional detail limited by scale, focus, and illumination; no uniform gloss or texture overlay."
+    },
+    {
+      "id": "tone-and-capture-response",
+      "required": false,
+      "acceptance_view": "Full frame at normal viewing size",
+      "acceptance_criterion": "When G or D differs from source, the requested palette, curve, highlight behavior, microcontrast, sharpening, and dynamic-range response are visible while source viewpoint, crop, focal plane, and depth of field remain stable."
+    },
+    {
+      "id": "clean-frame-quality",
+      "required": false,
+      "acceptance_view": "Full frame at normal size plus affected gradients, materials, and edit boundaries at 200%–400%",
+      "acceptance_criterion": "When Q differs from source, the named synthetic residue, banding, seam, color drift, or cumulative edit degradation is visibly reduced without smoothing natural detail, changing unauthorized light/color/structure, or undoing accepted edits."
+    }
+  ]
+}

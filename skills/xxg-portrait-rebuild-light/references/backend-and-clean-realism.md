@@ -1,0 +1,131 @@
+# V2.3 Backend Capability and Clean Realism
+
+## Delivery Modes
+
+| Mode | Entry condition and delivery |
+| --- | --- |
+| `strict-final` | Verified `strict-local` backend, valid edit plan, and every applicable gate passes. |
+| `best-effort` | Native full-frame semantic edit without verified mask/pixel passthrough; label non-strict and never claim frozen pixels. |
+| `invocation-handoff` | Discovery completed and no compatible callable exists; return a complete compact prompt without claiming invocation failed. |
+| `prompt-only` | The correct image tool returned a real error; summarize it and return a complete compact prompt. |
+| `prompt-handoff` | A generated image misses the target, changes identity/protected content, or breaks framing; report failure and recompile from source. |
+
+A small face, complex scene, visible text, edge contact, or limited backend can only trigger `best-effort`; none permits refusal. Uniform downscaling is acceptable.
+
+## Native Tool Routing
+
+1. Read the host's native image skill, inspect the source, and search registered tools. In Codex, inspect `ALL_TOOLS` and prefer `image_gen__imagegen` when actually present.
+2. For a local source in Codex, call `tools.image_gen__imagegen({referenced_image_paths: [absolute_path], prompt})`.
+3. Treat a wrong member, function name, argument, or `TypeError` as a dispatch error. Correct it from the registered signature and retry.
+4. Classify a real backend as `strict-local` or `full-frame-generative`. Do not bypass the host with a CLI or separate API by default.
+
+Never guess `tools.image_gen` or `input_image`. Reading a skill, inspecting an image, creating a task, or announcing generation is not a tool invocation.
+
+## Invocation Evidence
+
+| State | Required evidence | Mode |
+| --- | --- | --- |
+| Image generated | Image-tool call plus image/result ID or accessible output file | `strict-final` or `best-effort` after validation |
+| Invocation failed | Correct tool call plus explicit error from the same attempt | `prompt-only` |
+| No image tool | `tool_discovery_completed: true`, recorded candidates, `selected_image_tool_name: null` | `invocation-handoff` |
+| Dispatch error | Wrong function or argument caused a local error | Correct and retry; no handoff |
+| Result failed | Image exists and visual/file validation fails | `prompt-handoff` |
+
+## Backend Classification
+
+Match [backend-capabilities.json](backend-capabilities.json); classify an unknown path as `full-frame-generative`. When a registered profile exists, run `scripts/evaluate_backend_gate.py`.
+
+`strict-local` requires all of these capabilities before execution: semantic image editing, editable/protected masks, exact passthrough of unedited pixels, verifiable fixed canvas, and a local result file. Prompt language cannot create backend capability. If any item is missing, continue with best-effort generation.
+
+Pillow, NumPy, OpenCV, ImageMagick, FFmpeg, `sips`, and temporary filters are not semantic backends. Use them only for read-only measurement and validation.
+
+## Operation Scope and Generation Policy
+
+| Condition | Policy |
+| --- | --- |
+| `texture-only` | Preserve source light, highlight map, color, optics, and environment; authorize only skin reflectance/microdetail. |
+| `tone-and-exposure` | Preserve physical light direction and source optics; authorize only selected E/T/G behavior. |
+| `relight-and-skin` | Authorize selected L/E/T/A and scene-wide response; preserve source identity, focal plane, DOF, framing, and object structure. |
+| `capture-style` | Authorize selected G/D and logically required E; preserve viewpoint, crop, focal plane, DOF, identity, and scene structure. |
+| `optical-restyle` | Authorize only explicitly requested perspective/focal/DOF change; preserve facial feature geometry and all unrelated content. |
+| `quality-repair` | Authorize one Q repair only; preserve L/E/T/G/D/A, optics, identity, scene structure, and natural texture. |
+| `base-color-repair` | Authorize Q4 only in unchanged/unauthorized regions; preserve intended recolors and requested E/T/G/A. |
+| `multi-round-repair` | Use current edit plus root base; authorize Q5 while preserving each accepted current change once. |
+| Verified `strict-local` | Execute the validated local edit plan; deliver a strict final only after every gate passes. |
+| `full-frame-generative` | Generate the full frame as best effort; keep one clear visible target and reduce redraw/detail ambition. |
+| Face `<256 px` | Disable added microdetail; retain tone/reflection and the full scene-level lighting target. |
+| Text, products, complex props, multiple people, or edge contact | Name only the highest-risk protected objects; still allow source-consistent illumination/reflection. |
+| A6 | Authorize the full subject interior to become black while locking outline, proportion, pose, placement, composition, and background. |
+
+For full-frame edits, separate `structural_invariants`, `authorized_appearance_changes`, and one `minimum_visible_improvement` observable at normal size. An almost unchanged result cannot pass as restrained processing.
+
+## V2.3 Clean Optical Realism
+
+| Signal | Pass | Fail |
+| --- | --- | --- |
+| Broad tone | Source complexion remains continuous across face, ear, neck, and visible chest; transitions are gentle and light-driven. | Patch-like hue/luminance changes, localized whitening, or face-neck separation. |
+| Reflectance/form | Diffuse base and bounded highlights follow key direction and facial curvature; volume comes from illumination and occlusion. | Whole-face gloss, dead-matte flattening, duplicate highlights, or local line darkening used as sculpting. |
+| Microdetail | Region-specific detail is faint, nonrepeating, and limited by face scale, focus, distance, and illumination. | Uniform pore fields, texture overlays, global sharpening, or equally crisp skin/hair/clothing/background. |
+| Optics | Source focal plane and depth of field remain; edges and background transition optically. | Artificial blur, focus relocation, oversharpened edges, or cutout separation. |
+
+Treat source marks as identity anchors without naming or amplifying them in the generation prompt. Do not create realism by adding imperfections, color variation, grain, or darker facial lines. Under A6, replace skin checks with one continuous black interior.
+
+## Prompt-Priming Safety
+
+- Default to positive photographic behavior: tone continuity, bounded reflection, regional detail, and source focus.
+- Keep imperfection bundles, film grain, roughness, gritty texture, and high-contrast language out of default prompts.
+- Preserve the source complexion; do not inject `fair`, `whiter`, or beauty-grade terminology.
+- Use dramatic darkness only for an explicitly selected backlight, hard-light, low-key, neon, or silhouette recipe.
+- If a model becomes artificial, rewrite the SKIN line from scratch; never append more defect terms.
+
+## Tone and Capture Boundaries
+
+- Keep physical light (L/T), exposure placement (E), color/look (G), and capture response (D) separate. A grade or camera name never creates another light source.
+- Default to E0/G0/D0. Compile a nonzero recipe only from an explicit tone, style, era, device, film, camera, or phone request.
+- Exposure prompts must place highlight headroom, subject midtones, directional shadows, and black point. Avoid whole-frame highlight-plus-shadow recovery.
+- Compile device labels into tonal steps, highlight roll-off, color separation, microcontrast, sharpening, and dynamic range; never promise exact manufacturer color science.
+- A capture-style edit preserves source viewpoint, perspective, crop, focal plane, and DOF. Change optics only under explicit `optical-restyle`.
+- Grain, vignette, borders, date stamps, color casts, and exposure defects are opt-in frame-level artifacts, never skin-detail mechanisms.
+
+## Lighting Boundaries
+
+- Select E before fill, shadow, and highlight policy. Use E0 for preservation and E1 for unspecified natural relighting.
+- Derive highlight/shadow edge from apparent source size. Never add a second nose shadow/catchlight or create volume by darkening facial lines.
+- Preserve bright sources and rims under backlight. Use dramatic shadow loss only when the selected exposure requires it.
+- Indoor window light must explain subject, clothing, wall/furniture, reflective objects, and room falloff together. With insufficient evidence, use `match-source`.
+- A6 forces `silhouette + fill none`; the interior is black and any narrow rim stays outside it.
+
+Off-camera window confidence: `high` requires a visible window or at least three consistent evidence classes and permits explicit relighting; `medium` requires two and permits low-amplitude correction; `low` uses `match-source`.
+
+## Quality and Iteration Boundaries
+
+- Q is independent of L/E/T/G/D/A. Quality cleanup may not invent a new light, grade, capture profile, or skin finish.
+- For synthetic dirt, distinguish repeating cellular/grid/chroma residue from real directional fibers, pores, hair, fabric weave, edges, and focus falloff. Never denoise the full frame by default.
+- For banding, repair broken luminance/chroma continuity while retaining object edges, cast-shadow boundaries, local contrast, and black point.
+- For local seams, match boundary exposure, white balance, saturation, sharpness, noise, depth, haze, shadow, and reflection. Do not hide a seam with global blur.
+- For color drift, compare unchanged or unauthorized regions with the first root base. Preserve deliberate new colors and authorized E/T/G/A behavior.
+- For repeated edits, attach only current target plus root base. Use the repaired current output before the next round; never treat an intermediate raw round as color truth.
+- Full-frame prompt constraints are probabilistic. Do not claim frozen pixels and do not use local raster filters to produce the delivered repair.
+
+## Failure Mapping
+
+| Failure | Action |
+| --- | --- |
+| Backend lacks strict capability | Continue as `best-effort` and disclose the missing capability. |
+| No compatible tool / real tool error | Use `invocation-handoff` / `prompt-only`, respectively. |
+| Nearly unchanged, target missed, identity/protection/framing failed | Use `prompt-handoff`; never repair locally. |
+| Plastic smoothness remains | Use scale-aware S plus P0/P1; specify bounded highlights and focus-aware regional detail. |
+| Skin becomes artificial or the image dims unintentionally | Remove realism-by-defect/darkness terms; reset to clean source tone, bounded reflection, and E0/E1 exposure. |
+| Tone becomes flat or globally tinted | Replace E/G with explicit tonal-zone placement, neutral references, skin-hue protection, saturation relationship, and one curve. |
+| Device style is absent or changes optics | Replace the name with D capture behavior and restore source viewpoint/crop/focus/DOF. |
+| A6 retains interior detail or gray fill | Remove S/P, fill, catchlights, and subject lighting; require one continuous black interior. |
+| Prism effect looks painted | Reduce to a few ordered spectral bands; align them with one refracted source and surface curvature. |
+| Blind shadows look like an overlay | Restore one projection direction, repeated spacing, edge hardness, perspective, and continuation onto a nearby surface. |
+| Candlelight becomes orange fill | Keep one low near-field flame, rapid falloff, weak bounce, and a neutral-deep black point. |
+| Rain/wet effect dirties skin | Restrict droplets and wet highlights to gravity and key-facing planes; restore clean continuous complexion elsewhere. |
+| Repeating dirt/grid remains | Use Q1 only on the affected material; restore clean continuity while preserving natural directional detail. |
+| Repair creates waxy or flat surfaces | Remove global denoise/smoothing; restore pores, fibers, hair, edges, bounded reflection, and source focus falloff. |
+| Tonal/chroma banding remains | Use Q2 on the named gradient; preserve true edges, shadow boundaries, local contrast, and black point. |
+| Local edit boundary remains visible | Use Q3 to match boundary light/color/sharpness/noise/depth/haze/reflection without blurring the region. |
+| Color lock undoes an intentional look | Restrict Q4 to unchanged/unauthorized regions and exempt selected E/T/G/A behavior. |
+| Multi-round result keeps degrading | Use Q5 with current edit plus root base only; remove accumulated residue while preserving accepted changes once. |

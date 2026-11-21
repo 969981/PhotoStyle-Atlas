@@ -10,15 +10,15 @@
 
 ## 收录统计
 
-- 独立安装 Skill：83
-- 上游来源：12
-- Wibi Style Skills：51
+- 独立安装 Skill：87
+- 上游来源：15
+- Wibi Style Skills：52
 - Image Style Transfer 内部风格预设：80
 - Anime Restyle 动漫风格 key：71
 - Poster Generator 版式：20
 - Photo Editing Craft 修图配方：14
 
-[全部风格图鉴](docs/STYLES.md) · [安装教程](docs/INSTALL.md) · [上游来源和许可](docs/SOURCES.md) · [维护文档](docs/MAINTENANCE.md) · [效果对照模板](docs/STYLE-COMPARISON.md)
+[全部风格图鉴](docs/STYLES.md) · [安装教程](docs/INSTALL.md) · [上游来源和许可](docs/SOURCES.md) · [维护文档](docs/MAINTENANCE.md) · [效果对照模板](docs/STYLE-COMPARISON.md) · [人像光影与糖水片指南](docs/PORTRAIT-LIGHTING.md)
 
 ## 风格预览 · Wibi Style
 
@@ -41,13 +41,28 @@
 
 [查看全部 Wibi Style 风格](docs/STYLES.md#wibi-style-视觉风格)
 
+## 新增 · 人像精修与布光
+
+人像原图与风景兼顾，区分普通局部补光和需要图像生成工具的重新布光。
+
+| 预览 | Skill | 适用场景 |
+| --- | --- | --- |
+| <img src="previews/ai-portrait-light/portrait-light.jpg" width="145" alt="人像布光与光线配方"> | [人像布光与光线配方](skills/portrait-light/SKILL.md) | 闪光灯布光规划 / 日系清透糖水片 / 人物风景融合 / 人像光线提示词 |
+| <img src="previews/genai-portrait/genai-portrait.png" width="145" alt="GenAI 人像精修与光影迁移"> | [GenAI 人像精修与光影迁移](skills/genai-portrait/SKILL.md) | 棚拍证件照 / 夜景人像补光 / 替换背景 / 复杂人像环境光匹配 |
+| <img src="previews/xxg-portrait-light/xxg-portrait-rebuild-light.jpg" width="145" alt="人像光线重建与自然补光"> | [人像光线重建与自然补光](skills/xxg-portrait-rebuild-light/SKILL.md) | 夜间直闪人像 / 逆光面部补光 / 棚拍光线模拟 / 糖水片的柔光处理 |
+
+**授权提醒：** [x-rush/photo-retouch](https://github.com/x-rush/photo-retouch) 未附许可证，暂仅列入[外部候选目录](catalog/external-skills.yaml)，不复制其内容。
+
 ## 按用途挑选
 
 | 分类 | Skills 数量 | 用途 |
 | --- | ---: | --- |
 | [Lightroom 后期](docs/STYLES.md) | 5 | 裁切、曝光、调色 |
 | [专业修图](docs/STYLES.md) | 1 | 曲线、蒙版、PSD 与导出 |
-| [创意风格](docs/STYLES.md) | 51 | 漫画、胶片、印刷和实验视觉 |
+| [人像光影](docs/STYLES.md) | 1 | 闪光灯补光、逆光重建与自然肤色 |
+| [人像布光](docs/STYLES.md) | 1 | 柔雾糖水片、直闪和摄影光位配方 |
+| [人像精修](docs/STYLES.md) | 1 | 光线迁移、人物保真与背景融合 |
+| [创意风格](docs/STYLES.md) | 52 | 漫画、胶片、印刷和实验视觉 |
 | [动漫插画](docs/STYLES.md) | 1 | 动漫、国风、数字绘画 |
 | [杂志排版](docs/STYLES.md) | 4 | 旅行画册、视觉日记与系列海报 |
 | [极简印刷](docs/STYLES.md) | 1 | 单双色印刷、网点、留白 |

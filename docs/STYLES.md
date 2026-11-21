@@ -5,7 +5,7 @@
 
 ## Wibi Style 视觉风格
 
-包含全部 51 个独立 Skill，保留每个目录内的 LICENSE 与 NOTICE。
+包含全部 52 个独立 Skill，保留每个目录内的 LICENSE 与 NOTICE。
 
 | 预览 | 风格与特征 | Skill 文件 |
 | --- | --- | --- |
@@ -59,44 +59,48 @@
 | <img src="../previews/wibi-style/warm-paper-crayon-street.jpg" width="180" alt="Wibi Style · 暖纸蜡笔街拍"> | **Wibi Style · 暖纸蜡笔街拍**<br>Wibi Style 官方视觉风格。把用户上传的人物照片转换成象牙白纸面的粗蜡笔时尚编辑插画：笨拙大色块形体、符号化小脸、一处高饱和跳色和三个粗钝手写英文单词。适用于用户要求暖纸蜡笔街拍、蜡笔时装插画、把照片画成独立小刊街拍，或明确调用 $warm-paper | [warm-paper-crayon-street](../skills/warm-paper-crayon-street/SKILL.md) |
 | <img src="../previews/wibi-style/white-crayon-pet.jpg" width="180" alt="Wibi Style · 白底蜡笔宠物"> | **Wibi Style · 白底蜡笔宠物**<br>Wibi Style 官方视觉风格：把一张照片转换成白底蜡笔宠物。猫狗脸部和耳朵清楚的照片；备注写「图上写：名字」可添加姓名，眼睛与文字可能有偏差。适用于用户要求白底蜡笔宠物，或明确调用 $white-crayon-pet 时。 | [white-crayon-pet](../skills/white-crayon-pet/SKILL.md) |
 | <img src="../previews/wibi-style/wibi-frame.jpg" width="180" alt="Wibi Style · 框景漫画"> | **Wibi Style · 框景漫画**<br>Wibi Style 官方视觉风格。从用户照片中发现最有观看价值的局部事件，先给出三个具体文字候选并推荐一个，等待用户选择后，再把眼神与手势、嘴与道具、耳饰、妆容、服饰、腿鞋等高信息密度片段转译成大面积纯色留白中的复古平面漫画特写。用于需要先确认局部放大区域， | [wibi-frame](../skills/wibi-frame/SKILL.md) |
+| <img src="../previews/wibi-style/yellow-chibi-doodle.jpg" width="180" alt="Wibi Style · 明黄软萌Q版手绘"> | **Wibi Style · 明黄软萌Q版手绘**<br>Wibi Style 官方视觉风格：把一张照片转换成明黄软萌Q版手绘。适合单人、双人或人宠同框的日常随手拍与自拍，重绘为明黄纯色底、2.5头身极简手账小人并配原创手写中文拼音标题。适用于用户要求明黄软萌Q版手绘，或明确调用 $yellow-chibi-dood | [yellow-chibi-doodle](../skills/yellow-chibi-doodle/SKILL.md) |
 | <img src="../previews/wibi-style/yellow-hair-doodle.jpg" width="180" alt="Wibi Style · 明黄发丝涂鸦"> | **Wibi Style · 明黄发丝涂鸦**<br>Wibi Style 官方视觉风格：把一张照片转换成明黄发丝涂鸦。适合单人近景、发型清楚的照片，转换成明黄底黑白发流头像与朱红涂鸦；帽子、多人及极短发效果尚未验证。适用于用户要求明黄发丝涂鸦，或明确调用 $yellow-hair-doodle 时。 | [yellow-hair-doodle](../skills/yellow-hair-doodle/SKILL.md) |
 
 ## 其他风格与真实修图 Skills
 
-| 类别 | 中文名 / Skill | 风格特征 | 上游 |
-| --- | --- | --- | --- |
-| 动漫插画 | [动漫原图风格转换](../skills/anime-image-restyle/SKILL.md) | 把用户上传的单张原照片直接转换成指定动漫风格并出图。当用户上传图片后说「转成XX风格」「动漫风」「二次元」「水彩」「国风」「赛博朋克」「Q版」「像素」「厚涂」「吉卜力风」「新海诚风」「素描」「简笔」等时使用。默认保留人物身份、表情、姿势、人数、构图与关键物件，只替换视觉 | [anime-restyle](https://github.com/gaoren7716-lab/anime-image-restyle-skill) |
-| 风格迁移 | [80 种艺术风格迁移](../skills/image-style-transfer/SKILL.md) | 风格库 / 油画 / 水墨 / 胶片 / 动漫 / 杂志 | [image-style-transfer](https://github.com/jyi06/image-style-transfer) |
-| Lightroom 后期 | [Lightroom 专业调色](../skills/lr-color-grade/SKILL.md) | Lightroom / 调色 / 电影感 | [lightroom-computer-use](https://github.com/eamonboyle/computer-use-photo-editing-skills) |
-| Lightroom 后期 | [lr-composition](../skills/lr-composition/SKILL.md) | Reframe photos in Adobe Lightroom cloud desktop via Computer Use: crop, straighten, aspect ratio, horizon, subject placement, and geome | [lightroom-computer-use](https://github.com/eamonboyle/computer-use-photo-editing-skills) |
-| Lightroom 后期 | [lr-computer-use](../skills/lr-computer-use/SKILL.md) | Drive Adobe Lightroom (cloud desktop app) via ChatGPT Computer Use. Use when the user asks to "use Lightroom with computer use", "open  | [lightroom-computer-use](https://github.com/eamonboyle/computer-use-photo-editing-skills) |
-| Lightroom 后期 | [lr-edit-session](../skills/lr-edit-session/SKILL.md) | Full single-photo edit session in Adobe Lightroom cloud desktop via Computer Use. Orchestrates composition → lighting → color grade wit | [lightroom-computer-use](https://github.com/eamonboyle/computer-use-photo-editing-skills) |
-| Lightroom 后期 | [lr-lighting](../skills/lr-lighting/SKILL.md) | Adjust exposure and tone in Adobe Lightroom cloud desktop via Computer Use: exposure, contrast, highlights, shadows, whites, blacks, cu | [lightroom-computer-use](https://github.com/eamonboyle/computer-use-photo-editing-skills) |
-| 极简海报 | [Photo to Minimal Editorial Poster](../skills/minimal-editorial-poster/SKILL.md) | Turn one or more photographs into a consistent series of separate 3:4 minimalist editorial posters: a strictly faithful top photographi | [minimal-editorial](https://github.com/SARSfang/photo-to-minimal-form-poster) |
-| 极简印刷 | [极简单双色印刷海报](../skills/mono-color/SKILL.md) | Risograph / 双色印刷 / 杂志 | [mono-color](https://github.com/yanliudesign/mono-color-skill) |
-| 真实修图 | [人像精修](../skills/portrait-retouch/SKILL.md) | 人像 / 肤色 / 精修 / 保真 | [muse-retouch](https://github.com/GuohongLi/muse-skills) |
-| 真实修图 | [一键选片修图](../skills/select-retouch/SKILL.md) | 选片 / 人像 / 风景 | [muse-retouch](https://github.com/GuohongLi/muse-skills) |
-| 真实修图 | [图库级风光修图](../skills/vcg-retouch/SKILL.md) | 风光 / 夜景 / 构图 | [muse-retouch](https://github.com/GuohongLi/muse-skills) |
-| 杂志排版 | [Paper Signal](../skills/paper-signal/SKILL.md) | Plan, art-direct, generate, edit, and quality-check tactile minimal-zine bitmap imagery from almost any subject: landscapes, portraits, | [paper-signal](https://github.com/jiahuiqu17/paper-signal) |
-| 杂志排版 | [Paper Signal Art Director](../skills/paper-signal-art-director/SKILL.md) | Art-direct and generate one high-craft minimal-zine bitmap from a landscape, portrait, person, object, product, food, plant, building,  | [paper-signal](https://github.com/jiahuiqu17/paper-signal) |
-| 杂志排版 | [Paper Signal Audit](../skills/paper-signal-audit/SKILL.md) | Inspect and diagnose minimal-zine posters, photo restyles, editorial images, and social-card series for subject preservation, factual a | [paper-signal](https://github.com/jiahuiqu17/paper-signal) |
-| 杂志排版 | [Paper Signal Series](../skills/paper-signal-series/SKILL.md) | Plan, write, art-direct, generate, and package a coherent 2-10 image minimal-zine social series from notes, articles, photographs, trav | [paper-signal](https://github.com/jiahuiqu17/paper-signal) |
-| 专业修图 | [Photo editing craft](../skills/photo-editing-craft/SKILL.md) | Edits photos and graphics with the judgment of an experienced retoucher and designer, in PhotoCraft (open-source, MCP and CLI) or Adobe | [photo-editing-craft](https://github.com/aipiratesMunich/photo-editing-craft) |
-| 艺术海报 | [炭笔褪色旅行素描](../skills/charcoal-fading-travel-study/SKILL.md) | 炭笔 / 素描 / 旅行 | [photo-to-poster](https://github.com/GZ-L/photo-to-poster-skills) |
-| 艺术海报 | [极简禅意水墨](../skills/clean-ink-zen-memory/SKILL.md) | 水墨 / 黑白 / 禅意 | [photo-to-poster](https://github.com/GZ-L/photo-to-poster-skills) |
-| 艺术海报 | [民俗水墨地标](../skills/folk-ink-landmark-portrait/SKILL.md) | 水墨 / 地标 / 风景 | [photo-to-poster](https://github.com/GZ-L/photo-to-poster-skills) |
-| 艺术海报 | [水粉旅行静物](../skills/gouache-travel-still-life/SKILL.md) | 水粉 / 静物 / 旅行 | [photo-to-poster](https://github.com/GZ-L/photo-to-poster-skills) |
-| 艺术海报 | [厚涂微缩风景](../skills/impasto-miniature-landscape/SKILL.md) | 油画 / 厚涂 / 微缩景观 | [photo-to-poster](https://github.com/GZ-L/photo-to-poster-skills) |
-| 艺术海报 | [等距治愈方块](../skills/isometric-healing-blocks/SKILL.md) | 等距视角 / 立体插画 / 治愈 | [photo-to-poster](https://github.com/GZ-L/photo-to-poster-skills) |
-| 艺术海报 | [牛皮纸镂印地标](../skills/kraft-stencil-landmark/SKILL.md) | 牛皮纸 / 版画 / 地标 | [photo-to-poster](https://github.com/GZ-L/photo-to-poster-skills) |
-| 艺术海报 | [记忆日记双联画](../skills/memory-diary-duet/SKILL.md) | 摄影日记 / 水彩 / 画册 | [photo-to-poster](https://github.com/GZ-L/photo-to-poster-skills) |
-| 艺术海报 | [复古旅行双联画](../skills/nostalgic-travel-duet/SKILL.md) | 复古 / 插画 / 双联画 | [photo-to-poster](https://github.com/GZ-L/photo-to-poster-skills) |
-| 艺术海报 | [钢笔淡彩观察画](../skills/observational-pen-wash/SKILL.md) | 钢笔 / 淡彩 / 留白 | [photo-to-poster](https://github.com/GZ-L/photo-to-poster-skills) |
-| 艺术海报 | [纸片人物旅行场景](../skills/paper-cutout-travel-figures/SKILL.md) | 纸雕 / 人物 / 插画 | [photo-to-poster](https://github.com/GZ-L/photo-to-poster-skills) |
-| 艺术海报 | [纸雕旅行模型](../skills/papercraft-travel-diorama/SKILL.md) | 纸艺 / 立体模型 / 旅行 | [photo-to-poster](https://github.com/GZ-L/photo-to-poster-skills) |
-| 艺术海报 | [像素消散风景](../skills/pixel-dissolve-landscape/SKILL.md) | 像素画 / 消散 / 数字艺术 | [photo-to-poster](https://github.com/GZ-L/photo-to-poster-skills) |
-| 艺术海报 | [水彩旅行卡](../skills/watercolor-travel-card/SKILL.md) | 旅行 / 水彩 / 明信片 / 海报 | [photo-to-poster](https://github.com/GZ-L/photo-to-poster-skills) |
-| 海报设计 | [Poster Generator](../skills/poster-generator/SKILL.md) | Generates professional designer-grade posters, flyers, campaign visuals, event posters, and product posters. Use when the user asks for | [poster-generator](https://github.com/howardz27/poster-generator-skill) |
+| 类别 | 预览 | 中文名 / Skill | 风格特征 | 上游 |
+| --- | --- | --- | --- | --- |
+| 人像布光 | <img src="../previews/ai-portrait-light/portrait-light.jpg" width="110" alt="人像布光与光线配方"> | [人像布光与光线配方](../skills/portrait-light/SKILL.md) | 人像 / 光位 / 直闪 / 柔雾 / 黄金时刻 / 摄影构图 / 光影参考 | [ai-portrait-light](https://github.com/L-Trunks/ai-portrait-light) |
+| 动漫插画 | — | [动漫原图风格转换](../skills/anime-image-restyle/SKILL.md) | 把用户上传的单张原照片直接转换成指定动漫风格并出图。当用户上传图片后说「转成XX风格」「动漫风」「二次元」「水彩」「国风」「赛博朋克」「Q版」「像素」「厚涂」「吉卜力风」「新海诚风」「素描」「简笔」等时使用。默认保留人物身份、表情、姿势、人数、构图与关键物件，只替换视觉 | [anime-restyle](https://github.com/gaoren7716-lab/anime-image-restyle-skill) |
+| 人像精修 | <img src="../previews/genai-portrait/genai-portrait.png" width="110" alt="GenAI 人像精修与光影迁移"> | [GenAI 人像精修与光影迁移](../skills/genai-portrait/SKILL.md) | 人像精修 / 保留身份 / 重打光 / 背景融合 / 透明蒙版 / 合成 | [genai-portrait](https://github.com/grapeot/genai_portrait_skill) |
+| 风格迁移 | — | [80 种艺术风格迁移](../skills/image-style-transfer/SKILL.md) | 风格库 / 油画 / 水墨 / 胶片 / 动漫 / 杂志 | [image-style-transfer](https://github.com/jyi06/image-style-transfer) |
+| Lightroom 后期 | — | [Lightroom 专业调色](../skills/lr-color-grade/SKILL.md) | Lightroom / 调色 / 电影感 | [lightroom-computer-use](https://github.com/eamonboyle/computer-use-photo-editing-skills) |
+| Lightroom 后期 | — | [lr-composition](../skills/lr-composition/SKILL.md) | Reframe photos in Adobe Lightroom cloud desktop via Computer Use: crop, straighten, aspect ratio, horizon, subject placement, and geome | [lightroom-computer-use](https://github.com/eamonboyle/computer-use-photo-editing-skills) |
+| Lightroom 后期 | — | [lr-computer-use](../skills/lr-computer-use/SKILL.md) | Drive Adobe Lightroom (cloud desktop app) via ChatGPT Computer Use. Use when the user asks to "use Lightroom with computer use", "open  | [lightroom-computer-use](https://github.com/eamonboyle/computer-use-photo-editing-skills) |
+| Lightroom 后期 | — | [lr-edit-session](../skills/lr-edit-session/SKILL.md) | Full single-photo edit session in Adobe Lightroom cloud desktop via Computer Use. Orchestrates composition → lighting → color grade wit | [lightroom-computer-use](https://github.com/eamonboyle/computer-use-photo-editing-skills) |
+| Lightroom 后期 | — | [lr-lighting](../skills/lr-lighting/SKILL.md) | Adjust exposure and tone in Adobe Lightroom cloud desktop via Computer Use: exposure, contrast, highlights, shadows, whites, blacks, cu | [lightroom-computer-use](https://github.com/eamonboyle/computer-use-photo-editing-skills) |
+| 极简海报 | — | [Photo to Minimal Editorial Poster](../skills/minimal-editorial-poster/SKILL.md) | Turn one or more photographs into a consistent series of separate 3:4 minimalist editorial posters: a strictly faithful top photographi | [minimal-editorial](https://github.com/SARSfang/photo-to-minimal-form-poster) |
+| 极简印刷 | — | [极简单双色印刷海报](../skills/mono-color/SKILL.md) | Risograph / 双色印刷 / 杂志 | [mono-color](https://github.com/yanliudesign/mono-color-skill) |
+| 真实修图 | — | [人像精修](../skills/portrait-retouch/SKILL.md) | 人像 / 肤色 / 精修 / 保真 | [muse-retouch](https://github.com/GuohongLi/muse-skills) |
+| 真实修图 | — | [一键选片修图](../skills/select-retouch/SKILL.md) | 选片 / 人像 / 风景 | [muse-retouch](https://github.com/GuohongLi/muse-skills) |
+| 真实修图 | — | [图库级风光修图](../skills/vcg-retouch/SKILL.md) | 风光 / 夜景 / 构图 | [muse-retouch](https://github.com/GuohongLi/muse-skills) |
+| 杂志排版 | — | [Paper Signal](../skills/paper-signal/SKILL.md) | Plan, art-direct, generate, edit, and quality-check tactile minimal-zine bitmap imagery from almost any subject: landscapes, portraits, | [paper-signal](https://github.com/jiahuiqu17/paper-signal) |
+| 杂志排版 | — | [Paper Signal Art Director](../skills/paper-signal-art-director/SKILL.md) | Art-direct and generate one high-craft minimal-zine bitmap from a landscape, portrait, person, object, product, food, plant, building,  | [paper-signal](https://github.com/jiahuiqu17/paper-signal) |
+| 杂志排版 | — | [Paper Signal Audit](../skills/paper-signal-audit/SKILL.md) | Inspect and diagnose minimal-zine posters, photo restyles, editorial images, and social-card series for subject preservation, factual a | [paper-signal](https://github.com/jiahuiqu17/paper-signal) |
+| 杂志排版 | — | [Paper Signal Series](../skills/paper-signal-series/SKILL.md) | Plan, write, art-direct, generate, and package a coherent 2-10 image minimal-zine social series from notes, articles, photographs, trav | [paper-signal](https://github.com/jiahuiqu17/paper-signal) |
+| 专业修图 | — | [Photo editing craft](../skills/photo-editing-craft/SKILL.md) | Edits photos and graphics with the judgment of an experienced retoucher and designer, in PhotoCraft (open-source, MCP and CLI) or Adobe | [photo-editing-craft](https://github.com/aipiratesMunich/photo-editing-craft) |
+| 艺术海报 | — | [炭笔褪色旅行素描](../skills/charcoal-fading-travel-study/SKILL.md) | 炭笔 / 素描 / 旅行 | [photo-to-poster](https://github.com/GZ-L/photo-to-poster-skills) |
+| 艺术海报 | — | [极简禅意水墨](../skills/clean-ink-zen-memory/SKILL.md) | 水墨 / 黑白 / 禅意 | [photo-to-poster](https://github.com/GZ-L/photo-to-poster-skills) |
+| 艺术海报 | — | [民俗水墨地标](../skills/folk-ink-landmark-portrait/SKILL.md) | 水墨 / 地标 / 风景 | [photo-to-poster](https://github.com/GZ-L/photo-to-poster-skills) |
+| 艺术海报 | — | [水粉旅行静物](../skills/gouache-travel-still-life/SKILL.md) | 水粉 / 静物 / 旅行 | [photo-to-poster](https://github.com/GZ-L/photo-to-poster-skills) |
+| 艺术海报 | — | [厚涂微缩风景](../skills/impasto-miniature-landscape/SKILL.md) | 油画 / 厚涂 / 微缩景观 | [photo-to-poster](https://github.com/GZ-L/photo-to-poster-skills) |
+| 艺术海报 | — | [等距治愈方块](../skills/isometric-healing-blocks/SKILL.md) | 等距视角 / 立体插画 / 治愈 | [photo-to-poster](https://github.com/GZ-L/photo-to-poster-skills) |
+| 艺术海报 | — | [牛皮纸镂印地标](../skills/kraft-stencil-landmark/SKILL.md) | 牛皮纸 / 版画 / 地标 | [photo-to-poster](https://github.com/GZ-L/photo-to-poster-skills) |
+| 艺术海报 | — | [记忆日记双联画](../skills/memory-diary-duet/SKILL.md) | 摄影日记 / 水彩 / 画册 | [photo-to-poster](https://github.com/GZ-L/photo-to-poster-skills) |
+| 艺术海报 | — | [复古旅行双联画](../skills/nostalgic-travel-duet/SKILL.md) | 复古 / 插画 / 双联画 | [photo-to-poster](https://github.com/GZ-L/photo-to-poster-skills) |
+| 艺术海报 | — | [钢笔淡彩观察画](../skills/observational-pen-wash/SKILL.md) | 钢笔 / 淡彩 / 留白 | [photo-to-poster](https://github.com/GZ-L/photo-to-poster-skills) |
+| 艺术海报 | — | [纸片人物旅行场景](../skills/paper-cutout-travel-figures/SKILL.md) | 纸雕 / 人物 / 插画 | [photo-to-poster](https://github.com/GZ-L/photo-to-poster-skills) |
+| 艺术海报 | — | [纸雕旅行模型](../skills/papercraft-travel-diorama/SKILL.md) | 纸艺 / 立体模型 / 旅行 | [photo-to-poster](https://github.com/GZ-L/photo-to-poster-skills) |
+| 艺术海报 | — | [像素消散风景](../skills/pixel-dissolve-landscape/SKILL.md) | 像素画 / 消散 / 数字艺术 | [photo-to-poster](https://github.com/GZ-L/photo-to-poster-skills) |
+| 艺术海报 | — | [水彩旅行卡](../skills/watercolor-travel-card/SKILL.md) | 旅行 / 水彩 / 明信片 / 海报 | [photo-to-poster](https://github.com/GZ-L/photo-to-poster-skills) |
+| 海报设计 | — | [Poster Generator](../skills/poster-generator/SKILL.md) | Generates professional designer-grade posters, flyers, campaign visuals, event posters, and product posters. Use when the user asks for | [poster-generator](https://github.com/howardz27/poster-generator-skill) |
+| 人像光影 | <img src="../previews/xxg-portrait-light/xxg-portrait-rebuild-light.jpg" width="110" alt="人像光线重建与自然补光"> | [人像光线重建与自然补光](../skills/xxg-portrait-rebuild-light/SKILL.md) | 人像 / 补光 / 闪光灯 / 直闪 / 柔光 / 逆光 / 光影重建 / 保真 | [xxg-portrait-light](https://github.com/moskoo/xxg-portrait-rebuild-light) |
 
 ## Image Style Transfer · 80 种艺术风格
 

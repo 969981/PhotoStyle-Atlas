@@ -1,5 +1,30 @@
 {
   "sources": {
+    "ai-portrait-light": {
+      "commit": "4def521eed57a08e37ac90ac953e7fe42a952b2d",
+      "files": {
+        "LICENSES/ai-portrait-light/LICENSE": "c2fc04a29b9cd67cc9a908a8fa93b69d7de1bde871469697f1279a4a02db4d91",
+        "previews/ai-portrait-light/portrait-light.jpg": "d51eab28c5305eaf03d66db84c700a2947b554c964fe41fe94efe81561d51b9f",
+        "skills/portrait-light/SKILL.md": "2f2b1b8508a8b60b64ff04537d360ee0df4d7345d51239c68416d1598e5b943e",
+        "skills/portrait-light/docs/Krea2与Qwen-选图实践-20261018.md": "e879da64d608e779f494c4c9004b280138c7d68dc8c5e5f45de182e5bc4c4169",
+        "skills/portrait-light/docs/Z-Image-Turbo-选图实践-20261029.md": "121029948de19031261e2c428492f5eadf494c6ab0ed4fdd8cf4fbf1a57b6d6b",
+        "skills/portrait-light/docs/对照实验.md": "775597e751562f2a0756ae17604ea03be0286aee462a6655a92019a277d3fbfd",
+        "skills/portrait-light/docs/配方全文.md": "e41d9d1eb75707a1a6d49ba6acde0a4cdfe6a896745717fd0ffb7007abdb8a27"
+      },
+      "license": "CC BY 4.0 documents/images (licensed examples 01-10) + MIT code",
+      "ref": "master",
+      "repo": "L-Trunks/ai-portrait-light",
+      "skills": [
+        {
+          "category": "人像布光",
+          "id": "portrait-light",
+          "license": "CC BY 4.0 documents/images (licensed examples 01-10) + MIT code",
+          "source_id": "ai-portrait-light",
+          "source_repo": "L-Trunks/ai-portrait-light",
+          "upstream_path": "skills/portrait-light"
+        }
+      ]
+    },
     "anime-restyle": {
       "commit": "404ac129e22d220ae69bc43db6b434fdfaa95a4b",
       "files": {
@@ -47,6 +72,46 @@
       "ref": "main",
       "repo": "Serennity007/awesome-creative-skills",
       "skills": []
+    },
+    "genai-portrait": {
+      "commit": "45bbea31e1c8dcc9fd839ad9d256ab78e4385763",
+      "files": {
+        "LICENSES/genai-portrait/LICENSE": "530955bc5b8b1cf25569530176e5e8011e6188cc3b142e5be221b2bb03a135a3",
+        "previews/genai-portrait/genai-portrait.png": "68fe62e63217e0dd4a3d0f53b548eb806179d7c72c795c993298cfb0ba948c73",
+        "skills/genai-portrait/README.md": "ee8d2e9ad690f4ae25fb004bbdaea46f52c4d41f96375445e5028931ba8ed1a5",
+        "skills/genai-portrait/SKILL.md": "d6f3527cdf28d83e104b872fcbbfbd003eb14d97aa5416a24b3e81d93d86eae7",
+        "skills/genai-portrait/docs/prd.md": "d2dcbcaade588c167d09e4d69706e79f56b93692524449120469029c0180920a",
+        "skills/genai-portrait/docs/rfc.md": "876b72962f1cd2e56b0935f00b0a90a046004b47f70873855ceebea5488895a7",
+        "skills/genai-portrait/docs/test.md": "1c85c7ac1da46f4d251ab8dee6d88bf60684b54057aafd69ae8e50a6ff3fbb33",
+        "skills/genai-portrait/docs/working.md": "8850c577f12184a91b30d8bef52e50378ee6d21d6f63527fa64c628f5f70d1f1",
+        "skills/genai-portrait/examples/README.md": "c1d5f70bcdad90fed265acee219b70e3d02ea4598c73690bcb189e5c54092b98",
+        "skills/genai-portrait/examples/prompts/gemini_lighting_reference.txt": "a29f8bc4e86233491ba56b8f17c5595d407185abad1ff10bc5a15908ae1521e2",
+        "skills/genai-portrait/examples/prompts/gpt_identity_transfer.txt": "3ad66c7047d122c66ecbf2b0db36208af140c6febe7c2c3ee61780054821ca8e",
+        "skills/genai-portrait/pyproject.toml": "47cf145d069a9e21a1f807b6d2c1e1217749d836368576f84028a21465f5e64c",
+        "skills/genai-portrait/scripts/genai-portrait": "9ddb24585658323e6d9dc31aabbd0e2bcf464f394f577e3b74f6e94b41b9c142",
+        "skills/genai-portrait/src/genai_portrait/__init__.py": "c5f40cff18e368df295ba78550092e0fa7460522340bd52089c9b60ac6efb64f",
+        "skills/genai-portrait/src/genai_portrait/artifacts.py": "511ba952eb8f6a62f30c35c7d92b8bc9cf957767d2df16075dbbaadbdb9df66b",
+        "skills/genai-portrait/src/genai_portrait/cli.py": "2bc68270da204b4d9358a758672bd6c2be535d069e0a5f2bd352b36255da5e9b",
+        "skills/genai-portrait/src/genai_portrait/compositing.py": "c1a5fc532e34b606c13e9db4301b56f28be7eb2f74c667ad66c7f593df34a580",
+        "skills/genai-portrait/src/genai_portrait/config.py": "4cd5d9f3514fc11063cb58e074fee4e417030f7a5b590269427c50f9b1577e0b",
+        "skills/genai-portrait/src/genai_portrait/core.py": "301b2ea4ecec0c342fc7d3e045faa55693cf26ad3a72f9f62f7bf9c94e2711b9",
+        "skills/genai-portrait/src/genai_portrait/inspection.py": "ebe90d4ffb7d02af124961e5ab26491dd81a84049db318faa1ad0bdcf85a2ae8",
+        "skills/genai-portrait/src/genai_portrait/providers.py": "c939f0e727192b0efb624ee3c9eec8946ade8fae38acd8f22141855a999667a9",
+        "skills/genai-portrait/src/genai_portrait/py.typed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "license": "MIT",
+      "ref": "master",
+      "repo": "grapeot/genai_portrait_skill",
+      "skills": [
+        {
+          "category": "人像精修",
+          "id": "genai-portrait",
+          "license": "MIT",
+          "source_id": "genai-portrait",
+          "source_repo": "grapeot/genai_portrait_skill",
+          "upstream_path": "skills/skill_genai_portrait.md"
+        }
+      ]
     },
     "image-style-transfer": {
       "commit": "639215b3c5e83ba60daa16aee3e2546ece07d78e",
@@ -615,7 +680,7 @@
       ]
     },
     "wibi-style": {
-      "commit": "816ba0b67939345093c65006f5b7cb0ba95c3125",
+      "commit": "c063b052fc275bea92dd4cc15e509157cffa310c",
       "files": {
         "LICENSES/wibi-style/LICENSE": "88c3becd40f9c21de091db09c67b047044f95b36d20bfcec36b3b9fd54f89529",
         "previews/wibi-style/alt-manga-avatar.jpg": "0b78099708f4ec96e2d0fe42576f30f650f7c71ffc7f2bbea38fe553f71fb243",
@@ -668,6 +733,7 @@
         "previews/wibi-style/warm-paper-crayon-street.jpg": "6b0366289a5d9271006eea32c8d86f3daa6a053d336efa9a3fcc452e54815c36",
         "previews/wibi-style/white-crayon-pet.jpg": "a3077b74f14582dab1cd5daf3dca93e84f114458cefaf5efebb77a5f5687d18b",
         "previews/wibi-style/wibi-frame.jpg": "45b82a86b058d912676f021e610352be69077ca5bd8f956d590b677e3d528e76",
+        "previews/wibi-style/yellow-chibi-doodle.jpg": "35dc5002985ef9f88d11e6d75b008305912f96916f63f30867e717b2fd46fc7c",
         "previews/wibi-style/yellow-hair-doodle.jpg": "81f880de9ea384b1539b3b4704e4456114d5838e6e0c5fb8b4a7b2f8a5d75ed6",
         "skills/alt-manga-avatar/LICENSE": "7127044065db7cf837ac71d564a2865dc61efbbd72a821dee82d2496826a9fbe",
         "skills/alt-manga-avatar/NOTICE": "66dfb3efe5082ff069f1456ba3aeb0d7eea34481d1581c113ee389e71b31fb65",
@@ -1396,6 +1462,18 @@
         "skills/wibi-frame/scripts/check_update.py": "92f26fa729682453be17caa15374f5e372997e9889ff3efacdf16553240654f9",
         "skills/wibi-frame/scripts/community_info.py": "10b0c0e8fac621af662e24ecb92d48b5e69b2703935c9d5dca20e1a27824a32f",
         "skills/wibi-frame/scripts/show_skill_info.py": "2d84942d2dd72f70ab3e6177ccdc510e5704b5cc1de6264f3f8ad9ab5dce47d3",
+        "skills/yellow-chibi-doodle/LICENSE": "82f882cd8ceba124c797095c3f033ba8688b0b16427bf14770715b437e8e6ac2",
+        "skills/yellow-chibi-doodle/NOTICE": "38fc24d736d9b59f3e86ae692f9a97d1c08f5d8666e84dcba1eb88635aa8c802",
+        "skills/yellow-chibi-doodle/README.md": "05925f9e81014b81aa43ec86696d0a43da059ecf54da9b5a93f69a4eb55d35bd",
+        "skills/yellow-chibi-doodle/SKILL.md": "c55bd7d3a08835ab609c33a955317c4fcd860c9d9c597520668a87dfbd8aed8f",
+        "skills/yellow-chibi-doodle/SOURCES.md": "94781fbfd78bc9635cf3221c9e5aa3c8acf9bfcfc3f54d667ddaf8e00f7c298d",
+        "skills/yellow-chibi-doodle/agents/openai.yaml": "dff91dd522ce6d7cf8a601439cb100e8f037733b5697f052639e275edfbf3171",
+        "skills/yellow-chibi-doodle/manifest.json": "8542a2189602ab623be6fbedd8431d4d91ad11416141f3f7f2322eec59719446",
+        "skills/yellow-chibi-doodle/references/community.md": "e4e69a55d7c2a17639828c8597cd31e3728f5ee1fd72ecea9785cf725285571e",
+        "skills/yellow-chibi-doodle/references/style-prompt.md": "1d18a1aee8bb08b4d98462eeaeab8e9993823db8a371ff7fc68bb24817769fab",
+        "skills/yellow-chibi-doodle/scripts/check_update.py": "a809c3f6128d5c13cc5d52c50154256ceff18f7d8f953229e393a486a4a0954d",
+        "skills/yellow-chibi-doodle/scripts/community_info.py": "9fdb82336485a28673cfb5f0b605bfc613a031645268b0ca9db7f682dcca2e68",
+        "skills/yellow-chibi-doodle/scripts/show_skill_info.py": "2d84942d2dd72f70ab3e6177ccdc510e5704b5cc1de6264f3f8ad9ab5dce47d3",
         "skills/yellow-hair-doodle/LICENSE": "67161fb2799c5dee2e7beaf9e1ef66abb591b68b16bdb4927d821592bd9ae63d",
         "skills/yellow-hair-doodle/NOTICE": "1b757ec4cc862ff1b6cf24f0d713bd2359fc7bade8a48b1489b1659897d04d93",
         "skills/yellow-hair-doodle/README.md": "d27b2a20846a7efd3737100efba734a39656f11e1242b900a1bedb4c2b335cda",
@@ -1815,11 +1893,57 @@
         },
         {
           "category": "创意风格",
+          "id": "yellow-chibi-doodle",
+          "license": "Wibi Personal Non-Commercial 1.0 + MIT tooling",
+          "source_id": "wibi-style",
+          "source_repo": "Vieeeeeee/wibi-style",
+          "upstream_path": "skills/yellow-chibi-doodle"
+        },
+        {
+          "category": "创意风格",
           "id": "yellow-hair-doodle",
           "license": "Wibi Personal Non-Commercial 1.0 + MIT tooling",
           "source_id": "wibi-style",
           "source_repo": "Vieeeeeee/wibi-style",
           "upstream_path": "skills/yellow-hair-doodle"
+        }
+      ]
+    },
+    "xxg-portrait-light": {
+      "commit": "39b1ffd21248fd22e2d4e3075ec0ca0989236dd9",
+      "files": {
+        "LICENSES/xxg-portrait-light/LICENSE": "8b0d223783cc4e103fd78d1d31b2d1622e1963b7e49be6469db14cb41a4aec25",
+        "previews/xxg-portrait-light/xxg-portrait-rebuild-light.jpg": "5fc6929b5c000ab37e7e62743357cfd27f137db03b26c0957489dd9e82474a93",
+        "skills/xxg-portrait-rebuild-light/README.md": "fb91e771c3f9851458c49676c7b55c1dc1333334bebb696f9e16e0067a7c4df1",
+        "skills/xxg-portrait-rebuild-light/SKILL.md": "d00e4d5557d3b8a55b3a1bc14bd2dde381fb9a3f47454f7a92b9b27c9f8e6bd5",
+        "skills/xxg-portrait-rebuild-light/agents/openai.yaml": "f9992d393f17e67e96481375030618b8c73ec530ce66dc7d31aa426e34698536",
+        "skills/xxg-portrait-rebuild-light/references/backend-and-clean-realism.md": "e77b47c45f7f96c9b7acb7ca57067e8f5b03a36f124d299babd0cdffebba5149",
+        "skills/xxg-portrait-rebuild-light/references/backend-capabilities.json": "3f6b5715d70f776f1f9dadbd3541ee16440adba736bc98192db5098573db96b1",
+        "skills/xxg-portrait-rebuild-light/references/edit-plan-and-protection.md": "1f7b8481bc154e7ad8529d29a357a9791b0f884bc244879b6ea2ebbb4deb07ff",
+        "skills/xxg-portrait-rebuild-light/references/edit-plan-template.json": "9ffed81b3ace73dd2e91553ba52b9f835d3037ed5288de74ede7f353cc07ee52",
+        "skills/xxg-portrait-rebuild-light/references/identity-and-detail-audit.md": "224b19c71d47e44c3d47f80e9f8da35bc92c770c6a3f876a69de9d90d73c215d",
+        "skills/xxg-portrait-rebuild-light/references/lighting-skin-color-temperature-recipes.md": "9d0b49ea6cfbd46d87e4944a453c85a50db2fd541d15fbaadd48eab8c2392508",
+        "skills/xxg-portrait-rebuild-light/references/prompt-recipes.md": "b153aaa86c703bea9899ced1da9d5cc1267714a3d15ae7b152846d65fb205dc8",
+        "skills/xxg-portrait-rebuild-light/references/quality-repair-and-iteration.md": "785d392516bfec2d962fe2b44da27743192b8aad79ee05848253adcda34c42e1",
+        "skills/xxg-portrait-rebuild-light/references/tone-exposure-style-device-recipes.md": "dc74ed4e89feaad4894aa9b284a49bf00ba518ffd92b2e1636805098574ffe93",
+        "skills/xxg-portrait-rebuild-light/requirements.txt": "c8ae7f0856a9077cd3efa51d8936060bd8caf2026541678b9532493f85a99357",
+        "skills/xxg-portrait-rebuild-light/scripts/audit_pixel_regions.py": "c0b29cd04fbb57f1a2e7dcc77fdc5d3ff37b3e22c5d6eb0797ac10569cee2b29",
+        "skills/xxg-portrait-rebuild-light/scripts/check_aspect_ratio.py": "46e2dd691d4570b9741cd23caa87f57e92e2b99a572309c54cd23f41e81dbbfd",
+        "skills/xxg-portrait-rebuild-light/scripts/evaluate_backend_gate.py": "e5d1e5ee7fdab6cc41b4229e8e30e6381dceec6453397eb0d5f2901521b88c05",
+        "skills/xxg-portrait-rebuild-light/scripts/validate_edit_plan.py": "87cbc01c8054e9f88af2bec8d017af7a6aae57952ea404e1d1e03a0f6d1492e6",
+        "skills/xxg-portrait-rebuild-light/scripts/validate_result_assessment.py": "01251481d03d6e4cf9b85be59dbfe530aed04ceb4fb7a90d9b1a1ca3f87d5a9e"
+      },
+      "license": "MIT",
+      "ref": "main",
+      "repo": "moskoo/xxg-portrait-rebuild-light",
+      "skills": [
+        {
+          "category": "人像光影",
+          "id": "xxg-portrait-rebuild-light",
+          "license": "MIT",
+          "source_id": "xxg-portrait-light",
+          "source_repo": "moskoo/xxg-portrait-rebuild-light",
+          "upstream_path": "."
         }
       ]
     }

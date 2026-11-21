@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "genai-portrait-skill"
+version = "0.1.0"
+description = "Agent-driven generative portrait and headshot editing"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = [
+  "google-genai>=1.0,<2",
+  "numpy>=2,<3",
+  "openai>=2,<3",
+  "pillow>=11,<13",
+  "python-dotenv>=1,<2",
+]
+
+[project.scripts]
+genai-portrait = "genai_portrait.cli:main"
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8,<9",
+  "ruff>=0.9,<1",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+  "live_integration: real provider calls requiring explicit opt-in",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
