@@ -49,7 +49,7 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md config/upstream-lock.json catalog/skills.json catalog/styles.json docs/ LICENSES/ skills/ previews/ resources/
           if ! git diff --cached --quiet; then
-            git commit -m "chore(sync): import 83 photo skills and generate style atlas"
+            git commit -m "chore(sync): import photo skills and regenerate atlas"
             git push
           fi
       - name: Create update PR

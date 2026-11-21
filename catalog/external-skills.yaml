@@ -1,0 +1,15 @@
+version: 1
+# Unlicensed third-party material is indexed only. No content is copied.
+skills:
+  - id: photo-retouch-x-rush
+    repo: x-rush/photo-retouch
+    url: https://github.com/x-rush/photo-retouch
+    upstream_path: SKILL.md
+    category: 人像精修
+    zh_name: Photo Retouch 人像保真精修（外部候选）
+    tags: [人物身份保留, 皮肤质感, 精修, 补光, 人像]
+    license: 未提供
+    status: external-only
+    reason: 未发现 LICENSE 或明确可再分发授权，暂不镜像 Skill 正文及相关资源。
+    dependencies: 需要实际图像编辑能力；该 Skill 仅描述修图与身份核对流程。
+    reviewed_at: '2026-11-21'

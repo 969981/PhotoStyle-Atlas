@@ -62,3 +62,15 @@ skills:
   lr-color-grade:
     zh_name: Lightroom 专业调色
     tags: [Lightroom, 调色, 电影感]
+  xxg-portrait-rebuild-light:
+    zh_name: 人像光线重建与自然补光
+    tags: [人像, 补光, 闪光灯, 直闪, 柔光, 逆光, 光影重建, 保真]
+    use_cases: [夜间直闪人像, 逆光面部补光, 棚拍光线模拟, 糖水片的柔光处理]
+  portrait-light:
+    zh_name: 人像布光与光线配方
+    tags: [人像, 光位, 直闪, 柔雾, 黄金时刻, 摄影构图, 光影参考]
+    use_cases: [闪光灯布光规划, 日系清透糖水片, 人物风景融合, 人像光线提示词]
+  genai-portrait:
+    zh_name: GenAI 人像精修与光影迁移
+    tags: [人像精修, 保留身份, 重打光, 背景融合, 透明蒙版, 合成]
+    use_cases: [棚拍证件照, 夜景人像补光, 替换背景, 复杂人像环境光匹配]

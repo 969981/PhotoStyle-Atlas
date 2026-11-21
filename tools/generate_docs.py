@@ -49,7 +49,8 @@ def generate():
         "- Photo Editing Craft 修图配方：" + str(sum(x["skill_id"]=="photo-editing-craft" for x in presets)), "",
         "[全部风格图鉴](docs/STYLES.md) · [安装教程](docs/INSTALL.md) · "+
         "[上游来源和许可](docs/SOURCES.md) · [维护文档](docs/MAINTENANCE.md) · "+
-        "[效果对照模板](docs/STYLE-COMPARISON.md)", "",
+        "[效果对照模板](docs/STYLE-COMPARISON.md) · "+
+        "[人像光影与糖水片指南](docs/PORTRAIT-LIGHTING.md)", "",
         "## 风格预览 · Wibi Style", "",
         "以下缩略图从原作者仓库同步，保留署名与原始授权；不要独立拆包用于商业图库。", "",
         "| 预览 | 风格名 | Skill |", "| --- | --- | --- |",
@@ -59,6 +60,19 @@ def generate():
         visual="<img src=\""+preview+"\" width=\"145\" alt=\""+safe(x["title"],50)+"\">" if preview else "—"
         readme.append("| "+visual+" | "+safe(x["title"],70)+" | ["+x["id"]+"]("+x["path"]+"/SKILL.md) |")
     readme.extend(["","[查看全部 Wibi Style 风格](docs/STYLES.md#wibi-style-视觉风格)","",
+                   "## 新增 · 人像精修与布光", "",
+                   "人像原图与风景兼顾，区分普通局部补光和需要图像生成工具的重新布光。", "",
+                   "| 预览 | Skill | 适用场景 |", "| --- | --- | --- |"])
+    for x in skills:
+        if x["source_id"] not in {"xxg-portrait-light", "ai-portrait-light", "genai-portrait"}:
+            continue
+        preview=x.get("preview")
+        visual=("<img src=\""+preview+"\" width=\"145\" alt=\""+safe(x["title"],50)+"\">"
+                if preview else "—")
+        readme.append("| "+visual+" | ["+safe(x["title"],80)+"]("+x["path"]+"/SKILL.md) | "+
+                      safe(" / ".join(x.get("use_cases") or x.get("tags") or []),120)+" |")
+    readme.extend(["", "**授权提醒：** [x-rush/photo-retouch](https://github.com/x-rush/photo-retouch) 未附许可证，"+
+                   "暂仅列入[外部候选目录](catalog/external-skills.yaml)，不复制其内容。", "",
                    "## 按用途挑选","",
                    "| 分类 | Skills 数量 | 用途 |","| --- | ---: | --- |"])
     descriptions={
@@ -72,7 +86,10 @@ def generate():
         "真实修图":"选片、人像、风景后期",
         "Lightroom 后期":"裁切、曝光、调色",
         "专业修图":"曲线、蒙版、PSD 与导出",
-        "海报设计":"电影海报、瑞士排版、包豪斯"
+        "海报设计":"电影海报、瑞士排版、包豪斯",
+        "人像光影":"闪光灯补光、逆光重建与自然肤色",
+        "人像布光":"柔雾糖水片、直闪和摄影光位配方",
+        "人像精修":"光线迁移、人物保真与背景融合"
     }
     for cat in sorted(cats):
         readme.append("| ["+cat+"](docs/STYLES.md) | "+str(len(cats[cat]))+
@@ -106,11 +123,15 @@ def generate():
         gallery.append("| "+picture+" | **"+safe(x["title"],75)+"**<br>"+
             safe(x.get("description"),130)+" | ["+x["id"]+"](../"+x["path"]+"/SKILL.md) |")
     gallery.extend(["","## 其他风格与真实修图 Skills","",
-                    "| 类别 | 中文名 / Skill | 风格特征 | 上游 |","| --- | --- | --- | --- |"])
+                    "| 类别 | 预览 | 中文名 / Skill | 风格特征 | 上游 |",
+                    "| --- | --- | --- | --- | --- |"])
     for x in skills:
         if x["source_id"]=="wibi-style": continue
         tags=" / ".join(x.get("tags") or [])
-        gallery.append("| "+safe(x["category"])+" | ["+safe(x["title"],70)+"](../"+
+        preview=x.get("preview")
+        pic=("<img src=\"../"+preview+"\" width=\"110\" alt=\""+safe(x["title"],45)+"\">"
+             if preview else "—")
+        gallery.append("| "+safe(x["category"])+" | "+pic+" | ["+safe(x["title"],70)+"](../"+
             x["path"]+"/SKILL.md) | "+safe(tags or x.get("description"),135)+" | ["+
             x["source_id"]+"](https://github.com/"+x["source_repo"]+") |")
     for skill_id, headline, intro in [
@@ -141,7 +162,12 @@ def generate():
         version=("["+sha[:12]+"](https://github.com/"+s["repo"]+"/commit/"+sha+")") if sha else "—"
         provenance.append("| ["+s["repo"]+"](https://github.com/"+s["repo"]+") | "+
                          str(len(groups[s["id"]]))+" | "+version+" | "+safe(s["license"],100)+" |")
-    provenance.extend(["","## Wibi Style 特殊条款","",
+    provenance.extend(["","## 新增人像修图的授权与依赖","",
+        "- **XXG Portrait Rebuild Light**：上游 MIT；主要是光影工作流与核对脚本，需外部实际修图后端。",
+        "- **AI Portrait Light**：上游文本/图片 CC BY 4.0，代码 MIT；署名与原有 CC BY 4.0 条款必须保留；镜像仅保存其许可明确覆盖的早期示例预览。最新示例图从上游获取。",
+        "- **GenAI Portrait Skill**：上游 MIT；其 Python CLI 依赖须另行安装，生成式编辑可能需要 OpenAI/Gemini 等服务凭据。",
+        "- **Photo Retouch（x-rush）**：上游没有明确 LICENSE，本仓库只提供外部链接与介绍，不收录代码或 Skill 正文。", "",
+        "## Wibi Style 特殊条款","",
         "上游对自动化工具使用 MIT 条款，对原创视觉规则与提示词使用个人非商业许可；"+
         "各目录保留作者署名、LICENSE 和 NOTICE。第三方图片与字体可能各有额外要求。",
         "用户表示已经获得导入许可，但公开镜像不等于项目向第三人发放商业使用权。","",
