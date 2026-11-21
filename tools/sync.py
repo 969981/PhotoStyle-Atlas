@@ -356,7 +356,12 @@ def sync() -> None:
             old = old_lock.get("sources", {}).get(sid, {})
             check_snapshot(old)
             latest = remote_sha(spec["repo"], spec["ref"])
-            if latest == old.get("commit") and old.get("files") and old.get("skills") is not None:
+            manifest_sha = hashlib.sha256(
+                json.dumps(spec, sort_keys=True, ensure_ascii=False).encode("utf-8")
+            ).hexdigest()
+            if (latest == old.get("commit") and old.get("files")
+                    and old.get("skills") is not None
+                    and old.get("manifest_sha256") == manifest_sha):
                 snapshot = old
                 print("UNCHANGED", sid, latest[:12])
             else:
@@ -367,6 +372,7 @@ def sync() -> None:
                     "commit": full_sha, "skills": skills,
                     "files": apply(spec, pairs, old),
                     "license": spec["license"],
+                    "manifest_sha256": manifest_sha,
                 }
                 print("IMPORTED", sid, full_sha[:12], len(skills), "skills", len(pairs), "files")
             for path in snapshot["files"]:

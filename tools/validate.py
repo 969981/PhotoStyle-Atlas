@@ -38,6 +38,10 @@ def main():
     for s in sources:
         assert (ROOT/"LICENSES"/s["id"]/"LICENSE").is_file(), "upstream LICENSE missing"
         snap=lock[s["id"]]
+        manifest_digest=hashlib.sha256(
+            json.dumps(s, sort_keys=True, ensure_ascii=False).encode("utf-8")
+        ).hexdigest()
+        assert snap.get("manifest_sha256")==manifest_digest, "manifest drift: "+s["id"]
         for path, digest in snap.get("files", {}).items():
             file=ROOT/path
             assert file.is_file(), "missing mirrored file: "+path

@@ -8,7 +8,7 @@
 | --- | --- | --- | --- |
 | [XXG Portrait Rebuild Light](../skills/xxg-portrait-rebuild-light/SKILL.md) | 局部补光、逆光、直闪、棚拍质感、纹理校正 | 提供光影/纹理修图指导，需搭配可用的图像编辑后端 | ![XXG 上游示意](../previews/xxg-portrait-light/xxg-portrait-rebuild-light.jpg) |
 | [AI Portrait Light](../skills/portrait-light/SKILL.md) | 写实人像光位、柔雾、清透糖水片、直闪摄影提示词 | 主要用于设计提示词/生成，不是直接修改 RAW 的自动化插件 | ![AI Portrait Light 上游示例](../previews/ai-portrait-light/portrait-light.jpg) |
-| [GenAI Portrait Skill](../skills/genai-portrait/SKILL.md) | 光线迁移、环境融合、局部生成、身份保持 | 需要图像编辑模型，Python CLI 依赖与 API 凭据需自行配置 | ![GenAI 合成人物上游示例](../previews/genai-portrait/genai-portrait.png) |
+| [GenAI Portrait Skill](../skills/genai-portrait/SKILL.md) | 光线迁移、环境融合、局部生成、身份保持 | 需要图像编辑模型，Python CLI 依赖与 API 凭据需自行配置 | ![GenAI 合成人物上游示例](../previews/genai-portrait/genai-portrait.jpg) |
 
 ## 仅索引，不镜像
 
