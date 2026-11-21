@@ -58,4 +58,4 @@ output: {preserve_original: true, edit_copy: true}
 - [XXG 重新布光](../xxg-portrait-rebuild-light/SKILL.md)：复杂光场/清洁肤质。
 - [AI Portrait Light](../portrait-light/SKILL.md)：光位设计与写实光线提示词。
 - [GenAI Portrait](../genai-portrait/SKILL.md)：需要模型与身份核对的场景融合。
-- [Roby 十种精修](../roby-photo-retouch-pro/SKILL.md)：去路人、扩图、服装与背景等明确变更模式。
+- [Roby 十种精修](../photo-retouch-pro/SKILL.md)：去路人、扩图、服装与背景等明确变更模式。

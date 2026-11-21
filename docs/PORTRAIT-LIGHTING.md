@@ -14,7 +14,7 @@
 | [AI Portrait Light](../skills/portrait-light/SKILL.md) | 写实人像光位、柔雾、清透糖水片、直闪摄影提示词 | 主要用于设计提示词/生成，不是直接修改 RAW 的自动化插件 | ![AI Portrait Light 上游示例](../previews/ai-portrait-light/portrait-light.jpg) |
 | [GenAI Portrait Skill](../skills/genai-portrait/SKILL.md) | 光线迁移、环境融合、局部生成、身份保持 | 需要图像编辑模型，Python CLI 依赖与 API 凭据需自行配置 | ![GenAI 合成人物上游示例](../previews/genai-portrait/genai-portrait.jpg) |
 
-| [Roby Photo Retouch Pro](../skills/roby-photo-retouch-pro/SKILL.md) | 商业精修、移除路人、换背景、扩图、闭眼参考修复 | MIT；需要真实图像编辑工具 | — |
+| [Roby Photo Retouch Pro](../skills/photo-retouch-pro/SKILL.md) | 商业精修、移除路人、换背景、扩图、闭眼参考修复 | MIT；需要真实图像编辑工具 | — |
 
 ## 更多外部候选
 

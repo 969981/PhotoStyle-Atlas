@@ -206,7 +206,7 @@ sources:
     repo: robyboy888/photo-retouch-pro
     ref: main
     kind: root
-    target: roby-photo-retouch-pro
+    target: photo-retouch-pro
     sparse: [references, agents]
     include: [SKILL.md, LICENSE, README.md, references, agents]
     category: 商业人像精修

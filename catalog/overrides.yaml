@@ -75,7 +75,7 @@ skills:
     tags: [人像精修, 保留身份, 重打光, 背景融合, 透明蒙版, 合成]
     use_cases: [棚拍证件照, 夜景人像补光, 替换背景, 复杂人像环境光匹配]
 
-  roby-photo-retouch-pro:
+  photo-retouch-pro:
     zh_name: 商业人像十模式精修
     tags: [人像精修, 人物保真, 去路人, 背景更换, 扩图, 衣物修复, 重布光]
     use_cases: [商业客片, 自然修肤, 背景清理, 闭眼参考修复, 人物风景融合]

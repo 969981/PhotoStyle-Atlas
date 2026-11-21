@@ -23,7 +23,7 @@ def main():
     assert sum(x["skill_id"]=="photo-editing-craft" for x in presets)==14, "14 retouch recipes missing"
     assert len(sources)==len(lock), "source lock count differs"
     new_ids={"xxg-portrait-rebuild-light", "portrait-light", "genai-portrait",
-             "roby-photo-retouch-pro", "atlas-portrait-suite"}
+             "photo-retouch-pro", "atlas-portrait-suite"}
     assert new_ids.issubset(set(ids)), "missing portrait lighting Skills"
     assert "photo-retouch" not in ids, "unlicensed external Skill must not be vendored"
     local=yaml.safe_load((ROOT/"catalog/local-skills.yaml").read_text(encoding="utf-8"))["skills"]
