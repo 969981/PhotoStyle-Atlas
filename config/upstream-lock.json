@@ -12,6 +12,7 @@
         "skills/portrait-light/docs/配方全文.md": "e41d9d1eb75707a1a6d49ba6acde0a4cdfe6a896745717fd0ffb7007abdb8a27"
       },
       "license": "CC BY 4.0 documents/images (licensed examples 01-10) + MIT code",
+      "manifest_sha256": "c49eceb6f5ec6f5f4c2e869e4d6312e351a83912108c46296a1e0531b4d04f9c",
       "ref": "master",
       "repo": "L-Trunks/ai-portrait-light",
       "skills": [
@@ -40,6 +41,7 @@
         "skills/anime-image-restyle/scripts/render_prompt.py": "3d114573b530a7c4f512c547107155d21c0237f7b101b884f593e7728b3c8021"
       },
       "license": "MIT",
+      "manifest_sha256": "a3a268c6e2c03db4555282d80c368dfd5ff0c116380c46c495d0852d149b3fad",
       "ref": "main",
       "repo": "gaoren7716-lab/anime-image-restyle-skill",
       "skills": [
@@ -69,6 +71,7 @@
         "resources/creative-recipes/社交媒体/content-creator-pack.md": "061170a3221f98c1a7ae301d7e8daab9eef89af2a36dfe451373b83814461b12"
       },
       "license": "MIT",
+      "manifest_sha256": "50302f76e8cc7ef075f1a8a21e2a67c44c06bbd27e6ef39c8e102f62c121c058",
       "ref": "main",
       "repo": "Serennity007/awesome-creative-skills",
       "skills": []
@@ -77,8 +80,8 @@
       "commit": "45bbea31e1c8dcc9fd839ad9d256ab78e4385763",
       "files": {
         "LICENSES/genai-portrait/LICENSE": "530955bc5b8b1cf25569530176e5e8011e6188cc3b142e5be221b2bb03a135a3",
-        "previews/genai-portrait/genai-portrait.png": "68fe62e63217e0dd4a3d0f53b548eb806179d7c72c795c993298cfb0ba948c73",
-        "skills/genai-portrait/README.md": "ee8d2e9ad690f4ae25fb004bbdaea46f52c4d41f96375445e5028931ba8ed1a5",
+        "previews/genai-portrait/genai-portrait.jpg": "0140f37f10a7c657651a4cc18d91cf32c1d274c8bca7fe1fce72a59855e35f41",
+        "skills/genai-portrait/README.md": "6cb1d545012f6b6c5290c828e6fa4878a1dba5964a90db8354adc8eba99bbadd",
         "skills/genai-portrait/SKILL.md": "d6f3527cdf28d83e104b872fcbbfbd003eb14d97aa5416a24b3e81d93d86eae7",
         "skills/genai-portrait/docs/prd.md": "d2dcbcaade588c167d09e4d69706e79f56b93692524449120469029c0180920a",
         "skills/genai-portrait/docs/rfc.md": "876b72962f1cd2e56b0935f00b0a90a046004b47f70873855ceebea5488895a7",
@@ -100,6 +103,7 @@
         "skills/genai-portrait/src/genai_portrait/py.typed": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
       },
       "license": "MIT",
+      "manifest_sha256": "73a14e52d46ea552e560e7cb25e57893ca1b136ec4903a11b678c4a19111bb25",
       "ref": "master",
       "repo": "grapeot/genai_portrait_skill",
       "skills": [
@@ -124,6 +128,7 @@
         "skills/image-style-transfer/scripts/generate.py": "8376a58a2ea81c02ef562fac10feac13493eed41b7193ce228d8d6a02cb1b0ea"
       },
       "license": "MIT",
+      "manifest_sha256": "718a9e474ae2ce2af500177c3af55529a1d9732c88b82938ce984658a2fa32db",
       "ref": "main",
       "repo": "jyi06/image-style-transfer",
       "skills": [
@@ -159,6 +164,7 @@
         "skills/lr-lighting/references/tone-controls.md": "4fb2a2eb8e7d9b5116a545fc6d9145d6f70323d9912b95a13dc628df0daa06db"
       },
       "license": "MIT",
+      "manifest_sha256": "94c486297e25209c1a6342fda24abe5592b6023f123092af6c75957d6f642032",
       "ref": "main",
       "repo": "eamonboyle/computer-use-photo-editing-skills",
       "skills": [
@@ -221,6 +227,7 @@
         "skills/minimal-editorial-poster/scripts/validate-portable-skill.py": "3a8e1dece8e6fb018c6202909a9e36cdecae552b36bf9e88ef4a007444c54869"
       },
       "license": "MIT",
+      "manifest_sha256": "32fd035a846ca146848fef6d7cfd8065f75408e775ea5f163a9cc2192d813c1c",
       "ref": "main",
       "repo": "SARSfang/photo-to-minimal-form-poster",
       "skills": [
@@ -272,6 +279,7 @@
         "skills/mono-color/swatches/ultramarine-safety-orange.svg": "062f170d2e3c7937c1a8fa27bec5844700d2608d2a73e6c4ef3598e7337ec8c7"
       },
       "license": "MIT",
+      "manifest_sha256": "f31109d9123d33c482222c01fdf4345c1d3896a287353e97ff5c49eb7621070f",
       "ref": "main",
       "repo": "yanliudesign/mono-color-skill",
       "skills": [
@@ -295,6 +303,7 @@
         "skills/vcg-retouch/references/quality-standard.md": "4ca47cc3f73af8da72ba5a7a33c505c82fa9f5a6b44f96d243cff2b12e2b8366"
       },
       "license": "MIT",
+      "manifest_sha256": "d45da9bbe162cdea3f36033177a1102e4fbb222698013525382f78279c328003",
       "ref": "main",
       "repo": "GuohongLi/muse-skills",
       "skills": [
@@ -354,6 +363,7 @@
         "skills/paper-signal/scripts/validate_project.py": "1ba6aafef13a80c160db3558db83d8dc7ef19d8caa827abddad71d00d600848b"
       },
       "license": "MIT",
+      "manifest_sha256": "3603cef919dd6776e55b21a91ed8d1de4cfe712e57c80399d17c369bbe1995d6",
       "ref": "main",
       "repo": "jiahuiqu17/paper-signal",
       "skills": [
@@ -438,6 +448,7 @@
         "skills/photo-editing-craft/tests/fixtures/subject.png": "9ffb1c1d932dee3d5762733fda0147199faa56686dd6da1d604b3413225ce356"
       },
       "license": "MIT",
+      "manifest_sha256": "656b8b1b9e9a506b0313d8735590fcba45705495eae888957caa38c5d2ac3252",
       "ref": "main",
       "repo": "aipiratesMunich/photo-editing-craft",
       "skills": [
@@ -500,6 +511,7 @@
         "skills/watercolor-travel-card/agents/openai.yaml": "b22f10644e9cda772769b39d36b1e3e6c59d728dc483f917e01fc3914fc8dc59"
       },
       "license": "MIT",
+      "manifest_sha256": "5dc2e8c844f34391ff3c3f092f46d3b3c0dbe3b3baef441aef8c98436822e96b",
       "ref": "main",
       "repo": "GZ-L/photo-to-poster-skills",
       "skills": [
@@ -666,6 +678,7 @@
         "skills/poster-generator/references/styles/swiss-editorial.md": "042109d2ad00983f71258479881ae42eb6f9017a53af991d18e65af8c6109c90"
       },
       "license": "MIT",
+      "manifest_sha256": "8473f745c659103220f58b7620762dccda6024671462ae77b8afca134bf2b590",
       "ref": "main",
       "repo": "howardz27/poster-generator-skill",
       "skills": [
@@ -1488,6 +1501,7 @@
         "skills/yellow-hair-doodle/scripts/show_skill_info.py": "2d84942d2dd72f70ab3e6177ccdc510e5704b5cc1de6264f3f8ad9ab5dce47d3"
       },
       "license": "Wibi Personal Non-Commercial 1.0 + MIT tooling",
+      "manifest_sha256": "7a07959b57475184bb403211f7e4847b31f804d8f2f46e97dac2906d98b8f6e6",
       "ref": "main",
       "repo": "Vieeeeeee/wibi-style",
       "skills": [
@@ -1914,7 +1928,13 @@
       "files": {
         "LICENSES/xxg-portrait-light/LICENSE": "8b0d223783cc4e103fd78d1d31b2d1622e1963b7e49be6469db14cb41a4aec25",
         "previews/xxg-portrait-light/xxg-portrait-rebuild-light.jpg": "5fc6929b5c000ab37e7e62743357cfd27f137db03b26c0957489dd9e82474a93",
-        "skills/xxg-portrait-rebuild-light/README.md": "fb91e771c3f9851458c49676c7b55c1dc1333334bebb696f9e16e0067a7c4df1",
+        "skills/xxg-portrait-rebuild-light/CHANGELOG.md": "a867599209e5fa35aa46696bd680072249c5790f3517db9b83de47071ac9e944",
+        "skills/xxg-portrait-rebuild-light/CONTRIBUTING.md": "1fc587fa61650be3532c19683dfd731a7798b5810bc83fa1cf017461a25abd44",
+        "skills/xxg-portrait-rebuild-light/LICENSE": "8b0d223783cc4e103fd78d1d31b2d1622e1963b7e49be6469db14cb41a4aec25",
+        "skills/xxg-portrait-rebuild-light/README.ja.md": "5e73e5e4af60a2401c89f1ed2b36ac6de1e0d104db6221e1c14957c2f16a43cf",
+        "skills/xxg-portrait-rebuild-light/README.ko.md": "3d2bb18eaaf5982bd422fe8ada2c56067f343340147266802791fd077c646acd",
+        "skills/xxg-portrait-rebuild-light/README.md": "8937dd226faf6dabadf5a15e6119ca1f71b6afaf69a8db9accd6318d7adf7b90",
+        "skills/xxg-portrait-rebuild-light/README.zh-CN.md": "5e70e2212798ca668d628a3f95de68bae8f0958e6c93de80cc5e0fd1a509123a",
         "skills/xxg-portrait-rebuild-light/SKILL.md": "d00e4d5557d3b8a55b3a1bc14bd2dde381fb9a3f47454f7a92b9b27c9f8e6bd5",
         "skills/xxg-portrait-rebuild-light/agents/openai.yaml": "f9992d393f17e67e96481375030618b8c73ec530ce66dc7d31aa426e34698536",
         "skills/xxg-portrait-rebuild-light/references/backend-and-clean-realism.md": "e77b47c45f7f96c9b7acb7ca57067e8f5b03a36f124d299babd0cdffebba5149",
@@ -1934,6 +1954,7 @@
         "skills/xxg-portrait-rebuild-light/scripts/validate_result_assessment.py": "01251481d03d6e4cf9b85be59dbfe530aed04ceb4fb7a90d9b1a1ca3f87d5a9e"
       },
       "license": "MIT",
+      "manifest_sha256": "0dd2823cad9f5188766b2e3b5bc7008dac8e24edf463ed9e7cc956d658a299da",
       "ref": "main",
       "repo": "moskoo/xxg-portrait-rebuild-light",
       "skills": [

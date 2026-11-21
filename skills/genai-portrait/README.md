@@ -63,7 +63,7 @@ The demonstration uses a fully synthetic person generated for this repository. I
 
 | Synthetic white-background source | Final GPT lighting transfer |
 |---|---|
-| ![Synthetic white-background source](examples/assets/synthetic_white_input.png) | ![Synthetic final dark-studio portrait](examples/assets/synthetic_dark_final.png) |
+| ![Synthetic white-background source](https://raw.githubusercontent.com/grapeot/genai_portrait_skill/master/examples/assets/synthetic_white_input.png) | ![Synthetic final dark-studio portrait](https://raw.githubusercontent.com/grapeot/genai_portrait_skill/master/examples/assets/synthetic_dark_final.png) |
 
 The full comparison sheet also includes the Gemini lighting reference. Its three columns are:
 

@@ -52,7 +52,7 @@
       "id": "genai-portrait",
       "license": "MIT",
       "path": "skills/genai-portrait",
-      "preview": "previews/genai-portrait/genai-portrait.png",
+      "preview": "previews/genai-portrait/genai-portrait.jpg",
       "source_id": "genai-portrait",
       "source_repo": "grapeot/genai_portrait_skill",
       "tags": [

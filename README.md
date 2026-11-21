@@ -48,7 +48,7 @@
 | 预览 | Skill | 适用场景 |
 | --- | --- | --- |
 | <img src="previews/ai-portrait-light/portrait-light.jpg" width="145" alt="人像布光与光线配方"> | [人像布光与光线配方](skills/portrait-light/SKILL.md) | 闪光灯布光规划 / 日系清透糖水片 / 人物风景融合 / 人像光线提示词 |
-| <img src="previews/genai-portrait/genai-portrait.png" width="145" alt="GenAI 人像精修与光影迁移"> | [GenAI 人像精修与光影迁移](skills/genai-portrait/SKILL.md) | 棚拍证件照 / 夜景人像补光 / 替换背景 / 复杂人像环境光匹配 |
+| <img src="previews/genai-portrait/genai-portrait.jpg" width="145" alt="GenAI 人像精修与光影迁移"> | [GenAI 人像精修与光影迁移](skills/genai-portrait/SKILL.md) | 棚拍证件照 / 夜景人像补光 / 替换背景 / 复杂人像环境光匹配 |
 | <img src="previews/xxg-portrait-light/xxg-portrait-rebuild-light.jpg" width="145" alt="人像光线重建与自然补光"> | [人像光线重建与自然补光](skills/xxg-portrait-rebuild-light/SKILL.md) | 夜间直闪人像 / 逆光面部补光 / 棚拍光线模拟 / 糖水片的柔光处理 |
 
 **授权提醒：** [x-rush/photo-retouch](https://github.com/x-rush/photo-retouch) 未附许可证，暂仅列入[外部候选目录](catalog/external-skills.yaml)，不复制其内容。

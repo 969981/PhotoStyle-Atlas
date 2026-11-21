@@ -17,7 +17,7 @@ English | [简体中文](README.zh-CN.md) | [日本語](README.ja.md) | [한국�
 
 The skill changes the lighting without redrawing the person. It preserves identity, facial structure and proportions, natural slight asymmetry, expression, pose, camera view, and composition. It avoids plastic skin, grainy skin, dirty color variation, and fake depth made by exaggerating wrinkles.
 
-![演示图片](/assets/lightv2.jpg "skill-demo")
+![演示图片](https://raw.githubusercontent.com/moskoo/xxg-portrait-rebuild-light/main/assets/lightv2.jpg "skill-demo")
 
 ## Key features
 
@@ -41,10 +41,10 @@ The skill changes the lighting without redrawing the person. It preserves identi
 - If the current agent has no image-edit capability, or the edit misses the target, returns one complete compact image-edit prompt.
 - Never uses Pillow, NumPy, OpenCV, ImageMagick, or temporary filter scripts to produce the delivered image.
 
-![演示图片](/assets/skill-demo1.jpg "skill-demo")
-![演示图片](/assets/skill-demo2.jpg "skill-demo")
-![演示图片](/assets/skill-demo3.jpg "skill-demo")
-![演示图片](/assets/skill-demo4.jpg "skill-demo")
+![演示图片](https://raw.githubusercontent.com/moskoo/xxg-portrait-rebuild-light/main/assets/skill-demo1.jpg "skill-demo")
+![演示图片](https://raw.githubusercontent.com/moskoo/xxg-portrait-rebuild-light/main/assets/skill-demo2.jpg "skill-demo")
+![演示图片](https://raw.githubusercontent.com/moskoo/xxg-portrait-rebuild-light/main/assets/skill-demo3.jpg "skill-demo")
+![演示图片](https://raw.githubusercontent.com/moskoo/xxg-portrait-rebuild-light/main/assets/skill-demo4.jpg "skill-demo")
 
 ## Core method
 
