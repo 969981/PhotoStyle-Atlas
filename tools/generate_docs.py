@@ -115,7 +115,7 @@ def generate():
        "自动从每个真实 Skill 的 SKILL.md、manifest.json 和来源锁文件生成。",
        "预览代表上游所示的风格示例，并不代表本项目已对每个 Skill 做实测。","",
        "## Wibi Style 视觉风格","",
-       "包含全部 51 个独立 Skill，保留每个目录内的 LICENSE 与 NOTICE。","",
+       "包含全部 "+str(len(wibi))+" 个独立 Skill，保留每个目录内的 LICENSE 与 NOTICE。","",
        "| 预览 | 风格与特征 | Skill 文件 |","| --- | --- | --- |"]
     for x in wibi:
         pic=x.get("preview")

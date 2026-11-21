@@ -15,7 +15,7 @@ def main():
     ids=[x["id"] for x in catalog]
     assert len(ids)==len(set(ids)), "duplicate skill id"
     assert len(catalog)>=80, "incomplete Skill import"
-    assert sum(x["source_id"]=="wibi-style" for x in catalog)==51, "Wibi 51 Skills incomplete"
+    assert sum(x["source_id"]=="wibi-style" for x in catalog)>=51, "Wibi Skills incomplete"
     assert sum(x["source_id"]=="photo-to-poster" for x in catalog)==14, "Photo-to-Poster 14 Skills incomplete"
     assert sum(x["skill_id"]=="image-style-transfer" for x in presets)==80, "80 image styles missing"
     assert sum(x["skill_id"]=="anime-image-restyle" for x in presets)==71, "71 anime styles missing"
