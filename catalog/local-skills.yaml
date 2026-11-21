@@ -1,0 +1,12 @@
+version: 1
+# Original, hand-maintained PhotoStyle-Atlas Skills: never overwrite via upstream sync.
+skills:
+  - id: atlas-portrait-suite
+    path: skills/atlas-portrait-suite
+    name: Atlas 人像精修与清透糖水片套件
+    category: 自建摄影后期
+    source_repo: 969981/PhotoStyle-Atlas
+    license: MIT (PhotoStyle-Atlas original)
+    version: 1.0.0
+    tags: [人像精修, 糖水片, 补光, 闪光灯, 逆光, 人物与环境融合, 皮肤质感]
+    use_cases: [日系清冷空气感, 夏日逆光元气感, 室内窗边奶油感, 夜间直闪, 风景环境人像]

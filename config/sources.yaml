@@ -201,3 +201,14 @@ sources:
     category: 人像精修
     license: MIT
     notes: 通过标准 SKILL.md 安装，同时镜像 Python CLI 源码、依赖清单和合成示例。使用 OpenAI 或 Gemini 等服务需自行配置密钥及额度。
+
+  - id: roby-photo-retouch-pro
+    repo: robyboy888/photo-retouch-pro
+    ref: main
+    kind: root
+    target: roby-photo-retouch-pro
+    sparse: [references, agents]
+    include: [SKILL.md, LICENSE, README.md, references, agents]
+    category: 商业人像精修
+    license: MIT
+    notes: 包含十种精修模式；Skill 本身不带修图引擎。目录前缀用于区别其他同名候选。

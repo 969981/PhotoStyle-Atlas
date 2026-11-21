@@ -5,6 +5,9 @@ on:
     branches: [main]
     paths:
       - "config/sources.yaml"
+      - "catalog/local-skills.yaml"
+      - "catalog/external-skills.yaml"
+      - "skills/atlas-portrait-suite/**"
       - "catalog/overrides.yaml"
       - "tools/**"
       - "requirements.txt"

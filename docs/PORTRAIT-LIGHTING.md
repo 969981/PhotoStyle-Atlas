@@ -2,6 +2,10 @@
 
 > 本文为 PhotoStyle-Atlas 自编中文使用指南；预览图取自上游，**不代表本仓库实际修图效果**。用户照片不得未经授权提交到仓库或云端服务。
 
+## PhotoStyle-Atlas 自建综合 Skill
+
+[**Atlas Portrait Suite**](../skills/atlas-portrait-suite/SKILL.md) 将保真精修、可解释的局部补光、环境融合和清透调色整合为分阶段 SOP，附[五套参数配方](../skills/atlas-portrait-suite/references/presets.md)、[可读取 JSON](../skills/atlas-portrait-suite/references/presets.json)、[光学核对](../skills/atlas-portrait-suite/references/lighting-physics.md)与[人物 QA](../skills/atlas-portrait-suite/references/identity-and-qa.md)。这是独立原创 Skill，不属于任何上游的镜像。
+
 ## 已镜像（Manifest + 自动同步）
 
 | Skill | 推荐用途 | 能力边界 | 预览 |
@@ -9,6 +13,12 @@
 | [XXG Portrait Rebuild Light](../skills/xxg-portrait-rebuild-light/SKILL.md) | 局部补光、逆光、直闪、棚拍质感、纹理校正 | 提供光影/纹理修图指导，需搭配可用的图像编辑后端 | ![XXG 上游示意](../previews/xxg-portrait-light/xxg-portrait-rebuild-light.jpg) |
 | [AI Portrait Light](../skills/portrait-light/SKILL.md) | 写实人像光位、柔雾、清透糖水片、直闪摄影提示词 | 主要用于设计提示词/生成，不是直接修改 RAW 的自动化插件 | ![AI Portrait Light 上游示例](../previews/ai-portrait-light/portrait-light.jpg) |
 | [GenAI Portrait Skill](../skills/genai-portrait/SKILL.md) | 光线迁移、环境融合、局部生成、身份保持 | 需要图像编辑模型，Python CLI 依赖与 API 凭据需自行配置 | ![GenAI 合成人物上游示例](../previews/genai-portrait/genai-portrait.jpg) |
+
+| [Roby Photo Retouch Pro](../skills/roby-photo-retouch-pro/SKILL.md) | 商业精修、移除路人、换背景、扩图、闭眼参考修复 | MIT；需要真实图像编辑工具 | — |
+
+## 更多外部候选
+
+[本轮开源项目逐项核对](RETOUCH-SKILLS-REVIEW-2026-11-21.md) / [外部 Skill 与 ComfyUI 工具索引](../catalog/external-skills.yaml)。无明确再分发授权的仓库只记录链接，不复制文件。
 
 ## 仅索引，不镜像
 

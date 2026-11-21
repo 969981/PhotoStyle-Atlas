@@ -1,0 +1,126 @@
+{
+  "schema_version": 1,
+  "notes": "Ranges are illustrative local exposure corrections in EV; not executable model API parameters",
+  "presets": [
+    {
+      "id": "jp-airy",
+      "zh_name": "日系清冷空气感",
+      "light": {
+        "key": "diffused existing sky light",
+        "face_fill_ev_range": [
+          0.15,
+          0.4
+        ]
+      },
+      "palette": "muted cyan green background, natural skin",
+      "locked": [
+        "identity",
+        "geometry",
+        "pose",
+        "distinctive_marks"
+      ],
+      "quality_checks": [
+        "face identity",
+        "natural skin",
+        "lighting continuity",
+        "background integration"
+      ]
+    },
+    {
+      "id": "summer-backlight",
+      "zh_name": "夏日逆光元气感",
+      "light": {
+        "key": "observed warm backlight and ambient fill",
+        "face_fill_ev_range": [
+          0.2,
+          0.55
+        ]
+      },
+      "palette": "warm highlights, modest cool shadows",
+      "locked": [
+        "identity",
+        "geometry",
+        "pose",
+        "distinctive_marks"
+      ],
+      "quality_checks": [
+        "face identity",
+        "natural skin",
+        "lighting continuity",
+        "background integration"
+      ]
+    },
+    {
+      "id": "indoor-cream",
+      "zh_name": "室内窗边奶油感",
+      "light": {
+        "key": "large soft window light",
+        "face_fill_ev_range": [
+          0.1,
+          0.35
+        ]
+      },
+      "palette": "cream-neutral highlights, natural skin",
+      "locked": [
+        "identity",
+        "geometry",
+        "pose",
+        "distinctive_marks"
+      ],
+      "quality_checks": [
+        "face identity",
+        "natural skin",
+        "lighting continuity",
+        "background integration"
+      ]
+    },
+    {
+      "id": "night-direct-flash",
+      "zh_name": "夜间直闪杂志感",
+      "light": {
+        "key": "authorized on-camera flash effect",
+        "face_fill_ev_range": [
+          0,
+          0.3
+        ]
+      },
+      "palette": "clear shadow, cooler dimmer background",
+      "locked": [
+        "identity",
+        "geometry",
+        "pose",
+        "distinctive_marks"
+      ],
+      "quality_checks": [
+        "face identity",
+        "natural skin",
+        "lighting continuity",
+        "background integration"
+      ]
+    },
+    {
+      "id": "environment-portrait",
+      "zh_name": "人物风景融合",
+      "light": {
+        "key": "existing scene dominant light",
+        "face_fill_ev_range": [
+          0.1,
+          0.5
+        ]
+      },
+      "palette": "consistent environmental spill and perspective",
+      "locked": [
+        "identity",
+        "geometry",
+        "pose",
+        "distinctive_marks"
+      ],
+      "quality_checks": [
+        "face identity",
+        "natural skin",
+        "lighting continuity",
+        "background integration"
+      ]
+    }
+  ]
+}

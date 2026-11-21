@@ -13,3 +13,64 @@ skills:
     reason: 未发现 LICENSE 或明确可再分发授权，暂不镜像 Skill 正文及相关资源。
     dependencies: 需要实际图像编辑能力；该 Skill 仅描述修图与身份核对流程。
     reviewed_at: '2026-11-21'
+
+  - id: hotcoffee-portrait-retouch
+    repo: hotcoffeeshake/portrait-retouch-skills-docs
+    url: https://github.com/hotcoffeeshake/portrait-retouch-skills-docs/tree/main/skills/portrait-retouch
+    upstream_path: skills/portrait-retouch/SKILL.md
+    category: 商业人像诊断
+    zh_name: 人像精修与身份锚点 SOP
+    tags: [透视诊断, 自然人像, 身份保护, 光影]
+    license: 未提供明确再分发许可证
+    status: external-only
+    reason: 缺少仓库级 LICENSE；不得擅自镜像正文。
+    dependencies: 图像分析和实际修图后端；部分接口仅为预留。
+    reviewed_at: '2026-11-21'
+  - id: hotcoffee-cosplay-photo
+    repo: hotcoffeeshake/portrait-retouch-skills-docs
+    url: https://github.com/hotcoffeeshake/portrait-retouch-skills-docs/tree/main/skills/retouch-cosplay-photo
+    upstream_path: skills/retouch-cosplay-photo/SKILL.md
+    category: 漫展摄影
+    zh_name: 漫展 Cosplay 人像后期
+    tags: [漫展, 角色服装, 光影, 路人干扰]
+    license: 未提供明确再分发许可证
+    status: external-only
+    reason: 缺少仓库级 LICENSE；不得擅自镜像正文。
+    dependencies: 视觉理解与图像编辑工具。
+    reviewed_at: '2026-11-21'
+  - id: eachlabs-image-relighting
+    repo: eachlabs/skills
+    url: https://github.com/eachlabs/skills/tree/main/skills/image-relighting
+    upstream_path: skills/image-relighting/SKILL.md
+    category: 云端 API 重新布光
+    zh_name: EachLabs Image Relighting
+    tags: [三点布光, 柔光, 伦勃朗, 黄金时刻, 环境光匹配]
+    license: 未发现明确再分发许可证
+    status: external-only
+    reason: 未找到上游 LICENSE，记录外部链接而非复制原文。
+    dependencies: each::sense API、EACHLABS_API_KEY；可能收费并上传照片。
+    reviewed_at: '2026-11-21'
+  - id: tuxiuxiu-event
+    repo: CSlawyer1985/tuxiuxiu
+    url: https://github.com/CSlawyer1985/tuxiuxiu/tree/main/skill
+    upstream_path: skill/SKILL.md
+    category: 非生成式活动照片
+    zh_name: 图修修活动批量调色修肤
+    tags: [非生成式, 活动, 批量, 调色, 水印]
+    license: 未找到整个项目的明确再分发许可证
+    status: external-only
+    reason: 内含第三方模型声明不能替代项目本身的授权，先索引。
+    dependencies: Python 3、Pillow、NumPy、OpenCV、MediaPipe 等；macOS/Linux 更有文档支持。
+    reviewed_at: '2026-11-21'
+tools:
+  - id: ainvfx-paintaplate
+    repo: AInVFX/ainvfx-paintaplate
+    url: https://github.com/AInVFX/ainvfx-paintaplate
+    zh_name: ComfyUI Paint a Plate 视频 VFX 工具
+    category: ComfyUI 视频特效节点
+    tags: [视频, 逐帧, VFX, 重新布光, 保留未变区域]
+    license: Apache-2.0
+    status: external-tool-only
+    reason: 不是标准 SKILL.md，且为视频特效工作流，不能当摄影精修 Agent Skill 镜像。
+    dependencies: ComfyUI、FLUX/LTX 等大型模型；上游推荐 32GB 以上显存。
+    reviewed_at: '2026-11-21'

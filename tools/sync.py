@@ -332,6 +332,31 @@ def build_catalog(sources: list[dict], lock: dict) -> None:
                     presets.append({"skill_id": slug, "key": recipe.stem,
                                     "title": recipe.stem.replace("-", " ").title(),
                                     "type": "edit-recipe"})
+    # Locally-authored Skills live outside upstream lock ownership.
+    local_file = ROOT / "catalog" / "local-skills.yaml"
+    if local_file.is_file():
+        originals = yaml.safe_load(local_file.read_text(encoding="utf-8")) or {}
+        for own in originals.get("skills", []):
+            slug = own["id"]
+            path = safe_path(own["path"])
+            if path != Path("skills") / slug:
+                raise RuntimeError("Local Skill path must match id: " + slug)
+            file = ROOT / path / "SKILL.md"
+            if not file.is_file() or file.is_symlink():
+                raise RuntimeError("Local Skill file missing: " + str(file))
+            fm = frontmatter(file)
+            if fm.get("name") != slug:
+                raise RuntimeError("Local Skill frontmatter name mismatch: " + slug)
+            entries.append({
+                "id": slug, "source_id": "atlas-original",
+                "upstream_path": own["path"], "source_repo": own["source_repo"],
+                "category": own["category"], "license": own["license"],
+                "title": own["name"], "description": fm.get("description", ""),
+                "tags": own.get("tags", []), "use_cases": own.get("use_cases", []),
+                "version": own.get("version", ""), "upstream_commit": "local",
+                "path": own["path"], "preview": own.get("preview", ""),
+                "origin": "local-original",
+            })
     entries.sort(key=lambda x: (x["source_id"], x["id"]))
     presets.sort(key=lambda x: (x["skill_id"], x.get("number", 0), x.get("key", "")))
     ids = [e["id"] for e in entries]

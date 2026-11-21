@@ -22,9 +22,17 @@ def main():
     assert sum(x["skill_id"]=="poster-generator" for x in presets)==20, "20 poster styles missing"
     assert sum(x["skill_id"]=="photo-editing-craft" for x in presets)==14, "14 retouch recipes missing"
     assert len(sources)==len(lock), "source lock count differs"
-    new_ids={"xxg-portrait-rebuild-light", "portrait-light", "genai-portrait"}
+    new_ids={"xxg-portrait-rebuild-light", "portrait-light", "genai-portrait",
+             "roby-photo-retouch-pro", "atlas-portrait-suite"}
     assert new_ids.issubset(set(ids)), "missing portrait lighting Skills"
     assert "photo-retouch" not in ids, "unlicensed external Skill must not be vendored"
+    local=yaml.safe_load((ROOT/"catalog/local-skills.yaml").read_text(encoding="utf-8"))["skills"]
+    assert {x["id"] for x in local} == {x["id"] for x in catalog if x["source_id"]=="atlas-original"}
+    assert all((ROOT / x["path"] / "SKILL.md").is_file() for x in local)
+    recipes=json.loads((ROOT/"skills/atlas-portrait-suite/references/presets.json").read_text(encoding="utf-8"))
+    assert len(recipes["presets"]) == 5
+    extern=yaml.safe_load((ROOT/"catalog/external-skills.yaml").read_text(encoding="utf-8"))
+    assert len(extern["skills"])>=5 and len(extern["tools"])>=1
     for x in catalog:
         parent=ROOT/x["path"]
         assert (parent/"SKILL.md").is_file(), "missing Skill: "+x["id"]

@@ -64,7 +64,7 @@ def generate():
                    "人像原图与风景兼顾，区分普通局部补光和需要图像生成工具的重新布光。", "",
                    "| 预览 | Skill | 适用场景 |", "| --- | --- | --- |"])
     for x in skills:
-        if x["source_id"] not in {"xxg-portrait-light", "ai-portrait-light", "genai-portrait"}:
+        if x["source_id"] not in {"xxg-portrait-light", "ai-portrait-light", "genai-portrait", "roby-photo-retouch-pro", "atlas-original"}:
             continue
         preview=x.get("preview")
         visual=("<img src=\""+preview+"\" width=\"145\" alt=\""+safe(x["title"],50)+"\">"
@@ -72,7 +72,9 @@ def generate():
         readme.append("| "+visual+" | ["+safe(x["title"],80)+"]("+x["path"]+"/SKILL.md) | "+
                       safe(" / ".join(x.get("use_cases") or x.get("tags") or []),120)+" |")
     readme.extend(["", "**授权提醒：** [x-rush/photo-retouch](https://github.com/x-rush/photo-retouch) 未附许可证，"+
-                   "暂仅列入[外部候选目录](catalog/external-skills.yaml)，不复制其内容。", "",
+                   "以及其他未获明确再分发授权的项目仍列入[外部候选](catalog/external-skills.yaml)，不复制其内容。", "",
+                   "[自建清透糖水片五套配方](skills/atlas-portrait-suite/references/presets.md) · "+
+                   "[新增项目许可证审查](docs/RETOUCH-SKILLS-REVIEW-2026-11-21.md)", "",
                    "## 按用途挑选","",
                    "| 分类 | Skills 数量 | 用途 |","| --- | ---: | --- |"])
     descriptions={
@@ -89,7 +91,9 @@ def generate():
         "海报设计":"电影海报、瑞士排版、包豪斯",
         "人像光影":"闪光灯补光、逆光重建与自然肤色",
         "人像布光":"柔雾糖水片、直闪和摄影光位配方",
-        "人像精修":"光线迁移、人物保真与背景融合"
+        "人像精修":"光线迁移、人物保真与背景融合",
+        "商业人像精修":"十种精修模式、身份保护、换景与扩图",
+        "自建摄影后期":"清透糖水片、补光、人物与风景融合"
     }
     for cat in sorted(cats):
         readme.append("| ["+cat+"](docs/STYLES.md) | "+str(len(cats[cat]))+
@@ -166,7 +170,9 @@ def generate():
         "- **XXG Portrait Rebuild Light**：上游 MIT；主要是光影工作流与核对脚本，需外部实际修图后端。",
         "- **AI Portrait Light**：上游文本/图片 CC BY 4.0，代码 MIT；署名与原有 CC BY 4.0 条款必须保留；镜像仅保存其许可明确覆盖的早期示例预览。最新示例图从上游获取。",
         "- **GenAI Portrait Skill**：上游 MIT；其 Python CLI 依赖须另行安装，生成式编辑可能需要 OpenAI/Gemini 等服务凭据。",
-        "- **Photo Retouch（x-rush）**：上游没有明确 LICENSE，本仓库只提供外部链接与介绍，不收录代码或 Skill 正文。", "",
+        "- **Roby Photo Retouch Pro**：MIT，十种人像和照片精修模式，需宿主编辑后端。",
+        "- **Atlas Portrait Suite**：本仓库自编完整 Skill，沿用仓库 MIT，独立本地清单，不由上游同步覆盖。",
+        "- **其他外部候选**：x-rush、hotcoffeeshake、eachlabs、tuxiuxiu 未发现明确项目授权，暂不镜像；AInVFX 为 Apache-2.0 ComfyUI 视频特效工具。", "",
         "## Wibi Style 特殊条款","",
         "上游对自动化工具使用 MIT 条款，对原创视觉规则与提示词使用个人非商业许可；"+
         "各目录保留作者署名、LICENSE 和 NOTICE。第三方图片与字体可能各有额外要求。",
