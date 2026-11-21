@@ -50,7 +50,7 @@
 | <img src="previews/ai-portrait-light/portrait-light.jpg" width="145" alt="人像布光与光线配方"> | [人像布光与光线配方](skills/portrait-light/SKILL.md) | 闪光灯布光规划 / 日系清透糖水片 / 人物风景融合 / 人像光线提示词 |
 | — | [Atlas 人像精修与清透糖水片套件](skills/atlas-portrait-suite/SKILL.md) | 日系清冷空气感 / 夏日逆光元气感 / 室内窗边奶油感 / 夜间直闪 / 风景环境人像 |
 | <img src="previews/genai-portrait/genai-portrait.jpg" width="145" alt="GenAI 人像精修与光影迁移"> | [GenAI 人像精修与光影迁移](skills/genai-portrait/SKILL.md) | 棚拍证件照 / 夜景人像补光 / 替换背景 / 复杂人像环境光匹配 |
-| — | [商业人像十模式精修](skills/roby-photo-retouch-pro/SKILL.md) | 商业客片 / 自然修肤 / 背景清理 / 闭眼参考修复 / 人物风景融合 |
+| — | [商业人像十模式精修](skills/photo-retouch-pro/SKILL.md) | 商业客片 / 自然修肤 / 背景清理 / 闭眼参考修复 / 人物风景融合 |
 | <img src="previews/xxg-portrait-light/xxg-portrait-rebuild-light.jpg" width="145" alt="人像光线重建与自然补光"> | [人像光线重建与自然补光](skills/xxg-portrait-rebuild-light/SKILL.md) | 夜间直闪人像 / 逆光面部补光 / 棚拍光线模拟 / 糖水片的柔光处理 |
 
 **授权提醒：** [x-rush/photo-retouch](https://github.com/x-rush/photo-retouch) 未附许可证，以及其他未获明确再分发授权的项目仍列入[外部候选](catalog/external-skills.yaml)，不复制其内容。

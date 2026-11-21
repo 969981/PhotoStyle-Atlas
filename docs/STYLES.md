@@ -101,7 +101,7 @@
 | 艺术海报 | — | [像素消散风景](../skills/pixel-dissolve-landscape/SKILL.md) | 像素画 / 消散 / 数字艺术 | [photo-to-poster](https://github.com/GZ-L/photo-to-poster-skills) |
 | 艺术海报 | — | [水彩旅行卡](../skills/watercolor-travel-card/SKILL.md) | 旅行 / 水彩 / 明信片 / 海报 | [photo-to-poster](https://github.com/GZ-L/photo-to-poster-skills) |
 | 海报设计 | — | [Poster Generator](../skills/poster-generator/SKILL.md) | Generates professional designer-grade posters, flyers, campaign visuals, event posters, and product posters. Use when the user asks for | [poster-generator](https://github.com/howardz27/poster-generator-skill) |
-| 商业人像精修 | — | [商业人像十模式精修](../skills/roby-photo-retouch-pro/SKILL.md) | 人像精修 / 人物保真 / 去路人 / 背景更换 / 扩图 / 衣物修复 / 重布光 | [roby-photo-retouch-pro](https://github.com/robyboy888/photo-retouch-pro) |
+| 商业人像精修 | — | [商业人像十模式精修](../skills/photo-retouch-pro/SKILL.md) | 人像精修 / 人物保真 / 去路人 / 背景更换 / 扩图 / 衣物修复 / 重布光 | [roby-photo-retouch-pro](https://github.com/robyboy888/photo-retouch-pro) |
 | 人像光影 | <img src="../previews/xxg-portrait-light/xxg-portrait-rebuild-light.jpg" width="110" alt="人像光线重建与自然补光"> | [人像光线重建与自然补光](../skills/xxg-portrait-rebuild-light/SKILL.md) | 人像 / 补光 / 闪光灯 / 直闪 / 柔光 / 逆光 / 光影重建 / 保真 | [xxg-portrait-light](https://github.com/moskoo/xxg-portrait-rebuild-light) |
 
 ## Image Style Transfer · 80 种艺术风格

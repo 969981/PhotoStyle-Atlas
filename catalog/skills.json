@@ -693,9 +693,9 @@
     {
       "category": "商业人像精修",
       "description": "Retouch existing photos with identity and detail preservation. Use for natural cleanup, object removal, background or clothing replacement, enhancement, outpainting, relighting, closed-eye correction, garment smoothing, and removing elements from the user's designs. Supports 精修、换背景、换装、扩图、修闭眼 and prompt-only requests.",
-      "id": "roby-photo-retouch-pro",
+      "id": "photo-retouch-pro",
       "license": "MIT",
-      "path": "skills/roby-photo-retouch-pro",
+      "path": "skills/photo-retouch-pro",
       "preview": "",
       "source_id": "roby-photo-retouch-pro",
       "source_repo": "robyboy888/photo-retouch-pro",
