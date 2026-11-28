@@ -10,9 +10,9 @@
 
 ## 收录统计
 
-- 独立安装 Skill：89
+- 独立安装 Skill：92
 - 上游来源：16
-- Wibi Style Skills：52
+- Wibi Style Skills：55
 - Image Style Transfer 内部风格预设：80
 - Anime Restyle 动漫风格 key：71
 - Poster Generator 版式：20
@@ -32,12 +32,12 @@
 | <img src="previews/wibi-style/blue-paper-manga-type.jpg" width="145" alt="Wibi Style · 蓝纸漫画大字海报"> | Wibi Style · 蓝纸漫画大字海报 | [blue-paper-manga-type](skills/blue-paper-manga-type/SKILL.md) |
 | <img src="previews/wibi-style/blue-retro-print.jpg" width="145" alt="Wibi Style · 蓝底复古印刷"> | Wibi Style · 蓝底复古印刷 | [blue-retro-print](skills/blue-retro-print/SKILL.md) |
 | <img src="previews/wibi-style/bold-line-fashion.jpg" width="145" alt="Wibi Style · 粗线手绘穿搭插画"> | Wibi Style · 粗线手绘穿搭插画 | [bold-line-fashion](skills/bold-line-fashion/SKILL.md) |
+| <img src="previews/wibi-style/cinematic-film-still-wkw.jpg" width="145" alt="Wibi Style · 电影剧照大片·王家卫版"> | Wibi Style · 电影剧照大片·王家卫版 | [cinematic-film-still-wkw](skills/cinematic-film-still-wkw/SKILL.md) |
 | <img src="previews/wibi-style/clear-sky-urban-cel.jpg" width="145" alt="Wibi Style · 晴空都市赛璐璐"> | Wibi Style · 晴空都市赛璐璐 | [clear-sky-urban-cel](skills/clear-sky-urban-cel/SKILL.md) |
 | <img src="previews/wibi-style/cold-blue-glitch-anime.jpg" width="145" alt="Wibi Style · 冷蓝失真动漫"> | Wibi Style · 冷蓝失真动漫 | [cold-blue-glitch-anime](skills/cold-blue-glitch-anime/SKILL.md) |
 | <img src="previews/wibi-style/crayon-flat-naive.jpg" width="145" alt="Wibi Style · 蜡笔极简扁平画"> | Wibi Style · 蜡笔极简扁平画 | [crayon-flat-naive](skills/crayon-flat-naive/SKILL.md) |
 | <img src="previews/wibi-style/cream-home-sketch.jpg" width="145" alt="Wibi Style · 奶油纸复古家居速写"> | Wibi Style · 奶油纸复古家居速写 | [cream-home-sketch](skills/cream-home-sketch/SKILL.md) |
 | <img src="previews/wibi-style/cream-paper-doodle.jpg" width="145" alt="Wibi Style · 奶油纸涂鸦漫画"> | Wibi Style · 奶油纸涂鸦漫画 | [cream-paper-doodle](skills/cream-paper-doodle/SKILL.md) |
-| <img src="previews/wibi-style/dark-red-black-cel-shaded.jpg" width="145" alt="Wibi Style · 暗夜红黑赛璐璐"> | Wibi Style · 暗夜红黑赛璐璐 | [dark-red-black-cel-shaded](skills/dark-red-black-cel-shaded/SKILL.md) |
 
 [查看全部 Wibi Style 风格](docs/STYLES.md#wibi-style-视觉风格)
 
@@ -66,7 +66,7 @@
 | [人像光影](docs/STYLES.md) | 1 | 闪光灯补光、逆光重建与自然肤色 |
 | [人像布光](docs/STYLES.md) | 1 | 柔雾糖水片、直闪和摄影光位配方 |
 | [人像精修](docs/STYLES.md) | 1 | 光线迁移、人物保真与背景融合 |
-| [创意风格](docs/STYLES.md) | 52 | 漫画、胶片、印刷和实验视觉 |
+| [创意风格](docs/STYLES.md) | 55 | 漫画、胶片、印刷和实验视觉 |
 | [动漫插画](docs/STYLES.md) | 1 | 动漫、国风、数字绘画 |
 | [商业人像精修](docs/STYLES.md) | 1 | 十种精修模式、身份保护、换景与扩图 |
 | [杂志排版](docs/STYLES.md) | 4 | 旅行画册、视觉日记与系列海报 |

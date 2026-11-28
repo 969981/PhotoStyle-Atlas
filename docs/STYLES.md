@@ -5,7 +5,7 @@
 
 ## Wibi Style 视觉风格
 
-包含全部 52 个独立 Skill，保留每个目录内的 LICENSE 与 NOTICE。
+包含全部 55 个独立 Skill，保留每个目录内的 LICENSE 与 NOTICE。
 
 | 预览 | 风格与特征 | Skill 文件 |
 | --- | --- | --- |
@@ -15,6 +15,7 @@
 | <img src="../previews/wibi-style/blue-paper-manga-type.jpg" width="180" alt="Wibi Style · 蓝纸漫画大字海报"> | **Wibi Style · 蓝纸漫画大字海报**<br>Wibi Style 官方视觉风格：把一张照片转换成蓝纸漫画大字海报。适合动作和穿搭清楚的人物日常照片，绘成蓝纸漫画海报；按照片设计英文大字，让人物与文字形成遮挡或承托。适用于用户要求蓝纸漫画大字海报，或明确调用 $blue-paper-manga-type  | [blue-paper-manga-type](../skills/blue-paper-manga-type/SKILL.md) |
 | <img src="../previews/wibi-style/blue-retro-print.jpg" width="180" alt="Wibi Style · 蓝底复古印刷"> | **Wibi Style · 蓝底复古印刷**<br>Wibi Style 官方视觉风格：把一张照片转换成蓝底复古印刷。轮廓和神态清楚的人物照片。适用于用户要求蓝底复古印刷，或明确调用 $blue-retro-print 时。 | [blue-retro-print](../skills/blue-retro-print/SKILL.md) |
 | <img src="../previews/wibi-style/bold-line-fashion.jpg" width="180" alt="Wibi Style · 粗线手绘穿搭插画"> | **Wibi Style · 粗线手绘穿搭插画**<br>Wibi Style 官方视觉风格：把一张照片转换成粗线手绘穿搭插画。适合穿搭轮廓和动作清楚的人像、街拍及坐姿照片，转换成浅灰留白与黑色轮廓的时装角色插画。适用于用户要求粗线手绘穿搭插画，或明确调用 $bold-line-fashion 时。 | [bold-line-fashion](../skills/bold-line-fashion/SKILL.md) |
+| <img src="../previews/wibi-style/cinematic-film-still-wkw.jpg" width="180" alt="Wibi Style · 电影剧照大片·王家卫版"> | **Wibi Style · 电影剧照大片·王家卫版**<br>Wibi Style 官方视觉风格：把一张照片转换成电影剧照大片·王家卫版。适合日常街拍、对镜自拍、餐馆或车站随手拍，转为90年代港式霓虹浓彩35mm电影剧照，配2.39:1宽银幕黑边与原创对白字幕。适用于用户要求电影剧照大片·王家卫版，或明确调用 $cine | [cinematic-film-still-wkw](../skills/cinematic-film-still-wkw/SKILL.md) |
 | <img src="../previews/wibi-style/clear-sky-urban-cel.jpg" width="180" alt="Wibi Style · 晴空都市赛璐璐"> | **Wibi Style · 晴空都市赛璐璐**<br>Wibi Style 官方视觉风格：把一张照片转换成晴空都市赛璐璐。适合城市街道、建筑、旅行纪实、交通设施和环境人物照片。适用于用户要求晴空都市赛璐璐，或明确调用 $clear-sky-urban-cel 时。 | [clear-sky-urban-cel](../skills/clear-sky-urban-cel/SKILL.md) |
 | <img src="../previews/wibi-style/cold-blue-glitch-anime.jpg" width="180" alt="Wibi Style · 冷蓝失真动漫"> | **Wibi Style · 冷蓝失真动漫**<br>Wibi Style 官方视觉风格：把一张照片转换成冷蓝失真动漫。适合人物写真、自拍、街头抓拍、夜景生活照、姿态与情绪明确的照片。适用于用户要求冷蓝失真动漫，或明确调用 $cold-blue-glitch-anime 时。 | [cold-blue-glitch-anime](../skills/cold-blue-glitch-anime/SKILL.md) |
 | <img src="../previews/wibi-style/crayon-flat-naive.jpg" width="180" alt="Wibi Style · 蜡笔极简扁平画"> | **Wibi Style · 蜡笔极简扁平画**<br>Wibi Style 官方视觉 Skill。把用户上传的照片重绘成蜡笔极简扁平手绘时装插画：保留人物身份、姿态、服装轮廓和关键配饰，转为纯白纸面、稚拙线条、蜡笔颗粒与高饱和扁平色块。用户说“蜡笔极简扁平画”“蜡笔手绘时装插画”“极简扁平插画”或明确调用 $cr | [crayon-flat-naive](../skills/crayon-flat-naive/SKILL.md) |
@@ -23,7 +24,9 @@
 | <img src="../previews/wibi-style/dark-red-black-cel-shaded.jpg" width="180" alt="Wibi Style · 暗夜红黑赛璐璐"> | **Wibi Style · 暗夜红黑赛璐璐**<br>Wibi Style 官方视觉风格：把一张照片转换成暗夜红黑赛璐璐。轮廓清楚、适合戏剧性红黑光影的人物照片。适用于用户要求暗夜红黑赛璐璐，或明确调用 $dark-red-black-cel-shaded 时。 | [dark-red-black-cel-shaded](../skills/dark-red-black-cel-shaded/SKILL.md) |
 | <img src="../previews/wibi-style/diamond-kid-head-card.jpg" width="180" alt="Wibi Style · 钻牙萌娃大头"> | **Wibi Style · 钻牙萌娃大头**<br>Wibi Style 官方视觉风格。将单人儿童老照片重新拍摄式地转换成明亮可爱的现代儿童摄影大头卡贴，严格去掉脖子肩膀身体，并在原片露齿时制作满钻牙；生成前询问默认白色、复古大波点、柔和双色渐变、蜡笔手绘小星星、柔粉纯色五种背景。当用户要求钻牙大头、儿童头像卡 | [diamond-kid-head-card](../skills/diamond-kid-head-card/SKILL.md) |
 | <img src="../previews/wibi-style/electric-blue-halftone-poster.jpg" width="180" alt="Wibi Style · 电蓝网点海报"> | **Wibi Style · 电蓝网点海报**<br>Wibi Style 官方视觉风格。Turn one uploaded portrait or pet headshot into a square electric-blue coarse-halftone poster with a tightly cro | [electric-blue-halftone-poster](../skills/electric-blue-halftone-poster/SKILL.md) |
+| <img src="../previews/wibi-style/embroidered-patch-portrait.jpg" width="180" alt="Wibi Style · 刺绣徽章肖像"> | **Wibi Style · 刺绣徽章肖像**<br>Wibi Style 官方视觉风格：把一张照片转换成刺绣徽章肖像。适合单人自拍、人物近景半身照或猫狗宠物特写，做成带厚实缎面锁边与中粗方向性针脚的掌心异形刺绣布贴徽章。适用于用户要求刺绣徽章肖像，或明确调用 $embroidered-patch-portrai | [embroidered-patch-portrait](../skills/embroidered-patch-portrait/SKILL.md) |
 | <img src="../previews/wibi-style/fisheye-city-cover.jpg" width="180" alt="Wibi Style · 鱼眼城市海报"> | **Wibi Style · 鱼眼城市海报**<br>Wibi Style 官方视觉风格。Use one uploaded portrait, group photo, street photo, or travel photo as a fixed editing base, add the bundled Y | [fisheye-city-cover](../skills/fisheye-city-cover/SKILL.md) |
+| <img src="../previews/wibi-style/gingerbread-cookie-portrait.jpg" width="180" alt="Wibi Style · 姜饼人肖像"> | **Wibi Style · 姜饼人肖像**<br>Wibi Style 官方视觉风格：把一张照片转换成姜饼人肖像。适合单人自拍、萌娃照、情侣或亲子合照，做成深棕旧木桌上带 1:1 等大奶黄压模模具与立体蛋白糖霜的手工圣诞姜饼人肖像饼干。适用于用户要求姜饼人肖像，或明确调用 $gingerbread-cooki | [gingerbread-cookie-portrait](../skills/gingerbread-cookie-portrait/SKILL.md) |
 | <img src="../previews/wibi-style/glitch-pixel-collage.jpg" width="180" alt="Wibi Style · 乱码像素拼贴"> | **Wibi Style · 乱码像素拼贴**<br>Wibi Style 官方视觉风格：把一张照片转换成乱码像素拼贴。人物、静物或色彩层次明确的照片。适用于用户要求乱码像素拼贴，或明确调用 $glitch-pixel-collage 时。 | [glitch-pixel-collage](../skills/glitch-pixel-collage/SKILL.md) |
 | <img src="../previews/wibi-style/home-journal.jpg" width="180" alt="Wibi Style · 复古家居日志"> | **Wibi Style · 复古家居日志**<br>Wibi Style 官方视觉风格：把一张照片转换成复古家居日志。家里任意角落的随手照片，客厅、卧室、咖啡台、书架都行。适用于用户要求复古家居日志，或明确调用 $home-journal 时。 | [home-journal](../skills/home-journal/SKILL.md) |
 | <img src="../previews/wibi-style/iridescent-long-exposure.jpg" width="180" alt="Wibi Style · 虹彩柔焦长曝光"> | **Wibi Style · 虹彩柔焦长曝光**<br>Wibi Style 官方视觉风格：把一张照片转换成虹彩柔焦长曝光。想要朦胧氛围的人物近景或局部特写。适用于用户要求虹彩柔焦长曝光，或明确调用 $iridescent-long-exposure 时。 | [iridescent-long-exposure](../skills/iridescent-long-exposure/SKILL.md) |

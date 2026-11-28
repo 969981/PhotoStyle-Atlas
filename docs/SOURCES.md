@@ -6,7 +6,7 @@
 | 源仓库 | 独立 Skills | 上游版本 Commit | 授权 |
 | --- | ---: | --- | --- |
 | [GZ-L/photo-to-poster-skills](https://github.com/GZ-L/photo-to-poster-skills) | 14 | [268ee78460ab](https://github.com/GZ-L/photo-to-poster-skills/commit/268ee78460ab5592167082d0501b7834f2e5b676) | MIT |
-| [Vieeeeeee/wibi-style](https://github.com/Vieeeeeee/wibi-style) | 52 | [c063b052fc27](https://github.com/Vieeeeeee/wibi-style/commit/c063b052fc275bea92dd4cc15e509157cffa310c) | Wibi Personal Non-Commercial 1.0 + MIT tooling |
+| [Vieeeeeee/wibi-style](https://github.com/Vieeeeeee/wibi-style) | 55 | [29494f866ba9](https://github.com/Vieeeeeee/wibi-style/commit/29494f866ba9d98f657482809531b6e30707ea21) | Wibi Personal Non-Commercial 1.0 + MIT tooling |
 | [jyi06/image-style-transfer](https://github.com/jyi06/image-style-transfer) | 1 | [639215b3c5e8](https://github.com/jyi06/image-style-transfer/commit/639215b3c5e83ba60daa16aee3e2546ece07d78e) | MIT |
 | [yanliudesign/mono-color-skill](https://github.com/yanliudesign/mono-color-skill) | 1 | [c8ff70597dde](https://github.com/yanliudesign/mono-color-skill/commit/c8ff70597ddedcd65f21a0b528f6a70c35690b0a) | MIT |
 | [jiahuiqu17/paper-signal](https://github.com/jiahuiqu17/paper-signal) | 4 | [7567ff05f93f](https://github.com/jiahuiqu17/paper-signal/commit/7567ff05f93fe525bf886b3a0dce36903ab8c43b) | MIT |
